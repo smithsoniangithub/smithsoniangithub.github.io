@@ -1,0 +1,144 @@
+/* line 1, ../sass/main.scss */
+body, html {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 5, ../sass/main.scss */
+body {
+  background-color: black;
+  line-height: 2;
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 10, ../sass/main.scss */
+.wrapper {
+  position: relative;
+}
+/* line 13, ../sass/main.scss */
+.wrapper nav {
+  position: fixed;
+  right: 70px;
+  top: 30%;
+  z-index: 9999;
+}
+/* line 18, ../sass/main.scss */
+.wrapper nav ul {
+  padding: 0px;
+}
+/* line 20, ../sass/main.scss */
+.wrapper nav ul li {
+  list-style: none;
+  opacity: .4;
+}
+/* line 23, ../sass/main.scss */
+.wrapper nav ul li img {
+  height: 17px;
+}
+/* line 27, ../sass/main.scss */
+.wrapper nav ul li:hover {
+  opacity: 1;
+}
+/* line 33, ../sass/main.scss */
+.wrapper .bg-1 {
+  position: relative;
+  width: 100%;
+  height: 900px;
+}
+/* line 38, ../sass/main.scss */
+.wrapper .bg-1 video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+/* line 49, ../sass/main.scss */
+.wrapper .bg-1 .logo {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  z-index: 2;
+  margin-left: -50px;
+}
+/* line 57, ../sass/main.scss */
+.wrapper .bg-1 .desc {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  z-index: 2;
+  margin-left: -50px;
+}
+/* line 65, ../sass/main.scss */
+.wrapper .bg-1 .desc-bg {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  height: 190px;
+  bottom: 0;
+  opacity: .7;
+}
+/* line 74, ../sass/main.scss */
+.wrapper .bg-1 .blue-circle {
+  position: absolute;
+  z-index: 2;
+  bottom: 5%;
+  right: 30%;
+  display: none;
+}
+/* line 83, ../sass/main.scss */
+.wrapper .bg-2 {
+  height: 1080px;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  background-image: url("/images/bg2-filter.png"), url("/images/bg2.jpg");
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+/* line 92, ../sass/main.scss */
+.wrapper .bg-2 .take-survey {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -50px;
+}
+/* line 99, ../sass/main.scss */
+.wrapper .bg-2 .take-survey-bg {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  height: 190px;
+  bottom: 0;
+  opacity: .7;
+}
+/* line 108, ../sass/main.scss */
+.wrapper .bg-2 .annual-visitor {
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 660px;
+  padding: 20px;
+  border: 1px solid white;
+  line-height: 1.5;
+  top: 50%;
+  left: 38%;
+}
+/* line 119, ../sass/main.scss */
+.wrapper .bg-2 .annual-visitor .number {
+  font-size: 100px;
+  font-weight: bolder;
+}
+/* line 124, ../sass/main.scss */
+.wrapper .bg-2 .annual-visitor .sub-con {
+  font-size: 55px;
+  font-weight: 100;
+}
+
+/* line 132, ../sass/main.scss */
+.parallax-nav .active {
+  opacity: 1;
+}

@@ -1,0 +1,135 @@
+body, html {
+	margin:0px;
+	padding:0px;
+}
+body {
+	background-color: black;
+	line-height:2;
+	font-family: 'Lato', sans-serif;
+}
+.wrapper {
+	position:relative;
+
+	nav {
+		position: fixed;
+		right: 70px;
+		top: 30%;
+		z-index: 9999;
+		ul {
+			padding:0px; 
+			li {
+				list-style: none;
+				opacity: .4;
+				img {
+					height: 17px;
+				}
+			}
+			li:hover {
+				opacity: 1;
+			}
+		}
+	}
+
+	.bg-1 {
+		position: relative;
+		width: 100%;
+		height: 900px;
+
+		video {
+			position: absolute;
+			right: 0; 
+			bottom: 0;
+			min-width: 100%;
+			min-height: 100%;
+			width: auto; 
+			height: auto; 
+			z-index: -100;
+		}
+
+		.logo {
+				position:absolute;
+				top: 15%;
+				left: 50%;
+				z-index: 2;
+				margin-left: -50px;
+			}
+
+		.desc {
+			position: absolute;
+			bottom: 5%;
+			left: 50%;
+			z-index: 2;
+			margin-left: -50px;
+		}
+
+		.desc-bg {
+			position:absolute;
+			width: 100%;
+			z-index: 0;
+			height: 190px;
+			bottom: 0;
+			opacity: .7;
+		}
+
+		.blue-circle {
+			position: absolute;
+			z-index: 2;
+			bottom: 5%;
+			right: 30%;
+			display: none;
+		}
+	}
+
+	.bg-2 {
+		height: 1080px;
+		width: 100%;
+		z-index: 2;
+		position: relative;
+		background-image: url('/images/bg2-filter.png'), url('/images/bg2.jpg');
+		background-size:cover, cover;
+		background-repeat: no-repeat, no-repeat;
+		
+		.take-survey {
+			position: absolute;
+			bottom: 5%;
+			left: 50%;
+			margin-left: -50px;
+		}
+
+		.take-survey-bg {
+			position:absolute;
+			width: 100%;
+			z-index: 0;
+			height: 190px;
+			bottom: 0;
+			opacity: .7;
+		}
+
+		.annual-visitor {
+			position:absolute;
+			color: white;
+			text-align: center;
+			width: 660px;	
+			padding: 20px;
+			border: 1px solid white;
+			line-height: 1.5;
+			top: 50%;
+			left: 38%;
+
+			.number {
+				font-size: 100px;
+				font-weight:bolder;
+			}
+
+			.sub-con {
+				font-size: 55px;
+				font-weight: 100;
+			}
+		}
+	}
+}
+.parallax-nav {
+	.active {
+		opacity:1;
+	}
+}
