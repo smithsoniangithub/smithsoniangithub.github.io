@@ -10,6 +10,10 @@ body {
 .wrapper {
 	position:relative;
 
+	#curve-line-two {
+		position:absolute;
+	}
+
 	nav {
 		position: fixed;
 		right: 70px;
@@ -125,6 +129,13 @@ body {
 				font-size: 55px;
 				font-weight: 100;
 			}
+		}
+
+		.castle {
+			position:absolute;
+			left: 45%;
+			top: 12%;
+			margin-left: -50px;
 		}
 	}
 }
