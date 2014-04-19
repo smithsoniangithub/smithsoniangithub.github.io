@@ -10,8 +10,25 @@ body {
 .wrapper {
 	position:relative;
 
-	#curve-line-two {
+	#curve-line-1 {
 		position:absolute;
+		z-index: 10;
+		top: 31%;
+		left: 53%;
+	}
+
+	// .curve-line-1 {
+	// 	position:absolute;
+	// 	z-index: 10;
+	// 	top: 31%;
+	// 	left: 53%;
+	// }
+
+	#curve-line-2 {
+		position:absolute;
+		z-index: 10;
+		top: 1200px;
+		left: 22px;
 	}
 
 	nav {
@@ -23,13 +40,13 @@ body {
 			padding:0px; 
 			li {
 				list-style: none;
-				opacity: .4;
 				img {
 					height: 17px;
 				}
-			}
-			li:hover {
-				opacity: 1;
+				img:hover {
+					border: 2px solid white;
+					border-radius: 100%;
+				}
 			}
 		}
 	}
@@ -123,24 +140,42 @@ body {
 			.number {
 				font-size: 100px;
 				font-weight:bolder;
+				color:#ffd500;
 			}
 
 			.sub-con {
 				font-size: 55px;
 				font-weight: 100;
 			}
+
+			.sub-con-two {
+				font-size: 35px;
+				font-weight: 100;
+			}
 		}
 
-		.castle {
+		#castle {
 			position:absolute;
 			left: 45%;
 			top: 12%;
+			height: 362px;
 			margin-left: -50px;
 		}
+		
+		.castle {
+			position: absolute;
+			left: 33%;
+			top: 0%;
+			height: 362px;
+			// margin-left: -50px;
+		}
+
 	}
 }
 .parallax-nav {
 	.active {
-		opacity:1;
+		// opacity:1;
+		border: 2px solid white;
+		border-radius: 100%;
 	}
 }
