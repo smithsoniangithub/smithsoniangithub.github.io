@@ -27,7 +27,7 @@ body {
   position: absolute;
   z-index: 10;
   top: 1200px;
-  left: 22px;
+  left: 17px;
 }
 /* line 34, ../sass/main.scss */
 .wrapper nav {
@@ -94,14 +94,6 @@ body {
   height: 190px;
   bottom: 0;
   opacity: .7;
-}
-/* line 95, ../sass/main.scss */
-.wrapper .bg-1 .blue-circle {
-  position: absolute;
-  z-index: 2;
-  bottom: 5%;
-  right: 30%;
-  display: none;
 }
 /* line 104, ../sass/main.scss */
 .wrapper .bg-2 {
@@ -171,6 +163,7 @@ body {
   left: 33%;
   top: 0%;
   height: 362px;
+  display: none;
 }
 
 /* line 176, ../sass/main.scss */

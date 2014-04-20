@@ -87,6 +87,7 @@ $(document).ready(function(){
 			});
         drawLineOne();
         drawLineTwo();
+        $('.castle').fadeIn();
 		  }
        
 
