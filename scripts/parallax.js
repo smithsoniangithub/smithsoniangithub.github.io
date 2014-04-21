@@ -1,5 +1,7 @@
 $(document).ready(function(){
   // console.log($(document).scrollTop());
+  // $('.wrapper').smoothWheel();
+
   function drawCastle () {
      
     var pathObj = {
@@ -190,7 +192,7 @@ $(document).ready(function(){
           "strokepath": [
               {
                 "path": "M460,33.89v1h-46c-87.25-0.803-138.355,25.127-168.25,56.901      c-46.174,49.077-41.749,112.099-41.749,112.099v381.998V742.89c0,0-1.933,32.766,14.937,50.658      c6.337,6.721,15.324,11.342,28.063,11.342v0.998c-11.812,0-21.498-3.92-28.79-11.652c-16.97-18-15.29-50.051-15.212-51.346      V585.888l0.004-381.929c-0.046-0.634-3.925-64.022,42.019-112.853C281.398,52.444,338.252,33.193,414,33.89H460",
-                "duration": 4000
+                "duration": 2000
               }
           ],
           "dimensions": {
@@ -257,6 +259,7 @@ $(document).ready(function(){
       // mouse leave
       $('.tool-two').css('display','none');
     });
+
 
 });
 
