@@ -154,7 +154,7 @@ $(document).ready(function(){
       }).lazylinepainter('paint'); 
  
   }
-  
+
   function drawLineOne () {
       var pathObj = {
       "curve-line-1": {
@@ -218,7 +218,7 @@ $(document).ready(function(){
   }
 
 	function parallaxScroll(){
-		var scrolledY = $(window).scrollTop();
+		var scrolledY = $(document).scrollTop();
 		// $('.bg-1').css('top','-'+((scrolledY*0.75))+'px');
 		// $('.bg-2').css('top','-'+((scrolledY*1))+'px');
 
@@ -249,5 +249,18 @@ $(document).ready(function(){
 
     $(window).bind('scroll', function(e){
      parallaxScroll();
+    });
+
+
+
+    $('.nav-one').hover(function(){
+      // mouse enter
+      $('.tool-one').css('display','block');
+
+
+    }, function(){
+      // mouse leave
+
+      $('.tool-one').css('display','none');
     });
 });
