@@ -256,11 +256,24 @@ $(document).ready(function(){
     $('.nav-one').hover(function(){
       // mouse enter
       $('.tool-one').css('display','block');
-
-
+      $('.one').removeClass('active');
+      // $('.one').addClass('active-blue');
     }, function(){
       // mouse leave
-
       $('.tool-one').css('display','none');
+      // $('.one').removeClass('active-blue');
     });
+
+    $('.nav-two').hover(function(){
+      // mouse enter
+      $('.tool-two').css('display','block');
+      $('.two').removeClass('active');
+      // $('.one').addClass('active-blue');
+    }, function(){
+      // mouse leave
+      $('.tool-two').css('display','none');
+      // $('.one').removeClass('active-blue');
+    });
+
 });
+
