@@ -28,13 +28,13 @@ body {
   font-weight: 100;
   font-size: 15px;
   right: 120px;
-  top: 189px;
+  top: 212px;
   display: none;
 }
 /* line 29, ../sass/main.scss */
 .wrapper .tool-two {
   width: 100px;
-  height: 40px;
+  height: 30px;
   padding: 5px;
   text-align: center;
   background-color: #0bb3ff;
@@ -45,7 +45,7 @@ body {
   font-weight: 100;
   font-size: 15px;
   right: 120px;
-  top: 225px;
+  top: 245px;
   display: none;
 }
 /* line 46, ../sass/main.scss */
