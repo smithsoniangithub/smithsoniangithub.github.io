@@ -1,7 +1,6 @@
 $(document).ready(function(){
   // console.log($(document).scrollTop());
-  // $('.wrapper').smoothWheel();
-
+  // $('html').smoothWheel();
   function drawCastle () {
      
     var pathObj = {
@@ -227,7 +226,6 @@ $(document).ready(function(){
 			$('.blue-circle').fadeIn(1000);
       drawLineOne();
       if(scrolledY > 700){
-        // drawLineTwo();
         drawCastle();
         if(scrolledY > 900) {
           drawLineTwo();
