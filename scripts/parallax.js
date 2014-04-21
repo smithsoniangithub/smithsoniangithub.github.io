@@ -221,12 +221,16 @@ $(document).ready(function(){
 		var scrolledY = $(window).scrollTop();
     console.log(scrolledY);
 
-		if(scrolledY < 400) {
-		  }else if (scrolledY > 400) {
+		if(scrolledY > 400) {
 			$('.blue-circle').fadeIn(1000);
       drawLineOne();
-      drawLineTwo();
-      drawCastle();
+      if(scrolledY > 700){
+        // drawLineTwo();
+        drawCastle();
+        if(scrolledY > 900) {
+          drawLineTwo();
+        }
+      }
     }
 	}
 
