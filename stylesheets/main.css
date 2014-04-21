@@ -16,50 +16,58 @@ body {
   position: relative;
 }
 /* line 13, ../sass/main.scss */
+.wrapper .circle-one {
+  position: absolute;
+  z-index: 2;
+  top: 823px;
+  left: 884px;
+  display: none;
+}
+/* line 21, ../sass/main.scss */
 .wrapper #curve-line-1 {
   position: absolute;
   z-index: 10;
   top: 31%;
-  left: 53%;
+  left: 692px;
 }
-/* line 27, ../sass/main.scss */
+/* line 28, ../sass/main.scss */
 .wrapper #curve-line-2 {
   position: absolute;
   z-index: 10;
-  top: 1200px;
-  left: 17px;
+  top: 1198px;
+  left: 127px;
 }
-/* line 34, ../sass/main.scss */
+/* line 42, ../sass/main.scss */
 .wrapper nav {
   position: fixed;
   right: 70px;
   top: 30%;
   z-index: 9999;
 }
-/* line 39, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
 .wrapper nav ul {
   padding: 0px;
 }
-/* line 41, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 .wrapper nav ul li {
   list-style: none;
 }
-/* line 43, ../sass/main.scss */
+/* line 51, ../sass/main.scss */
 .wrapper nav ul li img {
   height: 17px;
 }
-/* line 46, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 .wrapper nav ul li img:hover {
   border: 2px solid white;
   border-radius: 100%;
 }
-/* line 54, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 .wrapper .bg-1 {
   position: relative;
   width: 100%;
   height: 900px;
 }
-/* line 59, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 .wrapper .bg-1 video {
   position: absolute;
   right: 0;
@@ -70,7 +78,7 @@ body {
   height: auto;
   z-index: -100;
 }
-/* line 70, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 .wrapper .bg-1 .logo {
   position: absolute;
   top: 15%;
@@ -78,7 +86,7 @@ body {
   z-index: 2;
   margin-left: -50px;
 }
-/* line 78, ../sass/main.scss */
+/* line 86, ../sass/main.scss */
 .wrapper .bg-1 .desc {
   position: absolute;
   bottom: 5%;
@@ -86,7 +94,7 @@ body {
   z-index: 2;
   margin-left: -50px;
 }
-/* line 86, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
 .wrapper .bg-1 .desc-bg {
   position: absolute;
   width: 100%;
@@ -152,21 +160,12 @@ body {
 /* line 157, ../sass/main.scss */
 .wrapper .bg-2 #castle {
   position: absolute;
-  left: 45%;
-  top: 12%;
+  left: 500px;
+  top: 38px;
   height: 362px;
-  margin-left: -50px;
-}
-/* line 165, ../sass/main.scss */
-.wrapper .bg-2 .castle {
-  position: absolute;
-  left: 33%;
-  top: 0%;
-  height: 362px;
-  display: none;
 }
 
-/* line 176, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 .parallax-nav .active {
   border: 2px solid white;
   border-radius: 100%;
