@@ -7,6 +7,9 @@ body {
 	line-height:2;
 	font-family: 'Lato', sans-serif;
 }
+
+
+
 .wrapper {
 	position:relative;
 	
@@ -59,21 +62,52 @@ body {
 			display: none;
 		}
 
-		#curve-line-1 {
+		// #curve-line-1 {
+		// 	position:absolute;
+		// 	z-index: 10;
+		// 	top: 605px;
+		// 	left: 517px;
+		// }
+
+		.curve-line-1 {
 			position:absolute;
 			z-index: 10;
 			top: 605px;
 			left: 517px;
+			svg {
+				.path {
+					stroke-dasharray:100;
+				}	
+			}
+			
 		}
 
-		#castle {
+		// #castle {
+		// 	position: absolute;
+		// 	left: 323px;
+		// 	top: 929px;
+		// 	z-index: 10;
+		// }
+
+		.castle {
 			position: absolute;
 			left: 323px;
 			top: 929px;
 			z-index: 10;
+			img {
+				height: 362px;
+				width: 400px;
+			}
 		}
 
-		#curve-line-2 {
+		// #curve-line-2 {
+		// 	position: absolute;
+		// 	z-index: 10;
+		// 	top: 1190px;
+		// 	left: -49px;
+		// }
+
+		.curve-line-2 {
 			position: absolute;
 			z-index: 10;
 			top: 1190px;

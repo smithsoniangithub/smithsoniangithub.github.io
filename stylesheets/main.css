@@ -11,11 +11,11 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-/* line 10, ../sass/main.scss */
+/* line 13, ../sass/main.scss */
 .wrapper {
   position: relative;
 }
-/* line 13, ../sass/main.scss */
+/* line 16, ../sass/main.scss */
 .wrapper .tool-one {
   width: 100px;
   padding: 5px;
@@ -31,7 +31,7 @@ body {
   top: 212px;
   display: none;
 }
-/* line 29, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 .wrapper .tool-two {
   width: 100px;
   height: 30px;
@@ -48,7 +48,7 @@ body {
   top: 245px;
   display: none;
 }
-/* line 46, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 .wrapper .castle-line {
   position: absolute;
   height: 100%;
@@ -57,7 +57,7 @@ body {
   right: 0;
   margin: 0 auto;
 }
-/* line 54, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 .wrapper .castle-line .circle-one {
   position: absolute;
   z-index: 2;
@@ -65,52 +65,61 @@ body {
   left: 710px;
   display: none;
 }
-/* line 62, ../sass/main.scss */
-.wrapper .castle-line #curve-line-1 {
+/* line 72, ../sass/main.scss */
+.wrapper .castle-line .curve-line-1 {
   position: absolute;
   z-index: 10;
   top: 605px;
   left: 517px;
 }
-/* line 69, ../sass/main.scss */
-.wrapper .castle-line #castle {
+/* line 78, ../sass/main.scss */
+.wrapper .castle-line .curve-line-1 svg .path {
+  stroke-dasharray: 100;
+}
+/* line 92, ../sass/main.scss */
+.wrapper .castle-line .castle {
   position: absolute;
   left: 323px;
   top: 929px;
   z-index: 10;
 }
-/* line 76, ../sass/main.scss */
-.wrapper .castle-line #curve-line-2 {
+/* line 97, ../sass/main.scss */
+.wrapper .castle-line .castle img {
+  height: 362px;
+  width: 400px;
+}
+/* line 110, ../sass/main.scss */
+.wrapper .castle-line .curve-line-2 {
   position: absolute;
   z-index: 10;
   top: 1190px;
   left: -49px;
 }
-/* line 91, ../sass/main.scss */
+/* line 125, ../sass/main.scss */
 .wrapper nav {
   position: fixed;
   right: 70px;
   top: 30%;
   z-index: 9999;
 }
-/* line 96, ../sass/main.scss */
+/* line 130, ../sass/main.scss */
 .wrapper nav ul {
   padding: 0px;
 }
-/* line 98, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 .wrapper nav ul li {
   list-style: none;
 }
-/* line 100, ../sass/main.scss */
+/* line 134, ../sass/main.scss */
 .wrapper nav ul li img {
   height: 17px;
 }
-/* line 103, ../sass/main.scss */
+/* line 137, ../sass/main.scss */
 .wrapper nav ul li img:hover {
   border: 2px solid white;
   border-radius: 100%;
 }
-/* line 111, ../sass/main.scss */
+/* line 145, ../sass/main.scss */
 .wrapper .bg-1 {
   position: relative;
   width: 100%;
@@ -119,7 +128,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 119, ../sass/main.scss */
+/* line 153, ../sass/main.scss */
 .wrapper .bg-1 video {
   position: absolute;
   right: 0;
@@ -130,31 +139,31 @@ body {
   height: auto;
   z-index: -100;
 }
-/* line 130, ../sass/main.scss */
+/* line 164, ../sass/main.scss */
 .wrapper .bg-1 .logo-div {
   position: absolute;
   top: 15%;
   left: 50%;
   z-index: 2;
 }
-/* line 135, ../sass/main.scss */
+/* line 169, ../sass/main.scss */
 .wrapper .bg-1 .logo-div .logo {
   position: relative;
   left: -50%;
 }
-/* line 141, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 .wrapper .bg-1 .desc-div {
   position: absolute;
   bottom: 5%;
   left: 50%;
   z-index: 2;
 }
-/* line 147, ../sass/main.scss */
+/* line 181, ../sass/main.scss */
 .wrapper .bg-1 .desc-div .desc {
   position: relative;
   left: -50%;
 }
-/* line 153, ../sass/main.scss */
+/* line 187, ../sass/main.scss */
 .wrapper .bg-1 .desc-bg {
   position: absolute;
   width: 100%;
@@ -163,7 +172,7 @@ body {
   bottom: 0;
   opacity: .7;
 }
-/* line 163, ../sass/main.scss */
+/* line 197, ../sass/main.scss */
 .wrapper .bg-2 {
   height: 1080px;
   width: 100%;
@@ -173,18 +182,18 @@ body {
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
 }
-/* line 172, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 .wrapper .bg-2 .take-survey-div {
   position: absolute;
   bottom: 5%;
   left: 50%;
 }
-/* line 176, ../sass/main.scss */
+/* line 210, ../sass/main.scss */
 .wrapper .bg-2 .take-survey-div .take-survey {
   position: relative;
   left: -50%;
 }
-/* line 182, ../sass/main.scss */
+/* line 216, ../sass/main.scss */
 .wrapper .bg-2 .take-survey-bg {
   position: absolute;
   width: 100%;
@@ -193,7 +202,7 @@ body {
   bottom: 0;
   opacity: .7;
 }
-/* line 191, ../sass/main.scss */
+/* line 225, ../sass/main.scss */
 .wrapper .bg-2 .annual-visitor {
   position: absolute;
   color: white;
@@ -205,29 +214,29 @@ body {
   top: 50%;
   left: 38%;
 }
-/* line 202, ../sass/main.scss */
+/* line 236, ../sass/main.scss */
 .wrapper .bg-2 .annual-visitor .number {
   font-size: 100px;
   font-weight: bolder;
   color: #ffd500;
 }
-/* line 208, ../sass/main.scss */
+/* line 242, ../sass/main.scss */
 .wrapper .bg-2 .annual-visitor .sub-con {
   font-size: 55px;
   font-weight: 100;
 }
-/* line 213, ../sass/main.scss */
+/* line 247, ../sass/main.scss */
 .wrapper .bg-2 .annual-visitor .sub-con-two {
   font-size: 35px;
   font-weight: 100;
 }
 
-/* line 231, ../sass/main.scss */
+/* line 265, ../sass/main.scss */
 .parallax-nav .active {
   border: 2px solid white;
   border-radius: 100%;
 }
-/* line 237, ../sass/main.scss */
+/* line 271, ../sass/main.scss */
 .parallax-nav .active-blue {
   border: 2px solid #0bb3ff;
   border-radius: 100%;
