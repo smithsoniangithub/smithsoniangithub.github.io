@@ -84,9 +84,15 @@ body {
 
 		#castle {
 			position: absolute;
-			left: 323px;
-			top: 929px;
+			left: 387px;
+			top: 992px;
 			z-index: 10;
+			svg {
+				.castle-path{
+					stroke-dasharray:1040.77587890625 1040.77587890625;
+					stroke-dashoffset:1040.77587890625;
+				}
+			}
 		}
 
 		// .castle {

@@ -1,22 +1,26 @@
 $(document).ready(function(){
 
-  function drawCastle () {
-
- 
+  function drawCastle (castleOffset) {
+    var castlepath = document.querySelector('.castle-path');
+    var castlePathLength = castlepath.getTotalLength();  // 1040.77587890625 
+    var scrolledY = $(window).scrollTop();
+    var offset = castleOffset-(scrolledY*3);
+    
+    $('.castle-path').css({"stroke-dashoffset": offset});
+    
   }
+
+  drawCastle();
 
   function drawLineOne (pathOffset) {
     var path = document.querySelector('.line-one');
     var pathLength = path.getTotalLength();  // 601.7965087890625
     var scrolledY = $(window).scrollTop();
     var zeroOffset = pathOffset-(scrolledY*3);
-    // console.log(pathLength);
     
     
-    if (zeroOffset <= 0) {
-      $('.line-one').css({"stroke-dashoffset": zeroOffset});
-      zeroOffset = 0;
-    }
+    $('.line-one').css({"stroke-dashoffset": zeroOffset});
+    
   } 
 
   function drawLineTwo () {
@@ -39,7 +43,7 @@ $(document).ready(function(){
 			$('.blue-circle').fadeIn(1000);
       drawLineOne(601.7965087890625);
       if(scrolledY > 700){
-        // drawCastle();
+        drawCastle(1040.77587890625 );
         if(scrolledY > 1000) {
           // drawLineTwo();
         }
