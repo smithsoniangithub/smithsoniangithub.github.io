@@ -62,43 +62,39 @@ body {
 			display: none;
 		}
 
-		// #curve-line-1 {
+		#curve-line-1 {
+			position:absolute;
+			z-index: 10;
+			top: 796px;
+			left: 695px;
+			svg {
+				path {
+					stroke-dasharray: 601.7965087890625 601.7965087890625;
+					stroke-dashoffset: 601.7965087890625;
+				}
+			}
+		}
+
+		// .curve-line-1 {
 		// 	position:absolute;
 		// 	z-index: 10;
 		// 	top: 605px;
 		// 	left: 517px;
 		// }
 
-		.curve-line-1 {
-			position:absolute;
+		#castle {
+			position: absolute;
+			left: 323px;
+			top: 929px;
 			z-index: 10;
-			top: 605px;
-			left: 517px;
-			svg {
-				.path {
-					stroke-dasharray:100;
-				}	
-			}
-			
 		}
 
-		// #castle {
+		// .castle {
 		// 	position: absolute;
 		// 	left: 323px;
 		// 	top: 929px;
 		// 	z-index: 10;
 		// }
-
-		.castle {
-			position: absolute;
-			left: 323px;
-			top: 929px;
-			z-index: 10;
-			img {
-				height: 362px;
-				width: 400px;
-			}
-		}
 
 		// #curve-line-2 {
 		// 	position: absolute;
@@ -107,12 +103,12 @@ body {
 		// 	left: -49px;
 		// }
 
-		.curve-line-2 {
-			position: absolute;
-			z-index: 10;
-			top: 1190px;
-			left: -49px;
-		}
+		// .curve-line-2 {
+		// 	position: absolute;
+		// 	z-index: 10;
+		// 	top: 1190px;
+		// 	left: -49px;
+		// }
 	}
 
 	// .curve-line-1 {
