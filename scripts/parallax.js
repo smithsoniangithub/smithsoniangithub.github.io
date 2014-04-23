@@ -4,7 +4,7 @@ $(document).ready(function(){
     var castlepath = document.querySelector('.castle-path');
     var castlePathLength = castlepath.getTotalLength();  // 2318.875732421875
     var scrolledY = $(window).scrollTop();
-    var offset = castleOffset + (scrolledY*2.98);
+    var offset = castleOffset + (scrolledY*6.95);
   
     $('.castle-path').css({"stroke-dashoffset": offset});
 
@@ -45,7 +45,7 @@ $(document).ready(function(){
 			$('.blue-circle').fadeIn();
       drawLineOne(601.7965087890625);
       if(scrolledY > 700){
-        drawCastle(1040.77587890625);
+        drawCastle(2319.67138671875);
       }
     }
 	}
