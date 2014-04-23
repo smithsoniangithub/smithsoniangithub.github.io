@@ -2,15 +2,15 @@ $(document).ready(function(){
 
   function drawCastle (castleOffset) {
     var castlepath = document.querySelector('.castle-path');
-    var castlePathLength = castlepath.getTotalLength();  // 1040.77587890625 
+    var castlePathLength = castlepath.getTotalLength();  // 2318.875732421875
     var scrolledY = $(window).scrollTop();
-    var offset = castleOffset-(scrolledY*3);
-    
+    var offset = castleOffset + (scrolledY*2.98);
+  
     $('.castle-path').css({"stroke-dashoffset": offset});
-    
-  }
 
-  drawCastle();
+
+    console.log(castlePathLength);
+  }
 
   function drawLineOne (pathOffset) {
     var path = document.querySelector('.line-one');
@@ -20,12 +20,14 @@ $(document).ready(function(){
     
     
     $('.line-one').css({"stroke-dashoffset": zeroOffset});
-    
+    if(scrolledY >600) {
+      $('.line-one').css({"stroke-dashoffset": 0});
+    }
   } 
 
-  function drawLineTwo () {
+  // function drawLineTwo () {
     
-  }
+  // }
    
 
 	// function commaSeparateNumber(val){
@@ -40,13 +42,10 @@ $(document).ready(function(){
     // console.log(scrolledY);
 
 		if(scrolledY > 400) {
-			$('.blue-circle').fadeIn(1000);
+			$('.blue-circle').fadeIn();
       drawLineOne(601.7965087890625);
       if(scrolledY > 700){
-        drawCastle(1040.77587890625 );
-        if(scrolledY > 1000) {
-          // drawLineTwo();
-        }
+        drawCastle(1040.77587890625);
       }
     }
 	}
