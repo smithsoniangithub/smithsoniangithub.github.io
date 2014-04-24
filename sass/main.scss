@@ -37,6 +37,14 @@ body {
 			display: none;
 		}
 
+		.circle-two {
+			position: absolute;
+			z-index: 3;
+			top: 1461px;
+			left: 58px;
+			display: none;
+		}
+
 		#curve-line-1 {
 			position:absolute;
 			z-index: 10;
@@ -54,8 +62,8 @@ body {
 		#castle {
 			position: absolute;
 			z-index: 10;
-			top: 875px;
-			left: 222px;
+			top: 906px;
+			left: 258px;
 			svg {
 				.castle-path{
 					stroke-dashoffset:1155.9654541015625 ;
@@ -64,13 +72,20 @@ body {
 			}
 		}
 
-		// #curve-line-2 {
-		// 	position: absolute;
-		// 	z-index: 10;
-		// 	top: 1190px;
-		// 	left: -49px;
-		// }
+		#curve-line-2 {
+			position: absolute;
+			z-index: 10;
+			top: 1282px;
+			left: 43px;
+		}
 	}
+
+		#white-line {
+			position: absolute;
+			z-index: 10;
+			top: 1456px;
+			left: 84px;
+		}
 
 	nav {
 		position: fixed;
@@ -168,17 +183,17 @@ body {
 
 		.annual-visitor-div {
 			@include center-div;
-			top: 50%;
+			top: 43%;
 
 			.annual-visitor {
 			background: rgba(0, 0, 0, 0.5);
 			position:relative;
 			color: white;
 			text-align: center;
-			width: 600px;	
-			padding: 20px;
+			width: 580px;	
+			padding-bottom: 25px;
 			line-height: 1.5;
-			left: -50%;
+			left: -53%;
 			display: none;
 
 			.number {

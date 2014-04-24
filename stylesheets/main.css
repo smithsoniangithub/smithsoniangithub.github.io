@@ -65,54 +65,76 @@ body {
   display: none;
 }
 /* line 40, ../sass/main.scss */
+.wrapper .castle-line .circle-two {
+  position: absolute;
+  z-index: 3;
+  top: 1461px;
+  left: 58px;
+  display: none;
+}
+/* line 48, ../sass/main.scss */
 .wrapper .castle-line #curve-line-1 {
   position: absolute;
   z-index: 10;
   top: 790px;
   left: 625px;
 }
-/* line 46, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 .wrapper .castle-line #curve-line-1 svg path {
   stroke-dasharray: 601.7965087890625 601.7965087890625;
   stroke-dashoffset: 601.7965087890625;
 }
-/* line 54, ../sass/main.scss */
+/* line 62, ../sass/main.scss */
 .wrapper .castle-line #castle {
   position: absolute;
   z-index: 10;
-  top: 875px;
-  left: 222px;
+  top: 906px;
+  left: 258px;
 }
-/* line 60, ../sass/main.scss */
+/* line 68, ../sass/main.scss */
 .wrapper .castle-line #castle svg .castle-path {
   stroke-dashoffset: 1155.96545;
   stroke-dasharray: 1155.96545;
 }
 /* line 75, ../sass/main.scss */
+.wrapper .castle-line #curve-line-2 {
+  position: absolute;
+  z-index: 10;
+  top: 1282px;
+  left: 43px;
+}
+/* line 83, ../sass/main.scss */
+.wrapper #white-line {
+  position: absolute;
+  z-index: 10;
+  top: 1456px;
+  left: 84px;
+}
+/* line 90, ../sass/main.scss */
 .wrapper nav {
   position: fixed;
   right: 70px;
   top: 30%;
   z-index: 9999;
 }
-/* line 80, ../sass/main.scss */
+/* line 95, ../sass/main.scss */
 .wrapper nav ul {
   padding: 0px;
 }
-/* line 82, ../sass/main.scss */
+/* line 97, ../sass/main.scss */
 .wrapper nav ul li {
   list-style: none;
 }
-/* line 84, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 .wrapper nav ul li img {
   height: 17px;
 }
-/* line 87, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 .wrapper nav ul li img:hover {
   border: 2px solid white;
   border-radius: 100%;
 }
-/* line 95, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
 .wrapper .bg-1 {
   position: relative;
   width: 100%;
@@ -121,7 +143,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 103, ../sass/main.scss */
+/* line 118, ../sass/main.scss */
 .wrapper .bg-1 video {
   position: absolute;
   right: 0;
@@ -132,31 +154,31 @@ body {
   height: auto;
   z-index: -100;
 }
-/* line 114, ../sass/main.scss */
+/* line 129, ../sass/main.scss */
 .wrapper .bg-1 .logo-div {
   position: absolute;
   left: 50%;
   z-index: 2;
   top: 15%;
 }
-/* line 117, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 .wrapper .bg-1 .logo-div .logo {
   position: relative;
   left: -50%;
 }
-/* line 123, ../sass/main.scss */
+/* line 138, ../sass/main.scss */
 .wrapper .bg-1 .desc-div {
   position: absolute;
   left: 50%;
   z-index: 2;
   bottom: 5%;
 }
-/* line 126, ../sass/main.scss */
+/* line 141, ../sass/main.scss */
 .wrapper .bg-1 .desc-div .desc {
   position: relative;
   left: -50%;
 }
-/* line 132, ../sass/main.scss */
+/* line 147, ../sass/main.scss */
 .wrapper .bg-1 .desc-bg {
   position: absolute;
   width: 100%;
@@ -165,7 +187,7 @@ body {
   bottom: 0;
   opacity: .7;
 }
-/* line 142, ../sass/main.scss */
+/* line 157, ../sass/main.scss */
 .wrapper .bg-2 {
   height: 1080px;
   width: 100%;
@@ -175,19 +197,19 @@ body {
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
 }
-/* line 151, ../sass/main.scss */
+/* line 166, ../sass/main.scss */
 .wrapper .bg-2 .take-survey-div {
   position: absolute;
   left: 50%;
   z-index: 2;
   bottom: 5%;
 }
-/* line 154, ../sass/main.scss */
+/* line 169, ../sass/main.scss */
 .wrapper .bg-2 .take-survey-div .take-survey {
   position: relative;
   left: -50%;
 }
-/* line 160, ../sass/main.scss */
+/* line 175, ../sass/main.scss */
 .wrapper .bg-2 .take-survey-bg {
   position: absolute;
   width: 100%;
@@ -196,48 +218,48 @@ body {
   bottom: 0;
   opacity: .7;
 }
-/* line 169, ../sass/main.scss */
+/* line 184, ../sass/main.scss */
 .wrapper .bg-2 .annual-visitor-div {
   position: absolute;
   left: 50%;
   z-index: 2;
-  top: 50%;
+  top: 43%;
 }
-/* line 173, ../sass/main.scss */
+/* line 188, ../sass/main.scss */
 .wrapper .bg-2 .annual-visitor-div .annual-visitor {
   background: rgba(0, 0, 0, 0.5);
   position: relative;
   color: white;
   text-align: center;
-  width: 600px;
-  padding: 20px;
+  width: 580px;
+  padding-bottom: 25px;
   line-height: 1.5;
-  left: -50%;
+  left: -53%;
   display: none;
 }
-/* line 184, ../sass/main.scss */
+/* line 199, ../sass/main.scss */
 .wrapper .bg-2 .annual-visitor-div .annual-visitor .number {
   font-size: 85px;
   font-weight: bolder;
   color: #ffd500;
 }
-/* line 190, ../sass/main.scss */
+/* line 205, ../sass/main.scss */
 .wrapper .bg-2 .annual-visitor-div .annual-visitor .sub-con {
   font-size: 45px;
   font-weight: 100;
 }
-/* line 195, ../sass/main.scss */
+/* line 210, ../sass/main.scss */
 .wrapper .bg-2 .annual-visitor-div .annual-visitor .sub-con-two {
   font-size: 25px;
   font-weight: 100;
 }
 
-/* line 205, ../sass/main.scss */
+/* line 220, ../sass/main.scss */
 .parallax-nav .active {
   border: 2px solid white;
   border-radius: 100%;
 }
-/* line 211, ../sass/main.scss */
+/* line 226, ../sass/main.scss */
 .parallax-nav .active-blue {
   border: 2px solid #0bb3ff;
   border-radius: 100%;
