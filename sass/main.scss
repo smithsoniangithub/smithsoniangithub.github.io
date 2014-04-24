@@ -171,29 +171,29 @@ body {
 			top: 50%;
 
 			.annual-visitor {
-			background-color: black;
+			background: rgba(0, 0, 0, 0.5);
 			position:relative;
 			color: white;
 			text-align: center;
-			width: 660px;	
+			width: 600px;	
 			padding: 20px;
-			border: 1px solid white;
 			line-height: 1.5;
 			left: -50%;
+			display: none;
 
 			.number {
-				font-size: 100px;
+				font-size: 85px;
 				font-weight:bolder;
 				color:#ffd500;
 			}
 
 			.sub-con {
-				font-size: 55px;
+				font-size: 45px;
 				font-weight: 100;
 			}
 
 			.sub-con-two {
-				font-size: 35px;
+				font-size: 25px;
 				font-weight: 100;
 				}
 			}

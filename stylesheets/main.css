@@ -205,30 +205,30 @@ body {
 }
 /* line 173, ../sass/main.scss */
 .wrapper .bg-2 .annual-visitor-div .annual-visitor {
-  background-color: black;
+  background: rgba(0, 0, 0, 0.5);
   position: relative;
   color: white;
   text-align: center;
-  width: 660px;
+  width: 600px;
   padding: 20px;
-  border: 1px solid white;
   line-height: 1.5;
   left: -50%;
+  display: none;
 }
 /* line 184, ../sass/main.scss */
 .wrapper .bg-2 .annual-visitor-div .annual-visitor .number {
-  font-size: 100px;
+  font-size: 85px;
   font-weight: bolder;
   color: #ffd500;
 }
 /* line 190, ../sass/main.scss */
 .wrapper .bg-2 .annual-visitor-div .annual-visitor .sub-con {
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 100;
 }
 /* line 195, ../sass/main.scss */
 .wrapper .bg-2 .annual-visitor-div .annual-visitor .sub-con-two {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 100;
 }
 

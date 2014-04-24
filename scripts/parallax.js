@@ -65,6 +65,11 @@ $(document).ready(function(){
                }
              });
           }
+          if(scrolledY >1200){
+            $('.annual-visitor').fadeIn(1000);
+          }else {
+            $('.annual-visitor').fadeOut(1000);
+          }
         }
       }
     }
