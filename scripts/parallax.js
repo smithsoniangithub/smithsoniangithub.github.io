@@ -32,12 +32,12 @@ $(document).ready(function(){
   // }
    
 
-	// function commaSeparateNumber(val){
- //    while (/(\d+)(\d{3})/.test(val.toString())){
- //      val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
- //    }
- //    return val;
- //  }
+	function commaSeparateNumber(val){
+    while (/(\d+)(\d{3})/.test(val.toString())){
+      val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+    }
+    return val;
+  }
 
 	function parallaxScroll(){
 		var scrolledY = $(window).scrollTop();
@@ -46,6 +46,18 @@ $(document).ready(function(){
 		if(scrolledY > 400) {
 			$('.blue-circle').fadeIn();
       drawLineOne(601.7965087890625);
+
+      $({spanValue: 1000000}).animate({spanValue: 30000000}, {
+           duration: 2000,
+           easing:'linear', 
+           step: function() { 
+             $('.number').html(commaSeparateNumber(Math.floor(this.spanValue)));
+           },
+           complete: function(){
+              $('.number').html(commaSeparateNumber(this.spanValue));
+             }
+           });
+      
       if(scrolledY > 700){
         drawCastle(2319.67138671875);
       }
