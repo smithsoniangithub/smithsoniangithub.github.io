@@ -2,16 +2,16 @@ $(document).ready(function(){
  var flag = false;
   function drawCastle (castleOffset) {
     var castlepath = document.querySelector('.castle-path');
-    var castlePathLength = castlepath.getTotalLength();  // 2318.875732421875
+    var castlePathLength = castlepath.getTotalLength();  // 1155.9654541015625
     var scrolledY = $(window).scrollTop();
-    var offset = (castleOffset*2) + (scrolledY*1.92);
+    var offset = (castleOffset*2) + (scrolledY*5.77);
   
     $('.castle-path').css({"stroke-dashoffset": offset});
-    if(scrolledY >1200) {
+    if(scrolledY >800) {
       $('.castle-path').css({"stroke-dashoffset": 0});
     }
 
-    // console.log(castlePathLength);
+    // console.log(scrolledY);
   }
 
   function drawLineOne (pathOffset) {
@@ -27,11 +27,22 @@ $(document).ready(function(){
     }
   } 
 
-  // function drawLineTwo () {
+  function drawLineTwo (pathOffset) {
+    var path = document.querySelector('.line-two');
+    var pathLength = path.getTotalLength();  // 332.88720703125
+    var scrolledY = $(window).scrollTop();
+    var zeroOffset = pathOffset+(scrolledY*3.3);
     
-  // }
-   
+    
+    $('.line-two').css({"stroke-dashoffset": zeroOffset});
+    if(scrolledY >910) {
+      $('.line-two').css({"stroke-dashoffset": 0});
+    }
 
+    console.log(scrolledY);
+  }
+   
+  //  function to animate numbers with comma
 	function commaSeparateNumber(val){
     while (/(\d+)(\d{3})/.test(val.toString())){
       val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
@@ -43,29 +54,42 @@ $(document).ready(function(){
 		var scrolledY = $(window).scrollTop();
 
 		if(scrolledY > 400) {
-			$('.blue-circle').fadeIn();
-      drawLineOne(601.7965087890625);
+			$('.circle-one').fadeIn();
+      drawLineOne(601.7965087890625); // line one function call
 
       if(scrolledY > 600){
-        drawCastle(1155.9654541015625);
-        if(scrolledY > 830){
-          if(flag==true){
 
-          }else{
-            flag=true;
-            $({spanValue: 1000000}).animate({spanValue: 30000000}, {
-             duration: 2000,
-             easing:'linear', 
-             step: function() { 
-               $('.number').html(commaSeparateNumber(Math.floor(this.spanValue)));
-             },
-             complete: function(){
-                $('.number').html(commaSeparateNumber(this.spanValue));
-                
-               }
-             });
+        drawCastle(1155.9654541015625); // draw castle function call
+
+        if(scrolledY > 800){
+
+          drawLineTwo(332.88720703125); // line two function call
+          
+          if (scrolledY > 910){
+            $('.circle-two').fadeIn();
+            // drawWhiteLine(); // White line function call
+          } else {
+            $('.circle-two').fadeOut();
           }
-          if(scrolledY >1200){
+          if(scrolledY >1140){
+            if(flag==true){
+
+            }else{
+
+              // Animate 30,000,000
+              flag=true;
+              $({spanValue: 1000000}).animate({spanValue: 30000000}, {
+               duration: 2000,
+               easing:'linear', 
+               step: function() { 
+                 $('.number').html(commaSeparateNumber(Math.floor(this.spanValue)));
+               },
+               complete: function(){
+                  $('.number').html(commaSeparateNumber(this.spanValue));
+                  
+                }
+              });
+            }
             $('.annual-visitor').fadeIn(1000);
           }else {
             $('.annual-visitor').fadeOut(1000);
@@ -73,7 +97,7 @@ $(document).ready(function(){
         }
       }
     } else {
-      $('.blue-circle').fadeOut();
+      $('.circle-one').fadeOut();
     }
   }
 
