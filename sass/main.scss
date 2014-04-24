@@ -1,3 +1,5 @@
+@import 'mixins';
+
 body, html {
 	margin:0px;
 	padding:0px;
@@ -14,36 +16,11 @@ body {
 	position:relative;
 	
 	.tool-one {
-		width:100px;
-    padding:5px;
-    text-align: center;
-    background-color: #0bb3ff;
-    color: white;
-    z-index: 10;
-    line-height: 1;
-    position:fixed;
-		font-weight: 100;
-		font-size: 15px;
-		right: 120px;
-		top: 212px;
-		display: none;
+		@include tooltip(212px);
 	}
 
 	.tool-two {
-		width:100px;
-		height: 30px;
-    padding:5px;
-    text-align: center;
-    background-color: #0bb3ff;
-    color: white;
-    z-index: 10;
-    line-height: 1;
-    position:fixed;
-		font-weight: 100;
-		font-size: 15px;
-		right: 120px;
-		top: 245px;
-		display: none;
+		@include tooltip(245px);
 	}
 	
 	.castle-line {
@@ -78,27 +55,16 @@ body {
 
 		#castle {
 			position: absolute;
-			left: 222px;
-			top: 875px;
 			z-index: 10;
+			top: 875px;
+			left: 222px;
 			svg {
 				.castle-path{
-					// stroke-dasharray:2318.875732421875;
-					// stroke-dashoffset:2318.875732421875;
-					// stroke-dasharray:1040.77587890625;
-					// stroke-dashoffset:1040.77587890625;
-					stroke-dashoffset:2319.67138671875;
-					stroke-dasharray:2319.67138671875;
+					stroke-dashoffset:1155.9654541015625 ;
+					stroke-dasharray:1155.9654541015625 ;
 				}
 			}
 		}
-
-		// .castle {
-		// 	position: absolute;
-		// 	left: 323px;
-		// 	top: 929px;
-		// 	z-index: 10;
-		// }
 
 		// #curve-line-2 {
 		// 	position: absolute;
@@ -107,7 +73,6 @@ body {
 		// 	left: -49px;
 		// }
 	}
-
 
 	nav {
 		position: fixed;
@@ -149,10 +114,8 @@ body {
 		}
 
 		.logo-div {
-				position:absolute;
+				@include center-div;
 				top: 15%;
-				left: 50%;
-				z-index: 2;
 				.logo {
 					position: relative;
 					left:-50%;
@@ -160,11 +123,8 @@ body {
 			}
 
 		.desc-div {
-			position: absolute;
+			@include center-div;
 			bottom: 5%;
-			left: 50%;
-			z-index: 2;
-
 			.desc {
 				position:relative;
 				left: -50%
@@ -191,9 +151,8 @@ body {
 		background-repeat: no-repeat, no-repeat;
 		
 		.take-survey-div {
-			position: absolute;
+			@include center-div;
 			bottom: 5%;
-			left: 50%;
 			.take-survey {
 				position:relative;
 				left: -50%;
@@ -208,10 +167,11 @@ body {
 			bottom: 0;
 			opacity: .7;
 		}
+
 		.annual-visitor-div {
-			position: absolute;
+			@include center-div;
 			top: 50%;
-			left: 50%;
+
 			.annual-visitor {
 			background-color: black;
 			position:relative;
@@ -240,19 +200,9 @@ body {
 				}
 			}
 		}
-		
-
-		
-		
-		// .castle {
-		// 	position: absolute;
-		// 	left: 33%;
-		// 	top: 4px;
-		// 	height: 352px;
-		// }
-
 	}
 }
+
 .parallax-nav {
 	.active {
 		// opacity:1;

@@ -1,17 +1,17 @@
 $(document).ready(function(){
-
+ var flag = false;
   function drawCastle (castleOffset) {
     var castlepath = document.querySelector('.castle-path');
     var castlePathLength = castlepath.getTotalLength();  // 2318.875732421875
     var scrolledY = $(window).scrollTop();
-    var offset = castleOffset + (scrolledY*2.15);
+    var offset = (castleOffset*2) + (scrolledY*1.92);
   
     $('.castle-path').css({"stroke-dashoffset": offset});
-    if(scrolledY >1300) {
+    if(scrolledY >1200) {
       $('.castle-path').css({"stroke-dashoffset": 0});
     }
 
-    console.log(castlePathLength);
+    // console.log(castlePathLength);
   }
 
   function drawLineOne (pathOffset) {
@@ -32,37 +32,43 @@ $(document).ready(function(){
   // }
    
 
-	// function commaSeparateNumber(val){
- //    while (/(\d+)(\d{3})/.test(val.toString())){
- //      val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
- //    }
- //    return val;
- //  }
+	function commaSeparateNumber(val){
+    while (/(\d+)(\d{3})/.test(val.toString())){
+      val = val.toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,");
+    }
+    return val;
+  }
 
 	function parallaxScroll(){
 		var scrolledY = $(window).scrollTop();
-    // console.log(scrolledY);
 
 		if(scrolledY > 400) {
 			$('.blue-circle').fadeIn();
       drawLineOne(601.7965087890625);
 
-      // $({spanValue: 1000000}).animate({spanValue: 30000000}, {
-      //      duration: 2000,
-      //      easing:'linear', 
-      //      step: function() { 
-      //        $('.number').html(commaSeparateNumber(Math.floor(this.spanValue)));
-      //      },
-      //      complete: function(){
-      //         $('.number').html(commaSeparateNumber(this.spanValue));
-      //        }
-      //      });
-
       if(scrolledY > 600){
-        drawCastle(2319.67138671875);
+        drawCastle(1155.9654541015625);
+        if(scrolledY > 830){
+          if(flag==true){
+
+          }else{
+            flag=true;
+            $({spanValue: 1000000}).animate({spanValue: 30000000}, {
+             duration: 2000,
+             easing:'linear', 
+             step: function() { 
+               $('.number').html(commaSeparateNumber(Math.floor(this.spanValue)));
+             },
+             complete: function(){
+                $('.number').html(commaSeparateNumber(this.spanValue));
+                
+               }
+             });
+          }
+        }
       }
     }
-	}
+  }
 
     $(window).bind('scroll', function(e){
      parallaxScroll();

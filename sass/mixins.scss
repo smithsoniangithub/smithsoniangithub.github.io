@@ -1,0 +1,23 @@
+
+// tooltip mixins
+@mixin tooltip($top) {
+	width:100px;
+  padding:5px;
+  text-align: center;
+  background-color: #0bb3ff;
+  color: white;
+  z-index: 10;
+  line-height: 1;
+  position:fixed;
+	font-weight: 100;
+	font-size: 15px;
+	right: 120px;
+	top: $top;
+	display: none;
+}
+
+@mixin center-div {
+	position:absolute;
+	left: 50%;
+	z-index: 2;
+}
