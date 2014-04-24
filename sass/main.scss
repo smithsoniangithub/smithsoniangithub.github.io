@@ -94,6 +94,12 @@ body {
 			z-index: 10;
 			top: 1456px;
 			left: 84px;
+			svg {
+				path {
+					stroke-dasharray: 650;
+					stroke-dashoffset: 650;
+				}
+			}
 		}
 
 		#curve-line-3 {
@@ -101,6 +107,12 @@ body {
 			z-index: 10;
 			top: 1461px;
 			left: 31px;
+			svg {
+				path{
+					stroke-dashoffset:641.594482421875;
+					stroke-dasharray:641.594482421875;
+				}
+			}
 		}
 
 	nav {

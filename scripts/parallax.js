@@ -11,7 +11,6 @@ $(document).ready(function(){
       $('.castle-path').css({"stroke-dashoffset": 0});
     }
 
-    // console.log(scrolledY);
   }
 
   function drawLineOne (pathOffset) {
@@ -37,6 +36,34 @@ $(document).ready(function(){
     $('.line-two').css({"stroke-dashoffset": zeroOffset});
     if(scrolledY >910) {
       $('.line-two').css({"stroke-dashoffset": 0});
+    }
+
+  }
+
+  function drawWhiteLine (pathOffset) {
+    var path = document.querySelector('.white-line');
+    var pathLength = path.getTotalLength();  // 
+    var scrolledY = $(window).scrollTop();
+    var zeroOffset = pathOffset-(scrolledY*1.4);
+    
+    
+    $('.white-line').css({"stroke-dashoffset": zeroOffset});
+    if(scrolledY >1393) {
+      $('.white-line').css({"stroke-dashoffset": 0});
+    }
+
+  }
+
+  function drawLineThree (pathOffset) {
+    var path = document.querySelector('.line-three');
+    var pathLength = path.getTotalLength();  // 
+    var scrolledY = $(window).scrollTop();
+    var zeroOffset = pathOffset+(scrolledY*3);
+    
+    
+    $('.line-three').css({"stroke-dashoffset": zeroOffset});
+    if(scrolledY >1700) {
+      $('.line-three').css({"stroke-dashoffset": 0});
     }
 
     console.log(scrolledY);
@@ -67,24 +94,24 @@ $(document).ready(function(){
           
           if (scrolledY > 910){
             $('.circle-two').fadeIn();
-            // drawWhiteLine(); // White line function call
+            drawWhiteLine(650); // White line function call
           } else {
             $('.circle-two').fadeOut();
           }
-          if(scrolledY >1140){
-            if(flag==true){
+            if(scrolledY >1140){
+              if(flag==true){
 
-            }else{
+              }else{
 
-              // Animate 30,000,000
-              flag=true;
-              $({spanValue: 1000000}).animate({spanValue: 30000000}, {
-               duration: 2000,
-               easing:'linear', 
-               step: function() { 
+                // Animate 30,000,000
+                flag=true;
+                $({spanValue: 1000000}).animate({spanValue: 30000000}, {
+                 duration: 2000,
+                 easing:'linear', 
+                step: function() { 
                  $('.number').html(commaSeparateNumber(Math.floor(this.spanValue)));
-               },
-               complete: function(){
+                 },
+                complete: function(){
                   $('.number').html(commaSeparateNumber(this.spanValue));
                   
                 }
@@ -94,6 +121,9 @@ $(document).ready(function(){
           }else {
             $('.annual-visitor').fadeOut(1000);
           }
+            if(scrolledY > 1200) {
+              drawLineThree(641.594482421875);
+            }
         }
       }
     } else {
