@@ -8,9 +8,9 @@ $(document).ready(function(){
     var offset = (castleOffset*2) + (scrolledY*5.77);
   
     $('.castle-path').css({"stroke-dashoffset": offset});
-    if(scrolledY >800) {
+    if(scrolledY>800) {
       $('.castle-path').css({"stroke-dashoffset": 0});
-    }
+    } 
 
   }
 
@@ -22,7 +22,7 @@ $(document).ready(function(){
     
     
     $('.line-one').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY >600) {
+    if(scrolledY>600) {
       $('.line-one').css({"stroke-dashoffset": 0});
     }
   } 
@@ -31,25 +31,24 @@ $(document).ready(function(){
     var path = document.querySelector('.line-two');
     var pathLength = path.getTotalLength();  // 332.88720703125
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = pathOffset+(scrolledY*3.3);
+    var zeroOffset = pathOffset+(scrolledY*3.3097);
     
     
     $('.line-two').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY >910) {
+    if(scrolledY>910) {
       $('.line-two').css({"stroke-dashoffset": 0});
     }
-
   }
 
   function drawWhiteLine (pathOffset) {
     var path = document.querySelector('.white-line');
     var pathLength = path.getTotalLength();  // 
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = pathOffset-(scrolledY*1.4);
+    var zeroOffset = pathOffset-(scrolledY*1.425);
     
     
     $('.white-line').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY >1393) {
+    if(scrolledY>1393) {
       $('.white-line').css({"stroke-dashoffset": 0});
     }
 
@@ -63,11 +62,10 @@ $(document).ready(function(){
     
     
     $('.line-three').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY >1700) {
+    if(scrolledY >1400) {
       $('.line-three').css({"stroke-dashoffset": 0});
     }
 
-    console.log(scrolledY);
   }
    
   //  function to animate numbers with comma
@@ -97,6 +95,7 @@ $(document).ready(function(){
             $('.circle-two').fadeIn();
             drawWhiteLine(650); // White line function call
           } else {
+            $('.white-line').css({"stroke-dashoffset": 650}); // white line function reset
             $('.circle-two').fadeOut();
           }
             if(scrolledY >1140){
@@ -104,7 +103,7 @@ $(document).ready(function(){
 
               }else{
 
-                // Animate 30,000,000
+                // Animate 30,000,000 when scrolled
                 flag=true;
                 $({spanValue: 1000000}).animate({spanValue: 30000000}, {
                  duration: 2000,
@@ -117,6 +116,8 @@ $(document).ready(function(){
                   
                 }
               });
+
+                // end of 30, 000, 000 animation
             }
             $('.annual-visitor').fadeIn(1000);
           }else {
@@ -124,11 +125,18 @@ $(document).ready(function(){
           }
             if(scrolledY > 1200) {
               drawLineThree(641.594482421875);
+            } else {
+               $('.line-three').css({"stroke-dashoffset": 641.594482421875});
             }
+        } else {
+          $('.line-two').css({"stroke-dashoffset": 332.88720703125}); // line two function reset
         }
+      } else {
+        $('.castle-path').css({"stroke-dashoffset": 1155.9654541015625}); //castle function reset
       }
     } else {
       $('.circle-one').fadeOut();
+      $('.line-one').css({"stroke-dashoffset": 601.7965087890625}); //line one function reset
     }
   }
 
