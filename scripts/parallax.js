@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
  var flag = false;
   function drawCastle (castleOffset) {
@@ -58,7 +59,7 @@ $(document).ready(function(){
     var path = document.querySelector('.line-three');
     var pathLength = path.getTotalLength();  // 
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = pathOffset+(scrolledY*3);
+    var zeroOffset = pathOffset+(scrolledY*3.18);
     
     
     $('.line-three').css({"stroke-dashoffset": zeroOffset});
