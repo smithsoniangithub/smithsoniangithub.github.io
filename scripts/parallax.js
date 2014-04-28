@@ -42,7 +42,7 @@ $(document).ready(function(){
 
   function drawWhiteLine (pathOffset) {
     var path = document.querySelector('.white-line');
-    var pathLength = path.getTotalLength();  // 
+    var pathLength = path.getTotalLength();  // 650
     var scrolledY = $(window).scrollTop();
     var zeroOffset = pathOffset-(scrolledY*1.425);
     
@@ -58,7 +58,7 @@ $(document).ready(function(){
     var path = document.querySelector('.line-three');
     var pathLength = path.getTotalLength();  // 
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = pathOffset+(scrolledY*3.18);
+    var zeroOffset = pathOffset-(scrolledY*2);
     
     
     $('.line-three').css({"stroke-dashoffset": zeroOffset});
@@ -67,6 +67,17 @@ $(document).ready(function(){
     }
 
   }
+
+  function drawLineFour () {
+    var path = document.querySelector('.line-four');
+    var pathLength = path.getTotalLength();  // 1708.6005859375
+    var scrolledY = $(window).scrollTop();
+    // var zeroOffset = pathOffset+(scrolledY*3.18);
+
+    console.log(pathLength);
+  }
+
+  drawLineFour();
    
   //  function to animate numbers with comma
 	function commaSeparateNumber(val){
@@ -126,7 +137,7 @@ $(document).ready(function(){
             if(scrolledY > 1200) {
               drawLineThree(641.594482421875);
             } else {
-               $('.line-three').css({"stroke-dashoffset": 641.594482421875});
+               $('.line-three').css({"stroke-dashoffset": 641.594482421875}); // line three function reset
             }
         } else {
           $('.line-two').css({"stroke-dashoffset": 332.88720703125}); // line two function reset
@@ -142,6 +153,7 @@ $(document).ready(function(){
 
     $(window).bind('scroll', function(e){
      parallaxScroll();
+     console.log($(window).scrollTop());
     });
 
 

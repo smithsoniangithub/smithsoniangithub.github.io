@@ -89,14 +89,6 @@ body {
 			}
 		}
 
-		.third-page-line{
-			position: absolute;
-			z-index: 10;
-			top: 1944px;
-			left: -52px;
-		}
-	}
-
 		#white-line {
 			position: absolute;
 			z-index: 10;
@@ -113,8 +105,8 @@ body {
 		#curve-line-3 {
 			position: absolute;
 			z-index: 10;
-			top: 1461px;
-			left: 31px;
+			top: 1489px;
+			left: 61px;
 			svg {
 				path{
 					stroke-dashoffset:641.594482421875;
@@ -122,6 +114,21 @@ body {
 				}
 			}
 		}
+
+		#third-page-line{
+			position: absolute;
+			z-index: 10;
+			top: 1944px;
+			left: -52px;
+			// svg {
+			// 	path {
+			// 		stroke-dashoffset:641.594482421875;
+			// 		stroke-dasharray:641.594482421875;
+			// 	}
+			// }
+		}
+	}
+
 
 	nav {
 		position: fixed;
@@ -148,9 +155,9 @@ body {
 		width: 100%;
 		z-index: 2;
 		position: relative;
-		background: url(/images/bg1.jpg);
-		background-size:cover;
-		background-repeat: no-repeat;
+		// background: url(/images/bg1.jpg);
+		// background-size:cover;
+		// background-repeat: no-repeat;
 
 		video {
 			position: absolute;
