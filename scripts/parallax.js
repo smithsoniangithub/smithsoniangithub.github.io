@@ -58,11 +58,11 @@ $(document).ready(function(){
     var path = document.querySelector('.line-three');
     var pathLength = path.getTotalLength();  // 
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = lineThreeOffset-(scrolledY*2);
+    var zeroOffset = lineThreeOffset-(scrolledY);
     
     
     $('.line-three').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY >1400) {
+    if(scrolledY >1500) {
       $('.line-three').css({"stroke-dashoffset": 0});
     }
 
@@ -75,10 +75,8 @@ $(document).ready(function(){
     var zeroOffset = lineFourOffset+(scrolledY*2);
 
     $('.line-four').css({"stroke-dashoffset": zeroOffset});
-    console.log(pathLength);
+    // console.log(pathLength);
   }
-
-  drawLineFour();
    
   //  function to animate numbers with comma
 	function commaSeparateNumber(val){
@@ -157,7 +155,7 @@ $(document).ready(function(){
                 $('.circle-con2').delay(500).fadeIn();
                 $('.circle-con3').delay(500).fadeIn();
 
-              }else {
+              } else {
 
                 $('.center-circle').hide('scale');
 
