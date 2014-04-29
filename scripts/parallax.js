@@ -150,14 +150,14 @@ $(document).ready(function(){
 
               if (scrolledY > 1800) {
 
-                $('.center-circle').show('scale',{percent:100, origin:['100','100']},1000);
+                $('.center-circle').show('scale',{percent:100, origin:['200','0']},1000);
                 $('.circle-con1').delay(1200).fadeIn();
                 $('.circle-con2').delay(1200).fadeIn();
                 $('.circle-con3').delay(1200).fadeIn();
 
               } else {
 
-                $('.center-circle').hide('scale');
+                $('.center-circle').fadeOut();
 
               }
 
