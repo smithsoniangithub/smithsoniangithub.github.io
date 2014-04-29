@@ -14,11 +14,11 @@ $(document).ready(function(){
 
   }
 
-  function drawLineOne (pathOffset) {
+  function drawLineOne (lineOneOffset) {
     var path = document.querySelector('.line-one');
     var pathLength = path.getTotalLength();  // 601.7965087890625
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = pathOffset-(scrolledY*3);
+    var zeroOffset = lineOneOffset-(scrolledY*3);
     
     
     $('.line-one').css({"stroke-dashoffset": zeroOffset});
@@ -27,11 +27,11 @@ $(document).ready(function(){
     }
   } 
 
-  function drawLineTwo (pathOffset) {
+  function drawLineTwo (lineTwoOffset) {
     var path = document.querySelector('.line-two');
     var pathLength = path.getTotalLength();  // 332.88720703125
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = pathOffset+(scrolledY*3.3097);
+    var zeroOffset = lineTwoOffset+(scrolledY*3.3097);
     
     
     $('.line-two').css({"stroke-dashoffset": zeroOffset});
@@ -40,25 +40,25 @@ $(document).ready(function(){
     }
   }
 
-  function drawWhiteLine (pathOffset) {
+  function drawWhiteLine (whiteLineOffset) {
     var path = document.querySelector('.white-line');
     var pathLength = path.getTotalLength();  // 650
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = pathOffset-(scrolledY*1.425);
+    var zeroOffset = whiteLineOffset-(scrolledY*2.8);
     
     
     $('.white-line').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY>1393) {
+    if(scrolledY>1150) {
       $('.white-line').css({"stroke-dashoffset": 0});
     }
 
   }
 
-  function drawLineThree (pathOffset) {
+  function drawLineThree (lineThreeOffset) {
     var path = document.querySelector('.line-three');
     var pathLength = path.getTotalLength();  // 
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = pathOffset-(scrolledY*2);
+    var zeroOffset = lineThreeOffset-(scrolledY*2);
     
     
     $('.line-three').css({"stroke-dashoffset": zeroOffset});
@@ -68,12 +68,13 @@ $(document).ready(function(){
 
   }
 
-  function drawLineFour () {
+  function drawLineFour (lineFourOffset) {
     var path = document.querySelector('.line-four');
     var pathLength = path.getTotalLength();  // 1708.6005859375
     var scrolledY = $(window).scrollTop();
-    // var zeroOffset = pathOffset+(scrolledY*3.18);
+    var zeroOffset = lineFourOffset+(scrolledY*2);
 
+    $('.line-four').css({"stroke-dashoffset": zeroOffset});
     console.log(pathLength);
   }
 
@@ -109,10 +110,11 @@ $(document).ready(function(){
             $('.white-line').css({"stroke-dashoffset": 650}); // white line function reset
             $('.circle-two').fadeOut();
           }
-            if(scrolledY >1140){
-              if(flag==true){
+          if(scrolledY >1140){
+            $('.annual-visitor').fadeIn(1000);
+            if(flag==true){
 
-              }else{
+              } else {
 
                 // Animate 30,000,000 when scrolled
                 flag=true;
@@ -123,22 +125,31 @@ $(document).ready(function(){
                  $('.number').html(commaSeparateNumber(Math.floor(this.spanValue)));
                  },
                 complete: function(){
-                  $('.number').html(commaSeparateNumber(this.spanValue));
-                  
+                  $('.number').html(commaSeparateNumber(this.spanValue));   
                 }
               });
 
                 // end of 30, 000, 000 animation
-            }
-            $('.annual-visitor').fadeIn(1000);
-          }else {
+            }   
+          } else {
             $('.annual-visitor').fadeOut(1000);
           }
+
+          if(scrolledY > 1200) {
+            drawLineThree(641.594482421875);
+
             if(scrolledY > 1200) {
-              drawLineThree(641.594482421875);
+
+              drawLineFour(1708.6005859375) // line four function call
+
             } else {
-               $('.line-three').css({"stroke-dashoffset": 641.594482421875}); // line three function reset
+
+              $('.line-four').css({"stroke-dashoffset": 1708.6005859375}); //line four function reset
+
             }
+          } else {
+            $('.line-three').css({"stroke-dashoffset": 641.594482421875}); // line three function reset
+          }
         } else {
           $('.line-two').css({"stroke-dashoffset": 332.88720703125}); // line two function reset
         }
@@ -149,11 +160,15 @@ $(document).ready(function(){
       $('.circle-one').fadeOut();
       $('.line-one').css({"stroke-dashoffset": 601.7965087890625}); //line one function reset
     }
+
+    // if (scrolledY > 1700) {
+
+    // }
   }
 
     $(window).bind('scroll', function(e){
      parallaxScroll();
-     console.log($(window).scrollTop());
+     // console.log($(window).scrollTop());
     });
 
 
