@@ -72,7 +72,7 @@ $(document).ready(function(){
     var path = document.querySelector('.line-four');
     var pathLength = path.getTotalLength();  // 1708.6005859375
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = lineFourOffset+(scrolledY*2);
+    var zeroOffset = lineFourOffset+(scrolledY*2.2);
 
     $('.line-four').css({"stroke-dashoffset": zeroOffset});
     // console.log(pathLength);
@@ -148,12 +148,12 @@ $(document).ready(function(){
 
               drawLineFour(1708.6005859375) // line four function call
 
-              if (scrolledY > 1950) {
+              if (scrolledY > 1800) {
 
-                $('.center-circle').show('scale');
-                $('.circle-con1').delay(500).fadeIn();
-                $('.circle-con2').delay(500).fadeIn();
-                $('.circle-con3').delay(500).fadeIn();
+                $('.center-circle').show('scale',{percent:100, origin:['100','100']},1000);
+                $('.circle-con1').delay(1200).fadeIn();
+                $('.circle-con2').delay(1200).fadeIn();
+                $('.circle-con3').delay(1200).fadeIn();
 
               } else {
 
