@@ -35,7 +35,7 @@ $(document).ready(function(){
     
     
     $('.line-two').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY>910) {
+    if(scrolledY>905) {
       $('.line-two').css({"stroke-dashoffset": 0});
     }
   }
@@ -44,7 +44,7 @@ $(document).ready(function(){
     var path = document.querySelector('.white-line');
     var pathLength = path.getTotalLength();  // 650
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = whiteLineOffset-(scrolledY*2.83);
+    var zeroOffset = whiteLineOffset-(scrolledY*2.855);
     
     
     $('.white-line').css({"stroke-dashoffset": zeroOffset});
