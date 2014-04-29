@@ -92,6 +92,7 @@ $(document).ready(function(){
 		var scrolledY = $(window).scrollTop();
 
 		if(scrolledY > 400) {
+
 			$('.circle-one').fadeIn();
       drawLineOne(601.7965087890625); // line one function call
 
@@ -104,14 +105,20 @@ $(document).ready(function(){
           drawLineTwo(332.88720703125); // line two function call
           
           if (scrolledY > 910){
+
             $('.circle-two').fadeIn();
             drawWhiteLine(650); // White line function call
+
           } else {
+
             $('.white-line').css({"stroke-dashoffset": 650}); // white line function reset
             $('.circle-two').fadeOut();
+
           }
           if(scrolledY >1140){
+
             $('.annual-visitor').fadeIn(1000);
+
             if(flag==true){
 
               } else {
@@ -136,11 +143,25 @@ $(document).ready(function(){
           }
 
           if(scrolledY > 1200) {
-            drawLineThree(641.594482421875);
 
-            if(scrolledY > 1200) {
+            drawLineThree(641.594482421875); // line three function call
+
+            if(scrolledY > 1400) {
 
               drawLineFour(1708.6005859375) // line four function call
+
+              if (scrolledY > 2000) {
+
+                $('.center-circle').show('scale');
+                $('.circle-con1').delay(500).fadeIn();
+                $('.circle-con2').delay(500).fadeIn();
+                $('.circle-con3').delay(500).fadeIn();
+
+              }else {
+
+                $('.center-circle').hide('scale');
+
+              }
 
             } else {
 
@@ -148,22 +169,28 @@ $(document).ready(function(){
 
             }
           } else {
+
             $('.line-three').css({"stroke-dashoffset": 641.594482421875}); // line three function reset
+
           }
         } else {
+
           $('.line-two').css({"stroke-dashoffset": 332.88720703125}); // line two function reset
+
         }
       } else {
+
         $('.castle-path').css({"stroke-dashoffset": 1155.9654541015625}); //castle function reset
+
       }
     } else {
+
       $('.circle-one').fadeOut();
       $('.line-one').css({"stroke-dashoffset": 601.7965087890625}); //line one function reset
+
     }
 
-    // if (scrolledY > 1700) {
-
-    // }
+    
   }
 
     $(window).bind('scroll', function(e){

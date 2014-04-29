@@ -213,7 +213,7 @@ body {
 		
 		.take-survey-div {
 			@include center-div;
-			bottom: 5%;
+			bottom: 3%;
 			.take-survey {
 				position:relative;
 				left: -50%;
@@ -221,7 +221,7 @@ body {
 		}
 
 		.take-survey-bg {
-			@include take-survey-bg(190px, .7);
+			@include take-survey-bg(100px, 1);
 		}
 
 		.annual-visitor-div {
@@ -292,28 +292,31 @@ body {
 			border-radius:100%;
 			display: none;
 
-			.center-con1 {
+			.circle-con1 {
 				top: 20%;
 				position: absolute;
 				left: 0;
 				right: 0;
 				margin: 0 auto;
+				display: none;
 			}
 
-			.center-con2 {
+			.circle-con2 {
 				top: 27%;
 				position: absolute;
 				left: 0;
 				right: 0;
 				margin: 0 auto;
+				display: none;
 			}
 			
-			.center-con3 {
+			.circle-con3 {
 				top: 55%;
 				position: absolute;
 				left: 0;
 				right: 0;
 				margin: 0 auto;
+				display: none;
 			}
 
 		}
