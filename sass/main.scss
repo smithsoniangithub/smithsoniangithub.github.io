@@ -37,7 +37,7 @@ body {
 		.circle-one {
 			position: absolute;
 			z-index: 10;
-			top: 813px;
+			top: 642px;
 			left: 710px;
 			display: none;
 		}
@@ -45,7 +45,7 @@ body {
 		.circle-two {
 			position: absolute;
 			z-index: 10;
-			top: 1461px;
+			top: 1291px;
 			left: 58px;
 			// display: none;
 		}
@@ -53,7 +53,7 @@ body {
 		#curve-line-1 {
 			position:absolute;
 			z-index: 10;
-			top: 790px;
+			top: 620px;
 			left: 625px;
 			svg {
 				path {
@@ -67,7 +67,7 @@ body {
 		#castle {
 			position: absolute;
 			z-index: 10;
-			top: 906px;
+			top: 736px;
 			left: 258px;
 			svg {
 				.castle-path{
@@ -80,7 +80,7 @@ body {
 		#curve-line-2 {
 			position: absolute;
 			z-index: 10;
-			top: 1282px;
+			top: 1112px;
 			left: 43px;
 			svg {
 				path {
@@ -93,7 +93,7 @@ body {
 		#white-line {
 			position: absolute;
 			z-index: 10;
-			top: 1456px;
+			top: 1286px;
 			left: 84px;
 			svg {
 				path {
@@ -106,7 +106,7 @@ body {
 		#curve-line-3 {
 			position: absolute;
 			z-index: 10;
-			top: 1489px;
+			top: 1319px;
 			left: 61px;
 			svg {
 				path{
@@ -119,8 +119,8 @@ body {
 		#third-page-line{
 			position: absolute;
 			z-index: 10;
-			top: 1944px;
-			left: -52px;
+			top: 1764px;
+			left: -53px;
 			svg {
 				path {
 					stroke-dashoffset:1708.6005859375;
@@ -152,7 +152,7 @@ body {
 	}
 
 	.bg-1 {
-		height: 900px;
+		height: 720px;
 		width: 100%;
 		z-index: 15;
 		position: relative;

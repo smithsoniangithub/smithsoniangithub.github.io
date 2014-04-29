@@ -44,7 +44,7 @@ $(document).ready(function(){
     var path = document.querySelector('.white-line');
     var pathLength = path.getTotalLength();  // 650
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = whiteLineOffset-(scrolledY*2.85);
+    var zeroOffset = whiteLineOffset-(scrolledY*2.86);
     
     
     $('.white-line').css({"stroke-dashoffset": zeroOffset});
@@ -140,15 +140,15 @@ $(document).ready(function(){
             $('.annual-visitor').fadeOut(1000);
           }
 
-          if(scrolledY > 1200) {
+          if(scrolledY > 700) {
 
             drawLineThree(641.594482421875); // line three function call
 
-            if(scrolledY > 1400) {
+            if(scrolledY > 1300) {
 
               drawLineFour(1708.6005859375) // line four function call
 
-              if (scrolledY > 2000) {
+              if (scrolledY > 1950) {
 
                 $('.center-circle').show('scale');
                 $('.circle-con1').delay(500).fadeIn();

@@ -65,7 +65,7 @@ body {
 .wrapper .castle-line .circle-one {
   position: absolute;
   z-index: 10;
-  top: 813px;
+  top: 642px;
   left: 710px;
   display: none;
 }
@@ -73,14 +73,14 @@ body {
 .wrapper .castle-line .circle-two {
   position: absolute;
   z-index: 10;
-  top: 1461px;
+  top: 1291px;
   left: 58px;
 }
 /* line 53, ../sass/main.scss */
 .wrapper .castle-line #curve-line-1 {
   position: absolute;
   z-index: 10;
-  top: 790px;
+  top: 620px;
   left: 625px;
 }
 /* line 59, ../sass/main.scss */
@@ -92,7 +92,7 @@ body {
 .wrapper .castle-line #castle {
   position: absolute;
   z-index: 10;
-  top: 906px;
+  top: 736px;
   left: 258px;
 }
 /* line 73, ../sass/main.scss */
@@ -104,7 +104,7 @@ body {
 .wrapper .castle-line #curve-line-2 {
   position: absolute;
   z-index: 10;
-  top: 1282px;
+  top: 1112px;
   left: 43px;
 }
 /* line 86, ../sass/main.scss */
@@ -116,7 +116,7 @@ body {
 .wrapper .castle-line #white-line {
   position: absolute;
   z-index: 10;
-  top: 1456px;
+  top: 1286px;
   left: 84px;
 }
 /* line 99, ../sass/main.scss */
@@ -128,7 +128,7 @@ body {
 .wrapper .castle-line #curve-line-3 {
   position: absolute;
   z-index: 10;
-  top: 1489px;
+  top: 1319px;
   left: 61px;
 }
 /* line 112, ../sass/main.scss */
@@ -140,8 +140,8 @@ body {
 .wrapper .castle-line #third-page-line {
   position: absolute;
   z-index: 10;
-  top: 1944px;
-  left: -52px;
+  top: 1764px;
+  left: -53px;
 }
 /* line 125, ../sass/main.scss */
 .wrapper .castle-line #third-page-line svg path {
@@ -174,7 +174,7 @@ body {
 }
 /* line 154, ../sass/main.scss */
 .wrapper .bg-1 {
-  height: 900px;
+  height: 720px;
   width: 100%;
   z-index: 15;
   position: relative;
