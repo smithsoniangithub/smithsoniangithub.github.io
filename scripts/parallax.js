@@ -156,7 +156,9 @@ $(document).ready(function(){
                 $('.circle-con3').delay(1200).fadeIn();
 
               } else {
-
+                $('.circle-con1').hide();
+                $('.circle-con2').hide();
+                $('.circle-con3').hide();
                 $('.center-circle').fadeOut();
 
               }
