@@ -44,7 +44,7 @@ $(document).ready(function(){
     var path = document.querySelector('.white-line');
     var pathLength = path.getTotalLength();  // 650
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = whiteLineOffset-(scrolledY*2.86);
+    var zeroOffset = whiteLineOffset-(scrolledY*2.88);
     
     
     $('.white-line').css({"stroke-dashoffset": zeroOffset});
@@ -120,7 +120,6 @@ $(document).ready(function(){
             if(flag==true){
 
               } else {
-
                 // Animate 30,000,000 when scrolled
                 flag=true;
                 $({spanValue: 1000000}).animate({spanValue: 30000000}, {
@@ -135,8 +134,9 @@ $(document).ready(function(){
               });
 
                 // end of 30, 000, 000 animation
-            }   
+            }  
           } else {
+
             $('.annual-visitor').fadeOut(1000);
           }
 
@@ -182,7 +182,7 @@ $(document).ready(function(){
 
       }
     } else {
-
+      flag=false;
       $('.circle-one').fadeOut();
       $('.line-one').css({"stroke-dashoffset": 601.7965087890625}); //line one function reset
 
