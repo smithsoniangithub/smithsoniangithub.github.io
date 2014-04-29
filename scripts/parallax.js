@@ -148,12 +148,12 @@ $(document).ready(function(){
 
               drawLineFour(1708.6005859375) // line four function call
 
-              if (scrolledY > 1800) {
+              if (scrolledY > 1700) {
 
                 $('.center-circle').show('scale',{percent:100, origin:['200','0']},1000);
-                $('.circle-con1').delay(1200).fadeIn();
-                $('.circle-con2').delay(1200).fadeIn();
-                $('.circle-con3').delay(1200).fadeIn();
+                $('.circle-con1').delay(800).fadeIn();
+                $('.circle-con2').delay(800).fadeIn();
+                $('.circle-con3').delay(800).fadeIn();
 
               } else {
                 $('.circle-con1').hide();
