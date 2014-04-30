@@ -5,7 +5,7 @@ body, html {
 	padding:0px;
 }
 body {
-	background-color: white;
+	background-color: black;
 	line-height:2;
 	font-family: 'Lato', sans-serif;
 }
@@ -152,7 +152,8 @@ body {
 	}
 
 	.bg-1 {
-		height: 720px;
+		// height: 720px;
+		height: 100%;
 		width: 100%;
 		z-index: 15;
 		position: relative;
@@ -288,7 +289,7 @@ body {
 			top:13%;
 			margin: 0 auto;
 			height: 500px;
-			width: 550px;
+			width: 500px;
 			background: rgba(0, 0, 0, 0.5);
 			border-radius:100%;
 			display: none;
@@ -326,15 +327,15 @@ body {
 
 }
 
-.parallax-nav {
-	.active {
-		// opacity:1;
-		border: 2px solid white;
-		border-radius: 100%;
-	}
+// .parallax-nav {
+// 	.active {
+// 		// opacity:1;
+// 		border: 2px solid white;
+// 		border-radius: 100%;
+// 	}
 
-	.active-blue {
-		border: 2px solid #0bb3ff;
-		border-radius: 100%;
-	}
-}
+// 	.active-blue {
+// 		border: 2px solid #0bb3ff;
+// 		border-radius: 100%;
+// 	}
+// }
