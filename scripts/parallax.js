@@ -1,3 +1,7 @@
+//  MASTER BRANCH
+
+
+
 
 $(document).ready(function(){
  var flag = false;
@@ -89,7 +93,7 @@ $(document).ready(function(){
 	function parallaxScroll(){
 		var scrolledY = $(window).scrollTop();
 
-		if(scrolledY > 400) {
+		if(scrolledY > 350) {
 
 			$('.circle-one').fadeIn();
       drawLineOne(601.7965087890625); // line one function call
@@ -195,7 +199,7 @@ $(document).ready(function(){
 
     $(window).bind('scroll', function(e){
      parallaxScroll();
-     // console.log($(window).scrollTop());
+     console.log($(window).scrollTop());
     });
 
 

@@ -1,3 +1,6 @@
+ // MASTER BRANCH
+
+
 @import 'mixins';
 
 body, html {
@@ -37,7 +40,7 @@ body {
 		.circle-one {
 			position: absolute;
 			z-index: 10;
-			top: 642px;
+			top: 612px;
 			left: 710px;
 			display: none;
 		}
@@ -45,15 +48,15 @@ body {
 		.circle-two {
 			position: absolute;
 			z-index: 10;
-			top: 1291px;
+			top: 1258px;
 			left: 58px;
 			// display: none;
 		}
 
 		#curve-line-1 {
-			position:absolute;
+			position: absolute;
 			z-index: 10;
-			top: 620px;
+			top: 588px;
 			left: 625px;
 			svg {
 				path {
@@ -67,7 +70,7 @@ body {
 		#castle {
 			position: absolute;
 			z-index: 10;
-			top: 736px;
+			top: 703px;
 			left: 258px;
 			svg {
 				.castle-path{
@@ -80,7 +83,7 @@ body {
 		#curve-line-2 {
 			position: absolute;
 			z-index: 10;
-			top: 1112px;
+			top: 1079px;
 			left: 43px;
 			svg {
 				path {
@@ -93,7 +96,7 @@ body {
 		#white-line {
 			position: absolute;
 			z-index: 10;
-			top: 1286px;
+			top: 1251px;
 			left: 84px;
 			svg {
 				path {
@@ -106,8 +109,8 @@ body {
 		#curve-line-3 {
 			position: absolute;
 			z-index: 10;
-			top: 1319px;
-			left: 61px;
+			top: 1290px;
+			left: 63px;
 			svg {
 				path{
 					stroke-dashoffset:641.594482421875;
@@ -119,8 +122,8 @@ body {
 		#third-page-line{
 			position: absolute;
 			z-index: 10;
-			top: 1764px;
-			left: -53px;
+			top: 1712px;
+			left: -52px;
 			svg {
 				path {
 					stroke-dashoffset:1708.6005859375;
@@ -170,7 +173,8 @@ body {
 		}
 
 		.cover {
-			z-index: -100;
+			position: relative;
+			z-index: -50;
 			height: 100%;
 			width: 100%;
 			opacity: .5;
@@ -205,12 +209,12 @@ body {
 	}
 
 	.bg-2 {
-		height: 1080px;
+		height: 1060px;
 		width: 100%;
 		z-index: 2;
 		position: relative;
 		background-image: url('/images/bg2-filter.png'), url('/images/bg2.jpg');
-		background-size:cover, cover;
+		background-size:100%, 100%;
 		background-repeat: no-repeat, no-repeat;
 		
 		.take-survey-div {
