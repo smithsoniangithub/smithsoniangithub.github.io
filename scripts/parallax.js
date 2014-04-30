@@ -111,72 +111,77 @@ $(document).ready(function(){
             $('.circle-two').fadeIn();
             drawWhiteLine(650); // White line function call
 
+            if(scrolledY > 900) {
+
+              drawLineThree(641.594482421875); // line three function call
+
+              if(scrolledY >1080){
+
+              $('.annual-visitor').fadeIn(1000);
+
+              if(flag==true){
+
+                } else {
+                  // Animate 30,000,000 when scrolled
+                  flag=true;
+                  $({spanValue: 1000000}).animate({spanValue: 30000000}, {
+                   duration: 2000,
+                   easing:'linear', 
+                  step: function() { 
+                   $('.number').html(commaSeparateNumber(Math.floor(this.spanValue)));
+                   },
+                  complete: function(){
+                    $('.number').html(commaSeparateNumber(this.spanValue));   
+                  }
+                });
+
+                  // end of 30, 000, 000 animation
+              } 
+              if(scrolledY > 1300) {
+
+                drawLineFour(1708.6005859375) // line four function call
+
+                if (scrolledY > 1700) {
+
+                  $('.center-circle').show('scale',{percent:100, origin:['200','0']},1000);
+                  $('.circle-con1').delay(800).fadeIn();
+                  $('.circle-con2').delay(800).fadeIn();
+                  $('.circle-con3').delay(800).fadeIn();
+
+                } else {
+                  $('.circle-con1').hide();
+                  $('.circle-con2').hide();
+                  $('.circle-con3').hide();
+                  $('.center-circle').fadeOut();
+
+                }
+
+              } else {
+
+                $('.line-four').css({"stroke-dashoffset": 1708.6005859375}); //line four function reset
+
+              } 
+            } else {
+
+              $('.annual-visitor').fadeOut(1000);
+            }
+
+            } else {
+
+             $('.line-three').css({"stroke-dashoffset": 641.594482421875}); // line three function reset
+
+            }
+
+
           } else {
 
             $('.white-line').css({"stroke-dashoffset": 650}); // white line function reset
             $('.circle-two').fadeOut();
 
           }
-          if(scrolledY >1080){
+          
+            // scrolled 1000 place here
 
-            $('.annual-visitor').fadeIn(1000);
-
-            if(flag==true){
-
-              } else {
-                // Animate 30,000,000 when scrolled
-                flag=true;
-                $({spanValue: 1000000}).animate({spanValue: 30000000}, {
-                 duration: 2000,
-                 easing:'linear', 
-                step: function() { 
-                 $('.number').html(commaSeparateNumber(Math.floor(this.spanValue)));
-                 },
-                complete: function(){
-                  $('.number').html(commaSeparateNumber(this.spanValue));   
-                }
-              });
-
-                // end of 30, 000, 000 animation
-            }  
-          } else {
-
-            $('.annual-visitor').fadeOut(1000);
-          }
-
-          if(scrolledY > 1000) {
-
-            drawLineThree(641.594482421875); // line three function call
-
-            if(scrolledY > 1300) {
-
-              drawLineFour(1708.6005859375) // line four function call
-
-              if (scrolledY > 1700) {
-
-                $('.center-circle').show('scale',{percent:100, origin:['200','0']},1000);
-                $('.circle-con1').delay(800).fadeIn();
-                $('.circle-con2').delay(800).fadeIn();
-                $('.circle-con3').delay(800).fadeIn();
-
-              } else {
-                $('.circle-con1').hide();
-                $('.circle-con2').hide();
-                $('.circle-con3').hide();
-                $('.center-circle').fadeOut();
-
-              }
-
-            } else {
-
-              $('.line-four').css({"stroke-dashoffset": 1708.6005859375}); //line four function reset
-
-            }
-          } else {
-
-            $('.line-three').css({"stroke-dashoffset": 641.594482421875}); // line three function reset
-
-          }
         } else {
 
           $('.line-two').css({"stroke-dashoffset": 332.88720703125}); // line two function reset
@@ -188,6 +193,7 @@ $(document).ready(function(){
 
       }
     } else {
+
       flag=false;
       $('.circle-one').fadeOut();
       $('.line-one').css({"stroke-dashoffset": 601.7965087890625}); //line one function reset
