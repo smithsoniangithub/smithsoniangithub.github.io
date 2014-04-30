@@ -286,17 +286,17 @@ body {
   font-weight: bolder;
   color: #ffd500;
 }
-/* line 254, ../sass/main.scss */
+/* line 255, ../sass/main.scss */
 .wrapper .bg-2 .annual-visitor-div .annual-visitor .sub-con {
   font-size: 45px;
   font-weight: 100;
 }
-/* line 259, ../sass/main.scss */
+/* line 260, ../sass/main.scss */
 .wrapper .bg-2 .annual-visitor-div .annual-visitor .sub-con-two {
   font-size: 25px;
   font-weight: 100;
 }
-/* line 267, ../sass/main.scss */
+/* line 268, ../sass/main.scss */
 .wrapper .bg-3 {
   height: 942px;
   width: 100%;
@@ -306,19 +306,19 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 276, ../sass/main.scss */
+/* line 277, ../sass/main.scss */
 .wrapper .bg-3 .take-survey-div {
   position: absolute;
   left: 50%;
   z-index: 2;
   bottom: 3%;
 }
-/* line 279, ../sass/main.scss */
+/* line 280, ../sass/main.scss */
 .wrapper .bg-3 .take-survey-div .take-survey {
   position: relative;
   left: -50%;
 }
-/* line 285, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 .wrapper .bg-3 .take-survey-bg {
   position: absolute;
   width: 100%;
@@ -327,7 +327,7 @@ body {
   bottom: 0;
   opacity: 1;
 }
-/* line 289, ../sass/main.scss */
+/* line 290, ../sass/main.scss */
 .wrapper .bg-3 .center-circle {
   position: absolute;
   right: 0;
@@ -340,7 +340,7 @@ body {
   border-radius: 100%;
   display: none;
 }
-/* line 301, ../sass/main.scss */
+/* line 302, ../sass/main.scss */
 .wrapper .bg-3 .center-circle .circle-con1 {
   top: 20%;
   position: absolute;
@@ -349,7 +349,7 @@ body {
   margin: 0 auto;
   display: none;
 }
-/* line 310, ../sass/main.scss */
+/* line 311, ../sass/main.scss */
 .wrapper .bg-3 .center-circle .circle-con2 {
   top: 27%;
   position: absolute;
@@ -358,7 +358,7 @@ body {
   margin: 0 auto;
   display: none;
 }
-/* line 319, ../sass/main.scss */
+/* line 320, ../sass/main.scss */
 .wrapper .bg-3 .center-circle .circle-con3 {
   top: 55%;
   position: absolute;
