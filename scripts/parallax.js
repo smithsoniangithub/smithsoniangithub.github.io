@@ -5,41 +5,41 @@
 
 $(document).ready(function(){
  var flag = false;
+  function drawLineOne (lineOneOffset) {
+    var path = document.querySelector('.line-one');
+    var pathLength = path.getTotalLength();  // 601.7965087890625
+    var scrolledY = $(window).scrollTop();
+    var zeroOffset = (lineOneOffset*2)-(scrolledY*5.2);
+    
+    
+    $('.line-one').css({"stroke-dashoffset": zeroOffset});
+    if(scrolledY>460) {
+      $('.line-one').css({"stroke-dashoffset": 0});
+    }
+  } 
+
   function drawCastle (castleOffset) {
     var castlepath = document.querySelector('.castle-path');
     var castlePathLength = castlepath.getTotalLength();  // 1155.9654541015625
     var scrolledY = $(window).scrollTop();
-    var offset = (castleOffset*2) + (scrolledY*5.77);
+    var offset = (castleOffset) + (scrolledY*5.001);
   
     $('.castle-path').css({"stroke-dashoffset": offset});
-    if(scrolledY>800) {
+    if(scrolledY>693) {
       $('.castle-path').css({"stroke-dashoffset": 0});
     } 
 
   }
 
-  function drawLineOne (lineOneOffset) {
-    var path = document.querySelector('.line-one');
-    var pathLength = path.getTotalLength();  // 601.7965087890625
-    var scrolledY = $(window).scrollTop();
-    var zeroOffset = lineOneOffset-(scrolledY*3);
-    
-    
-    $('.line-one').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY>600) {
-      $('.line-one').css({"stroke-dashoffset": 0});
-    }
-  } 
-
   function drawLineTwo (lineTwoOffset) {
     var path = document.querySelector('.line-two');
     var pathLength = path.getTotalLength();  // 332.88720703125
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = lineTwoOffset+(scrolledY*3.3097);
+    var zeroOffset = lineTwoOffset+(scrolledY*1.9);
     
     
     $('.line-two').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY>905) {
+    if(scrolledY>875) {
       $('.line-two').css({"stroke-dashoffset": 0});
     }
   }
@@ -48,11 +48,11 @@ $(document).ready(function(){
     var path = document.querySelector('.white-line');
     var pathLength = path.getTotalLength();  // 650
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = whiteLineOffset-(scrolledY*2.85);
+    var zeroOffset = whiteLineOffset-(scrolledY*2.849);
     
     
     $('.white-line').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY>1150) {
+    if(scrolledY>1140) {
       $('.white-line').css({"stroke-dashoffset": 0});
     }
 
@@ -93,16 +93,16 @@ $(document).ready(function(){
 	function parallaxScroll(){
 		var scrolledY = $(window).scrollTop();
 
-		if(scrolledY > 350) {
+		if(scrolledY > 300) {
 
 			$('.circle-one').fadeIn();
       drawLineOne(601.7965087890625); // line one function call
 
-      if(scrolledY > 600){
+      if(scrolledY > 460){
 
         drawCastle(1155.9654541015625); // draw castle function call
-
-        if(scrolledY > 800){
+        // $('#windowTwo').addClass('fixed');
+        if(scrolledY > 693){
 
           drawLineTwo(332.88720703125); // line two function call
           

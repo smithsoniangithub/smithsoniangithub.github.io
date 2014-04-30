@@ -3,7 +3,7 @@
 
 @import 'mixins';
 
-body, html {
+body, html, div, span {
 	margin:0px;
 	padding:0px;
 }
@@ -27,7 +27,7 @@ body {
 	.castle-line {
 		position: absolute;
 		height: 100%;
-		width: 1100px;
+		width: 1260px;
 		left: 0;
 		right: 0;
 		margin: 0 auto;
@@ -41,7 +41,7 @@ body {
 			position: absolute;
 			z-index: 10;
 			top: 612px;
-			left: 710px;
+			left: 789px;
 			display: none;
 		}
 
@@ -49,7 +49,7 @@ body {
 			position: absolute;
 			z-index: 10;
 			top: 1258px;
-			left: 58px;
+			left: 138px;
 			// display: none;
 		}
 
@@ -57,7 +57,7 @@ body {
 			position: absolute;
 			z-index: 10;
 			top: 588px;
-			left: 625px;
+			left: 705px;			
 			svg {
 				path {
 					stroke-dasharray: 601.7965087890625 601.7965087890625;
@@ -71,7 +71,7 @@ body {
 			position: absolute;
 			z-index: 10;
 			top: 703px;
-			left: 258px;
+			left: 338px;
 			svg {
 				.castle-path{
 					stroke-dashoffset:1155.9654541015625 ;
@@ -84,7 +84,7 @@ body {
 			position: absolute;
 			z-index: 10;
 			top: 1079px;
-			left: 43px;
+			left: 123px;
 			svg {
 				path {
 					stroke-dasharray:332.88720703125;
@@ -97,7 +97,7 @@ body {
 			position: absolute;
 			z-index: 10;
 			top: 1251px;
-			left: 84px;
+			left: 164px;
 			svg {
 				path {
 					stroke-dasharray: 650;
@@ -110,7 +110,7 @@ body {
 			position: absolute;
 			z-index: 10;
 			top: 1290px;
-			left: 63px;
+			left: 163px;
 			svg {
 				path{
 					stroke-dashoffset:641.594482421875;
@@ -122,8 +122,8 @@ body {
 		#third-page-line{
 			position: absolute;
 			z-index: 10;
-			top: 1712px;
-			left: -52px;
+			top: 1615px;
+			left: 47px;
 			svg {
 				path {
 					stroke-dashoffset:1708.6005859375;
@@ -156,6 +156,9 @@ body {
 
 	.bg-1 {
 		// height: 720px;
+		background-image: url("/images/bg2-filter.png");
+		background-size: cover;
+		background-repeat: no-repeat;
 		height: 100%;
 		width: 100%;
 		z-index: 15;
@@ -209,14 +212,14 @@ body {
 	}
 
 	.bg-2 {
-		height: 1060px;
+		height: 962px;
 		width: 100%;
 		z-index: 2;
 		position: relative;
-		background-image: url('/images/bg2-filter.png'), url('/images/bg2.jpg');
-		background-size:100%, 100%;
+		background-image: url("/images/bg2-filter.png"), url("/images/bg2.jpg");
+		background-size: cover,cover;
 		background-repeat: no-repeat, no-repeat;
-		
+		background-position: center;
 		.take-survey-div {
 			@include center-div;
 			bottom: 3%;
@@ -232,7 +235,7 @@ body {
 
 		.annual-visitor-div {
 			@include center-div;
-			top: 43%;
+			top: 49%;
 
 			.annual-visitor {
 			background: rgba(0, 0, 0, 0.5);
@@ -329,6 +332,15 @@ body {
 
 	}
 
+}
+
+.fixed {
+	position:fixed !important;
+	top:0;
+	left: 0;
+	right: 0;
+	z-index:70;
+	overflow:hidden;
 }
 
 // .parallax-nav {
