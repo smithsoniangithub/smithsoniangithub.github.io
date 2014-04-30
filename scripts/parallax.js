@@ -48,11 +48,11 @@ $(document).ready(function(){
     var path = document.querySelector('.white-line');
     var pathLength = path.getTotalLength();  // 650
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = whiteLineOffset-(scrolledY*2.849);
+    var zeroOffset = whiteLineOffset-(scrolledY*2.95);
     
     
     $('.white-line').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY>1140) {
+    if(scrolledY>1100) {
       $('.white-line').css({"stroke-dashoffset": 0});
     }
 
@@ -106,7 +106,7 @@ $(document).ready(function(){
 
           drawLineTwo(332.88720703125); // line two function call
           
-          if (scrolledY > 910){
+          if (scrolledY > 880){
 
             $('.circle-two').fadeIn();
             drawWhiteLine(650); // White line function call
@@ -117,7 +117,7 @@ $(document).ready(function(){
             $('.circle-two').fadeOut();
 
           }
-          if(scrolledY >1140){
+          if(scrolledY >1080){
 
             $('.annual-visitor').fadeIn(1000);
 
@@ -144,7 +144,7 @@ $(document).ready(function(){
             $('.annual-visitor').fadeOut(1000);
           }
 
-          if(scrolledY > 700) {
+          if(scrolledY > 1000) {
 
             drawLineThree(641.594482421875); // line three function call
 
