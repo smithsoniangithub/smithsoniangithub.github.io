@@ -192,7 +192,6 @@ body {
 }
 /* line 175, ../sass/main.scss */
 .wrapper .bg-1 .cover {
-  position: relative;
   z-index: -50;
   height: 100%;
   width: 100%;
