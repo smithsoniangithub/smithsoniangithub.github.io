@@ -3,10 +3,58 @@
 
 @import 'mixins';
 
-body, html, div, span {
-	margin:0px;
-	padding:0px;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
 body {
 	background-color: black;
 	line-height:2;
@@ -27,11 +75,11 @@ body {
 	.castle-line {
 		position: absolute;
 		height: 100%;
-		width: 1260px;
+		// width: 1260px;
 		left: 0;
 		right: 0;
 		margin: 0 auto;
-		z-index: 100;
+		z-index: 999;
 		
 		.blue-circle {
 			display: none;
@@ -40,9 +88,12 @@ body {
 		.circle-one {
 			position: absolute;
 			z-index: 10;
-			top: 612px;
+			top: 700px;
 			left: 789px;
 			display: none;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
 		}
 
 		.circle-two {
@@ -56,12 +107,12 @@ body {
 		#curve-line-1 {
 			position: absolute;
 			z-index: 10;
-			top: 588px;
-			left: 705px;			
+			top: 702px;
+			left: 625px;			
 			svg {
 				.line-one {
-					stroke-dasharray: 601.7965087890625 601.7965087890625;
-					stroke-dashoffset: 601.7965087890625;
+					stroke-dasharray: 863.447509765625;
+					stroke-dashoffset: 863.447509765625;
 				}
 			}
 		}
@@ -74,8 +125,6 @@ body {
 			left: 338px;
 			svg {
 				.castle-path{
-					width:100%;
-					// height: 100%;
 					stroke-dashoffset:1155.9654541015625 ;
 					stroke-dasharray:1155.9654541015625 ;
 				}
@@ -115,8 +164,8 @@ body {
 			left: 145px;
 			svg {
 				path{
-					stroke-dashoffset:641.594482421875;
-					stroke-dasharray:641.594482421875;
+					stroke-dashoffset:243;
+					stroke-dasharray:243;
 				}
 			}
 		}
@@ -156,114 +205,118 @@ body {
 		}
 	}
 
-	.bg-1 {
-		// height: 720px;
-		background-image: url("/images/bg2-filter.png");
-		background-size: cover;
-		background-repeat: no-repeat;
-		height: 100%;
-		width: 100%;
-		z-index: 15;
-		position: relative;
-
-		video {
-			position: absolute;
-			right: 0; 
-			bottom: 0;
-			min-width: 100%;
-			min-height: 100%;
-			width: auto; 
-			height: auto; 
-			z-index: -100;
-		}
-
-		.cover {
-			// position: relative;
-			z-index: -50;
+	.window-one-wrap {
+		position:relative;
+		.bg-1 {
+			background-image: url("/images/bg2-filter.png");
+			background-size: cover;
+			background-repeat: no-repeat;
 			height: 100%;
 			width: 100%;
-			opacity: .5;
-		}
+			z-index: 15;
+			position: relative;
 
-		.logo-div {
+			video {
+				position: absolute;
+				right: 0; 
+				bottom: 0;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto; 
+				height: auto; 
+				z-index: -100;
+			}
+
+			.cover {
+				z-index: -50;
+				height: 100%;
+				width: 100%;
+				opacity: .5;
+			}
+
+			.logo-div {
+					@include center-div;
+					top: 15%;
+					.logo {
+						position: relative;
+						left:-50%;
+					}
+				}
+
+			.desc-div {
 				@include center-div;
-				top: 15%;
-				.logo {
-					position: relative;
-					left:-50%;
+				bottom: 5%;
+				.desc {
+					position:relative;
+					left: -50%
 				}
 			}
 
-		.desc-div {
-			@include center-div;
-			bottom: 5%;
-			.desc {
-				position:relative;
-				left: -50%
+			.desc-bg {
+				position:absolute;
+				width: 100%;
+				z-index: 0;
+				height: 190px;
+				bottom: 0;
+				opacity: .7;
 			}
-		}
-
-		.desc-bg {
-			position:absolute;
-			width: 100%;
-			z-index: 0;
-			height: 190px;
-			bottom: 0;
-			opacity: .7;
 		}
 	}
+	
+	.window-two-wrap {
+		position:relative;
+		.bg-2 {
+			height: 962px;
+			width: 100%;
+			z-index: 2;
+			position: relative;
+			background-image: url("/images/bg2-filter.png"), url("/images/bg2.jpg");
+			background-size: cover,cover;
+			background-repeat: no-repeat, no-repeat;
+			background-position: center;
+			.take-survey-div {
+				@include center-div;
+				bottom: 3%;
+				.take-survey {
+					position:relative;
+					left: -50%;
+				}
+			}
 
-	.bg-2 {
-		height: 962px;
-		width: 100%;
-		z-index: 2;
-		position: relative;
-		background-image: url("/images/bg2-filter.png"), url("/images/bg2.jpg");
-		background-size: cover,cover;
-		background-repeat: no-repeat, no-repeat;
-		background-position: center;
-		.take-survey-div {
-			@include center-div;
-			bottom: 3%;
-			.take-survey {
+			.take-survey-bg {
+				@include take-survey-bg(100px, 1);
+			}
+
+			.annual-visitor-div {
+				@include center-div;
+				top: 49%;
+
+				.annual-visitor {
+				background: rgba(0, 0, 0, 0.5);
 				position:relative;
-				left: -50%;
-			}
-		}
+				color: white;
+				text-align: center;
+				width: 580px;	
+				padding-bottom: 25px;
+				line-height: 1.5;
+				left: -53%;
+				display: none;
 
-		.take-survey-bg {
-			@include take-survey-bg(100px, 1);
-		}
+				.number {
+					font-size: 85px;
+					font-weight:bolder;
+					color:#ffd500;
+				}
 
-		.annual-visitor-div {
-			@include center-div;
-			top: 49%;
+				.sub-con {
+					font-size: 45px;
+					font-weight: 100;
+				}
 
-			.annual-visitor {
-			background: rgba(0, 0, 0, 0.5);
-			position:relative;
-			color: white;
-			text-align: center;
-			width: 580px;	
-			padding-bottom: 25px;
-			line-height: 1.5;
-			left: -53%;
-			display: none;
-
-			.number {
-				font-size: 85px;
-				font-weight:bolder;
-				color:#ffd500;
-			}
-
-			.sub-con {
-				font-size: 45px;
-				font-weight: 100;
-			}
-
-			.sub-con-two {
-				font-size: 25px;
-				font-weight: 100;
+				.sub-con-two {
+					font-size: 25px;
+					font-weight: 100;
+					}
 				}
 			}
 		}
@@ -341,8 +394,7 @@ body {
 	top:0;
 	left: 0;
 	right: 0;
-	z-index:70;
-	overflow:hidden;
+	z-index:500;
 }
 
 // .parallax-nav {

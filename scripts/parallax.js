@@ -9,11 +9,11 @@ $(document).ready(function(){
     var path = document.querySelector('.line-one');
     var pathLength = path.getTotalLength();  // 601.7965087890625
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = (lineOneOffset*2)-(scrolledY*5.2);
+    var zeroOffset = (lineOneOffset)-(scrolledY*6);
     
     
     $('.line-one').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY>460) {
+    if(scrolledY>400) {
       $('.line-one').css({"stroke-dashoffset": 0});
     }
   } 
@@ -66,7 +66,7 @@ $(document).ready(function(){
     
     
     $('.line-three').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY >1530) {
+    if(scrolledY >1200) {
       $('.line-three').css({"stroke-dashoffset": 0});
     }
 
@@ -96,7 +96,7 @@ $(document).ready(function(){
 		if(scrolledY > 300) {
 
 			$('.circle-one').fadeIn();
-      drawLineOne(601.7965087890625); // line one function call
+      drawLineOne(863.447509765625); // line one function call
 
       if(scrolledY > 460){
 
@@ -107,13 +107,19 @@ $(document).ready(function(){
           drawLineTwo(332.88720703125); // line two function call
           
           if (scrolledY > 880){
+            // $('.bg-2').css({'position':'fixed'});
+            // $('.bg-2').css({'top':'0'});
+            // $('.bg-2').css({'left':'0'});
+            // $('.bg-2').css({'right':'0'});
+            // $('.bg-2').css({'height':'100%'});
+            // $('.bg-2').css({'z-index':'500'});
 
             $('.circle-two').fadeIn();
             drawWhiteLine(650); // White line function call
 
-            if(scrolledY > 900) {
+            if(scrolledY > 1000) {
 
-              drawLineThree(641.594482421875); // line three function call
+              drawLineThree(243); // line three function call
 
               if(scrolledY >1080){
 
@@ -137,7 +143,7 @@ $(document).ready(function(){
 
                   // end of 30, 000, 000 animation
               } 
-              if(scrolledY > 1300) {
+              if(scrolledY > 1200) {
 
                 drawLineFour(1708.6005859375) // line four function call
 
@@ -168,7 +174,7 @@ $(document).ready(function(){
 
             } else {
 
-             $('.line-three').css({"stroke-dashoffset": 641.594482421875}); // line three function reset
+             $('.line-three').css({"stroke-dashoffset": 243}); // line three function reset
 
             }
 
@@ -196,7 +202,7 @@ $(document).ready(function(){
 
       flag=false;
       $('.circle-one').fadeOut();
-      $('.line-one').css({"stroke-dashoffset": 601.7965087890625}); //line one function reset
+      $('.line-one').css({"stroke-dashoffset": 863.447509765625}); //line one function reset
 
     }
 
@@ -205,7 +211,7 @@ $(document).ready(function(){
 
     $(window).bind('scroll', function(e){
      parallaxScroll();
-     console.log($(window).scrollTop());
+     // console.log($(window).scrollTop());
     });
 
 
