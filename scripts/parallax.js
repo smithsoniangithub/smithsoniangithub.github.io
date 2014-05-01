@@ -1,7 +1,29 @@
 //  RESPONSIVE BRANCH
 
 $(document).ready(function(){
- var flag = false;
+var windowWidth;
+var isSmall;
+var flag = false;
+
+window.onresize = function() {
+  windowWidth = $(window).width();
+  isSmall = false;
+  console.log(windowWidth);
+  if(isSmall == true){
+
+  }else {
+    if(windowWidth < 720){
+      isSmall=true;
+      console.log('test');
+    }
+  }
+}
+
+
+
+
+
+ 
   function drawLineOne (lineOneOffset) {
     var path = document.querySelector('.line-one');
     var pathLength = path.getTotalLength();  // 601.7965087890625
