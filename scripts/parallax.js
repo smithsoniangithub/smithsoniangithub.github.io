@@ -1,15 +1,12 @@
 //  RESPONSIVE BRANCH
 
-
-
-
 $(document).ready(function(){
  var flag = false;
   function drawLineOne (lineOneOffset) {
     var path = document.querySelector('.line-one');
     var pathLength = path.getTotalLength();  // 601.7965087890625
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = (lineOneOffset)-(scrolledY*6);
+    var zeroOffset = (lineOneOffset)-(scrolledY*5.72);
     
     
     $('.line-one').css({"stroke-dashoffset": zeroOffset});
