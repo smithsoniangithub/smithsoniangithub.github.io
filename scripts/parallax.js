@@ -13,7 +13,7 @@ $(document).ready(function(){
     
     
     $('.line-one').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY>400) {
+    if(scrolledY>430) {
       $('.line-one').css({"stroke-dashoffset": 0});
     }
   } 
@@ -22,10 +22,10 @@ $(document).ready(function(){
     var castlepath = document.querySelector('.castle-path');
     var castlePathLength = castlepath.getTotalLength();  // 1155.9654541015625
     var scrolledY = $(window).scrollTop();
-    var offset = (castleOffset) + (scrolledY*5.001);
+    var offset = (castleOffset) + (scrolledY*5.364);
   
     $('.castle-path').css({"stroke-dashoffset": offset});
-    if(scrolledY>693) {
+    if(scrolledY>645) {
       $('.castle-path').css({"stroke-dashoffset": 0});
     } 
 
@@ -35,11 +35,11 @@ $(document).ready(function(){
     var path = document.querySelector('.line-two');
     var pathLength = path.getTotalLength();  // 332.88720703125
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = lineTwoOffset+(scrolledY*1.9);
+    var zeroOffset = lineTwoOffset+(scrolledY*2.05);
     
     
     $('.line-two').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY>875) {
+    if(scrolledY>815) {
       $('.line-two').css({"stroke-dashoffset": 0});
     }
   }
@@ -48,11 +48,11 @@ $(document).ready(function(){
     var path = document.querySelector('.white-line');
     var pathLength = path.getTotalLength();  // 650
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = whiteLineOffset-(scrolledY*2.95);
+    var zeroOffset = whiteLineOffset-(scrolledY*3.175);
     
     
     $('.white-line').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY>1100) {
+    if(scrolledY>1030) {
       $('.white-line').css({"stroke-dashoffset": 0});
     }
 
@@ -62,11 +62,11 @@ $(document).ready(function(){
     var path = document.querySelector('.line-three');
     var pathLength = path.getTotalLength();  // 
     var scrolledY = $(window).scrollTop();
-    var zeroOffset = lineThreeOffset-(scrolledY);
+    var zeroOffset = lineThreeOffset-(scrolledY*3.148);
     
     
     $('.line-three').css({"stroke-dashoffset": zeroOffset});
-    if(scrolledY >1200) {
+    if(scrolledY >1160) {
       $('.line-three').css({"stroke-dashoffset": 0});
     }
 
@@ -98,31 +98,23 @@ $(document).ready(function(){
 			$('.circle-one').fadeIn();
       drawLineOne(863.447509765625); // line one function call
 
-      if(scrolledY > 460){
+      if(scrolledY > 430){
 
         drawCastle(1155.9654541015625); // draw castle function call
         // $('#windowTwo').addClass('fixed');
-        if(scrolledY > 693){
+
+        if(scrolledY > 645){
 
           drawLineTwo(332.88720703125); // line two function call
           
-          if (scrolledY > 880){
-            // $('.bg-2').css({'position':'fixed'});
-            // $('.bg-2').css({'top':'0'});
-            // $('.bg-2').css({'left':'0'});
-            // $('.bg-2').css({'right':'0'});
-            // $('.bg-2').css({'height':'100%'});
-            // $('.bg-2').css({'z-index':'500'});
+          if (scrolledY > 815){
 
             $('.circle-two').fadeIn();
             drawWhiteLine(650); // White line function call
 
-            if(scrolledY > 1000) {
+            if(scrolledY > 1080) {
 
               drawLineThree(243); // line three function call
-
-              if(scrolledY >1080){
-
               $('.annual-visitor').fadeIn(1000);
 
               if(flag==true){
@@ -143,7 +135,7 @@ $(document).ready(function(){
 
                   // end of 30, 000, 000 animation
               } 
-              if(scrolledY > 1200) {
+              if(scrolledY > 1160) {
 
                 drawLineFour(1708.6005859375) // line four function call
 
@@ -167,13 +159,10 @@ $(document).ready(function(){
                 $('.line-four').css({"stroke-dashoffset": 1708.6005859375}); //line four function reset
 
               } 
-            } else {
 
+
+            } else {
               $('.annual-visitor').fadeOut(1000);
-            }
-
-            } else {
-
              $('.line-three').css({"stroke-dashoffset": 243}); // line three function reset
 
             }

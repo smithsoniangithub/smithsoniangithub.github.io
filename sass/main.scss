@@ -75,7 +75,7 @@ body {
 	.castle-line {
 		position: absolute;
 		height: 100%;
-		// width: 1260px;
+		width: 1260px;
 		left: 0;
 		right: 0;
 		margin: 0 auto;
@@ -89,26 +89,23 @@ body {
 			position: absolute;
 			z-index: 10;
 			top: 700px;
-			left: 789px;
+			left: 612px;
 			display: none;
-			left: 0;
-			right: 0;
-			margin: 0 auto;
 		}
 
 		.circle-two {
 			position: absolute;
 			z-index: 10;
-			top: 1258px;
-			left: 138px;
-			// display: none;
+			top: 1235px;
+			left: 145px;
+			display: none;
 		}
 
 		#curve-line-1 {
 			position: absolute;
 			z-index: 10;
-			top: 702px;
-			left: 625px;			
+			top: 674px;
+			left: 620px;			
 			svg {
 				.line-one {
 					stroke-dasharray: 863.447509765625;
@@ -121,8 +118,8 @@ body {
 		#castle {
 			position: absolute;
 			z-index: 10;
-			top: 703px;
-			left: 338px;
+			top: 679px;
+			left: 351px;
 			svg {
 				.castle-path{
 					stroke-dashoffset:1155.9654541015625 ;
@@ -134,8 +131,8 @@ body {
 		#curve-line-2 {
 			position: absolute;
 			z-index: 10;
-			top: 1079px;
-			left: 123px;
+			top: 1054px;
+			left: 129px;
 			svg {
 				path {
 					stroke-dasharray:332.88720703125;
@@ -147,8 +144,8 @@ body {
 		#white-line {
 			position: absolute;
 			z-index: 10;
-			top: 1251px;
-			left: 164px;
+			top: 1229px;
+			left: 168px;
 			svg {
 				path {
 					stroke-dasharray: 650;
@@ -160,8 +157,8 @@ body {
 		#curve-line-3 {
 			position: absolute;
 			z-index: 10;
-			top: 1290px;
-			left: 145px;
+			top: 1265px;
+			left: 152px;
 			svg {
 				path{
 					stroke-dashoffset:243;
@@ -174,7 +171,7 @@ body {
 			position: absolute;
 			z-index: 10;
 			top: 1615px;
-			left: 29px;
+			left: 36px;
 			svg {
 				path {
 					stroke-dashoffset:1708.6005859375;
@@ -206,6 +203,7 @@ body {
 	}
 
 	.window-one-wrap {
+		z-index: 5;
 		position:relative;
 		.bg-1 {
 			background-image: url("/images/bg2-filter.png");
@@ -213,7 +211,6 @@ body {
 			background-repeat: no-repeat;
 			height: 100%;
 			width: 100%;
-			z-index: 15;
 			position: relative;
 
 			video {
@@ -265,10 +262,10 @@ body {
 	
 	.window-two-wrap {
 		position:relative;
+		z-index: 5;
 		.bg-2 {
 			height: 962px;
 			width: 100%;
-			z-index: 2;
 			position: relative;
 			background-image: url("/images/bg2-filter.png"), url("/images/bg2.jpg");
 			background-size: cover,cover;
@@ -289,7 +286,7 @@ body {
 
 			.annual-visitor-div {
 				@include center-div;
-				top: 49%;
+				top: 46%;
 
 				.annual-visitor {
 				background: rgba(0, 0, 0, 0.5);
@@ -322,71 +319,72 @@ body {
 		}
 	}
 
-	.bg-3 {
-		height: 942px;
-		width: 100%;
-		z-index: 2;
-		position: relative;
-		background-image: url('/images/bg3.jpg');
-		background-size:cover;
-		background-repeat: no-repeat;
+	.window-three-wrap {
+		position:relative;
+		z-index: 5;
+		.bg-3 {
+			height: 962px;
+			width: 100%;
+			z-index: 2;
+			position: relative;
+			background-image: url('/images/bg3.jpg');
+			background-size:cover;
+			background-repeat: no-repeat;
 
-		.take-survey-div {
-			@include center-div;
-			bottom: 3%;
-			.take-survey {
-				position:relative;
-				left: -50%;
-			}
-		}
-
-		.take-survey-bg {
-				@include take-survey-bg(100px, 1);
-			}
-		
-		.center-circle {
-			position:absolute;
-			right: 0;
-			left: 0;
-			top:13%;
-			margin: 0 auto;
-			height: 500px;
-			width: 500px;
-			background: rgba(0, 0, 0, 0.5);
-			border-radius:100%;
-			display: none;
-
-			.circle-con1 {
-				top: 20%;
-				position: absolute;
-				left: 0;
-				right: 0;
-				margin: 0 auto;
-				display: none;
+			.take-survey-div {
+				@include center-div;
+				bottom: 3%;
+				.take-survey {
+					position:relative;
+					left: -50%;
+				}
 			}
 
-			.circle-con2 {
-				top: 27%;
-				position: absolute;
-				left: 0;
-				right: 0;
-				margin: 0 auto;
-				display: none;
-			}
+			.take-survey-bg {
+					@include take-survey-bg(100px, 1);
+				}
 			
-			.circle-con3 {
-				top: 55%;
-				position: absolute;
-				left: 0;
+			.center-circle {
+				position:absolute;
 				right: 0;
+				left: 0;
+				top:13%;
 				margin: 0 auto;
+				height: 500px;
+				width: 500px;
+				background: rgba(0, 0, 0, 0.5);
+				border-radius:100%;
 				display: none;
+
+				.circle-con1 {
+					top: 20%;
+					position: absolute;
+					left: 0;
+					right: 0;
+					margin: 0 auto;
+					display: none;
+				}
+
+				.circle-con2 {
+					top: 27%;
+					position: absolute;
+					left: 0;
+					right: 0;
+					margin: 0 auto;
+					display: none;
+				}
+				
+				.circle-con3 {
+					top: 55%;
+					position: absolute;
+					left: 0;
+					right: 0;
+					margin: 0 auto;
+					display: none;
+				}
 			}
-
 		}
-
 	}
-
 }
 
 .fixed {
