@@ -224,12 +224,12 @@ body {
 				z-index: -100;
 			}
 
-			// .cover {
-			// 	z-index: -50;
-			// 	height: 100%;
-			// 	width: 100%;
-			// 	opacity: .5;
-			// }
+			.cover {
+				z-index: -50;
+				height: 100%;
+				width: 100%;
+				opacity: .5;
+			}
 
 			.logo-div {
 					@include center-div;
