@@ -15,6 +15,7 @@ window.onresize = function() {
     if(windowWidth < 720){
       isSmall=true;
       console.log('test');
+      $('.center-circle').fadeIn();
     }
   }
 }
@@ -160,16 +161,16 @@ window.onresize = function() {
 
                 if (scrolledY > 1700) {
 
-                  $('.center-circle').show('scale',{percent:100, origin:['200','0']},1000);
-                  $('.circle-con1').delay(800).fadeIn();
-                  $('.circle-con2').delay(800).fadeIn();
-                  $('.circle-con3').delay(800).fadeIn();
+                  // $('.center-circle').show('scale',{percent:100, origin:['200','0']},1000);
+                  // $('.circle-con1').delay(800).fadeIn();
+                  // $('.circle-con2').delay(800).fadeIn();
+                  // $('.circle-con3').delay(800).fadeIn();
 
                 } else {
-                  $('.circle-con1').hide();
-                  $('.circle-con2').hide();
-                  $('.circle-con3').hide();
-                  $('.center-circle').fadeOut();
+                  // $('.circle-con1').hide();
+                  // $('.circle-con2').hide();
+                  // $('.circle-con3').hide();
+                  // $('.center-circle').fadeOut();
 
                 }
 
