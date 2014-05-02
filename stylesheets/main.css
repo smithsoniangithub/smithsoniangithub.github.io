@@ -253,13 +253,6 @@ body {
   height: auto;
   z-index: -100;
 }
-/* line 227, ../sass/main.scss */
-.wrapper .window-one-wrap .bg-1 .cover {
-  z-index: -50;
-  height: 100%;
-  width: 100%;
-  opacity: .5;
-}
 /* line 234, ../sass/main.scss */
 .wrapper .window-one-wrap .bg-1 .logo-div {
   position: absolute;
