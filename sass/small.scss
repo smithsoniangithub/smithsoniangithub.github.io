@@ -201,6 +201,23 @@ body {
 		}
 	}
 
+	.take-survey-div {
+		@include center-div;
+		z-index: 250;
+		display: none;
+		.take-survey {
+			position: fixed;
+			left: 0;
+			bottom: 5%;
+			right: 0;
+			margin: 0 auto;
+		}
+	}
+
+	.take-survey-bg {
+		@include take-survey-bg(100px, 1);
+	}
+
 	.window-one-wrap {
 		z-index: 5;
 		position:relative;
@@ -231,7 +248,7 @@ body {
 			}
 
 			.logo-div {
-					@include center-div;
+					@include center-div(absolute);
 					top: 15%;
 					.logo {
 						position: relative;
@@ -240,7 +257,7 @@ body {
 				}
 
 			.desc-div {
-				@include center-div;
+				@include center-div(absolute);
 				bottom: 5%;
 				.desc {
 					position:relative;
@@ -270,21 +287,9 @@ body {
 			background-size: cover, cover;
 			background-repeat: no-repeat, no-repeat;
 
-			.take-survey-div {
-				@include center-div;
-				bottom: 3%;
-				.take-survey {
-					position:relative;
-					left: -50%;
-				}
-			}
-
-			.take-survey-bg {
-				@include take-survey-bg(100px, 1);
-			}
 
 			.annual-visitor-div {
-				@include center-div;
+				@include center-div(absolute);
 				top: 46%;
 
 				.annual-visitor {
@@ -329,19 +334,6 @@ body {
 			background-image: url('/images/bg3.jpg');
 			background-size:cover;
 			background-repeat: no-repeat;
-
-			.take-survey-div {
-				@include center-div;
-				bottom: 3%;
-				.take-survey {
-					position:relative;
-					left: -50%;
-				}
-			}
-
-			.take-survey-bg {
-					@include take-survey-bg(100px, 1);
-				}
 			
 			.center-circle {
 				position:absolute;
@@ -353,7 +345,7 @@ body {
 				width: 500px;
 				background: rgba(0, 0, 0, 0.5);
 				border-radius:100%;
-				// display: none;
+				display: none;
 
 				.circle-con1 {
 					top: 20%;
@@ -386,13 +378,6 @@ body {
 	}
 }
 
-.fixed {
-	position:fixed !important;
-	top:0;
-	left: 0;
-	right: 0;
-	z-index:500;
-}
 
 // .parallax-nav {
 // 	.active {
