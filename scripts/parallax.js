@@ -124,7 +124,7 @@ window.onresize = function() {
     
     // footer show/hide
     if(scrolledY > 100) {
-      
+
       $('.take-survey-bg').show('blind');
       $('.take-survey-div').show();
       $('.take-survey-one').addClass('take-survey-active');
@@ -156,7 +156,6 @@ window.onresize = function() {
       if(scrolledY > 430){
 
         drawCastle(1155.9654541015625); // draw castle function call
-        // $('#windowTwo').addClass('fixed');
 
         if(scrolledY > 645){
 
