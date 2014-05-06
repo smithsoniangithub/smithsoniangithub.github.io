@@ -4,11 +4,13 @@ $(document).ready(function(){
 var windowWidth;
 var windowHeight;
 var docuHeight;
+var docuWidth;
 var isSmall;
 var flag = false;
 
 window.onresize = function() {
   windowWidth = $(window).width();
+  docuWidth = $(document).width();
   if(windowWidth < 720) {
     $('.cover').css('height', '100%');
     console.log('720px');
@@ -23,7 +25,10 @@ window.onresize = function() {
     $('#curve-line-1').css('top', windowHeight-5);
     $('#castle').css('top', windowHeight);
     $('#curve-line-2').css('top', windowHeight+375);
-    // $('.castle-line').css('height', docuHeight);
+    $('.circle-two').css('top', windowHeight+557);
+    $('#white-line').css('top', windowHeight+550);
+    $('#curve-line-3').css('top', windowHeight+586);
+    $('#third-page-line').css('top', windowHeight+937);
     console.log(windowHeight);
   }
 
