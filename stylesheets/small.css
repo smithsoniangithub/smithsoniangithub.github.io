@@ -1,94 +1,422 @@
-/*
-Syntax error: Mixin center-div is missing argument $pos.
-        on line 205 of /Users/BryanGamotea/BryanProjects/paralax-sample/sample/sass/small.scss, in `center-div'
-        from line 205 of /Users/BryanGamotea/BryanProjects/paralax-sample/sample/sass/small.scss
-
-Backtrace:
-/Users/BryanGamotea/BryanProjects/paralax-sample/sample/sass/small.scss:205:in `center-div'
-/Users/BryanGamotea/BryanProjects/paralax-sample/sample/sass/small.scss:205
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:59:in `block in perform_arguments'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:52:in `zip'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:52:in `perform_arguments'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:263:in `visit_mixin'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/tree/root_node.rb:20:in `render'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/engine.rb:315:in `_render'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/sass-3.2.13/lib/sass/engine.rb:262:in `render'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:147:in `recompile'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:30:in `block in temporary_multipath_handler'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:27:in `each'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:27:in `temporary_multipath_handler'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:17:in `block (2 levels) in run'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:16:in `each'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:16:in `block in run'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/rb-fsevent-0.9.4/lib/rb-fsevent/fsevent.rb:45:in `call'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/rb-fsevent-0.9.4/lib/rb-fsevent/fsevent.rb:45:in `run'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/rbfsevent.rb:20:in `run'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/watch_project.rb:87:in `perform'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/bin/compass:23:in `load'
-/Users/BryanGamotea/.rbenv/versions/1.9.3-p0/bin/compass:23:in `<main>'
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Mixin center-div is missing argument $pos.\A         on line 205 of /Users/BryanGamotea/BryanProjects/paralax-sample/sample/sass/small.scss, in `center-div'\A         from line 205 of /Users/BryanGamotea/BryanProjects/paralax-sample/sample/sass/small.scss"; }
+/* line 23, ../sass/small.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 34, ../sass/small.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 37, ../sass/small.scss */
+body {
+  line-height: 1;
+}
+
+/* line 40, ../sass/small.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 43, ../sass/small.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 47, ../sass/small.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 51, ../sass/small.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 57, ../sass/small.scss */
+body {
+  background-color: black;
+  line-height: 2;
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 63, ../sass/small.scss */
+.wrapper {
+  position: relative;
+}
+/* line 66, ../sass/small.scss */
+.wrapper .tool-one {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  background-color: #0bb3ff;
+  color: white;
+  z-index: 10;
+  line-height: 1;
+  position: fixed;
+  font-weight: 100;
+  font-size: 15px;
+  right: 120px;
+  top: 212px;
+  display: none;
+}
+/* line 70, ../sass/small.scss */
+.wrapper .tool-two {
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  background-color: #0bb3ff;
+  color: white;
+  z-index: 10;
+  line-height: 1;
+  position: fixed;
+  font-weight: 100;
+  font-size: 15px;
+  right: 120px;
+  top: 245px;
+  display: none;
+}
+/* line 74, ../sass/small.scss */
+.wrapper .castle-line {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 999;
+}
+/* line 83, ../sass/small.scss */
+.wrapper .castle-line .blue-circle {
+  display: none;
+}
+/* line 87, ../sass/small.scss */
+.wrapper .castle-line .circle-one {
+  position: absolute;
+  z-index: 10;
+  left: 612px;
+  display: none;
+}
+/* line 95, ../sass/small.scss */
+.wrapper .castle-line .circle-two {
+  position: absolute;
+  z-index: 10;
+  left: 145px;
+  display: none;
+}
+/* line 103, ../sass/small.scss */
+.wrapper .castle-line #curve-line-1 {
+  position: absolute;
+  z-index: 10;
+  left: 620px;
+}
+/* line 109, ../sass/small.scss */
+.wrapper .castle-line #curve-line-1 svg .line-one {
+  stroke-dasharray: 863.447509765625;
+  stroke-dashoffset: 863.447509765625;
+}
+/* line 117, ../sass/small.scss */
+.wrapper .castle-line #castle {
+  position: absolute;
+  z-index: 10;
+  left: 351px;
+}
+/* line 123, ../sass/small.scss */
+.wrapper .castle-line #castle svg .castle-path {
+  stroke-dashoffset: 1155.96545;
+  stroke-dasharray: 1155.96545;
+}
+/* line 130, ../sass/small.scss */
+.wrapper .castle-line #curve-line-2 {
+  position: absolute;
+  z-index: 10;
+  left: 129px;
+}
+/* line 136, ../sass/small.scss */
+.wrapper .castle-line #curve-line-2 svg path {
+  stroke-dasharray: 332.88720703125;
+  stroke-dashoffset: 332.88720703125;
+}
+/* line 143, ../sass/small.scss */
+.wrapper .castle-line #white-line {
+  position: absolute;
+  z-index: 10;
+  left: 168px;
+}
+/* line 149, ../sass/small.scss */
+.wrapper .castle-line #white-line svg path {
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
+}
+/* line 156, ../sass/small.scss */
+.wrapper .castle-line #curve-line-3 {
+  position: absolute;
+  z-index: 10;
+  left: 152px;
+}
+/* line 162, ../sass/small.scss */
+.wrapper .castle-line #curve-line-3 svg path {
+  stroke-dashoffset: 243;
+  stroke-dasharray: 243;
+}
+/* line 169, ../sass/small.scss */
+.wrapper .castle-line #third-page-line {
+  position: absolute;
+  z-index: 10;
+  left: 36px;
+}
+/* line 175, ../sass/small.scss */
+.wrapper .castle-line #third-page-line svg path {
+  stroke-dashoffset: 1708.6005859375;
+  stroke-dasharray: 1708.6005859375;
+}
+/* line 184, ../sass/small.scss */
+.wrapper nav {
+  position: fixed;
+  right: 70px;
+  top: 30%;
+  z-index: 9999;
+}
+/* line 189, ../sass/small.scss */
+.wrapper nav ul {
+  padding: 0px;
+}
+/* line 191, ../sass/small.scss */
+.wrapper nav ul li {
+  list-style: none;
+}
+/* line 193, ../sass/small.scss */
+.wrapper nav ul li img {
+  height: 17px;
+}
+/* line 196, ../sass/small.scss */
+.wrapper nav ul li img:hover {
+  border: 2px solid white;
+  border-radius: 100%;
+}
+/* line 204, ../sass/small.scss */
+.wrapper .take-survey-div {
+  position: fixed;
+  left: 50%;
+  z-index: 11;
+  z-index: 999;
+  display: none;
+}
+/* line 208, ../sass/small.scss */
+.wrapper .take-survey-div .take-survey {
+  display: none;
+}
+/* line 211, ../sass/small.scss */
+.wrapper .take-survey-div .take-survey-active {
+  position: fixed;
+  left: 0;
+  bottom: 5%;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+}
+/* line 221, ../sass/small.scss */
+.wrapper .take-survey-bg {
+  position: fixed;
+  width: 100%;
+  z-index: 900;
+  height: 100px;
+  bottom: 0;
+  opacity: 1;
+  display: none;
+}
+/* line 225, ../sass/small.scss */
+.wrapper .window-one-wrap {
+  z-index: 5;
+  position: relative;
+}
+/* line 228, ../sass/small.scss */
+.wrapper .window-one-wrap .bg-1 {
+  background-image: url("/images/bg2-filter.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+/* line 236, ../sass/small.scss */
+.wrapper .window-one-wrap .bg-1 video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+/* line 247, ../sass/small.scss */
+.wrapper .window-one-wrap .bg-1 .cover {
+  z-index: -50;
+  height: 100%;
+  width: 100%;
+  opacity: .5;
+}
+/* line 254, ../sass/small.scss */
+.wrapper .window-one-wrap .bg-1 .logo-div {
+  position: absolute;
+  left: 50%;
+  z-index: 11;
+  top: 15%;
+}
+/* line 257, ../sass/small.scss */
+.wrapper .window-one-wrap .bg-1 .logo-div .logo {
+  position: relative;
+  left: -50%;
+}
+/* line 263, ../sass/small.scss */
+.wrapper .window-one-wrap .bg-1 .desc-div {
+  position: absolute;
+  left: 50%;
+  z-index: 11;
+  bottom: 5%;
+}
+/* line 266, ../sass/small.scss */
+.wrapper .window-one-wrap .bg-1 .desc-div .desc {
+  position: relative;
+  left: -50%;
+}
+/* line 272, ../sass/small.scss */
+.wrapper .window-one-wrap .bg-1 .desc-bg {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  height: 190px;
+  bottom: 0;
+  opacity: .7;
+}
+/* line 283, ../sass/small.scss */
+.wrapper .window-two-wrap {
+  position: relative;
+  z-index: 5;
+  height: 100%;
+}
+/* line 287, ../sass/small.scss */
+.wrapper .window-two-wrap .bg-2 {
+  height: 677px;
+  position: relative;
+  background-image: url("/images/bg2-filter.png"), url("/images/bg2.jpg");
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+/* line 295, ../sass/small.scss */
+.wrapper .window-two-wrap .bg-2 .annual-visitor-div {
+  position: absolute;
+  left: 50%;
+  z-index: 11;
+  top: 46%;
+}
+/* line 299, ../sass/small.scss */
+.wrapper .window-two-wrap .bg-2 .annual-visitor-div .annual-visitor {
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  color: white;
+  text-align: center;
+  width: 450px;
+  padding-bottom: 25px;
+  line-height: 1.5;
+  left: -53%;
+  display: none;
+}
+/* line 310, ../sass/small.scss */
+.wrapper .window-two-wrap .bg-2 .annual-visitor-div .annual-visitor .number {
+  font-size: 60px;
+  font-weight: bolder;
+  color: #ffd500;
+}
+/* line 316, ../sass/small.scss */
+.wrapper .window-two-wrap .bg-2 .annual-visitor-div .annual-visitor .sub-con {
+  font-size: 40px;
+  font-weight: 100;
+}
+/* line 321, ../sass/small.scss */
+.wrapper .window-two-wrap .bg-2 .annual-visitor-div .annual-visitor .sub-con-two {
+  font-size: 25px;
+  font-weight: 100;
+}
+/* line 330, ../sass/small.scss */
+.wrapper .window-three-wrap {
+  position: relative;
+  z-index: 5;
+  height: 100%;
+}
+/* line 334, ../sass/small.scss */
+.wrapper .window-three-wrap .bg-3 {
+  height: 677px;
+  z-index: 2;
+  position: relative;
+  background-image: url("/images/bg3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* line 342, ../sass/small.scss */
+.wrapper .window-three-wrap .bg-3 .center-circle {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 13%;
+  margin: 0 auto;
+  height: 500px;
+  width: 500px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  display: none;
+}
+/* line 354, ../sass/small.scss */
+.wrapper .window-three-wrap .bg-3 .center-circle .circle-con1 {
+  top: 20%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: none;
+}
+/* line 363, ../sass/small.scss */
+.wrapper .window-three-wrap .bg-3 .center-circle .circle-con2 {
+  top: 27%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: none;
+}
+/* line 372, ../sass/small.scss */
+.wrapper .window-three-wrap .bg-3 .center-circle .circle-con3 {
+  top: 55%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: none;
+}

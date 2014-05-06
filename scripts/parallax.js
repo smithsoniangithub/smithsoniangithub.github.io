@@ -121,13 +121,36 @@ window.onresize = function() {
 
 	function parallaxScroll(){
 		var scrolledY = $(window).scrollTop();
-    // $('.castle-line').css('top',(0-(scrolledY*.15)));
-    // $('.annual-visitor').css('top',(0-(scrolledY*.15)));
+    
+    // footer show/hide
+    if(scrolledY > 100) {
+      
+      $('.take-survey-bg').show('blind');
+      $('.take-survey-div').show();
+      $('.take-survey-one').addClass('take-survey-active');
+      if (scrolledY > 1070) {
+        
+        $('.take-survey-two').addClass('take-survey-active');
+      
+      } else {
+        
+        $('.take-survey-two').removeClass('take-survey-active');
+      
+      }
+    
+    } else {
+
+      $('.take-survey-one').removeClass('take-survey-active');
+      $('.take-survey-bg').fadeOut('blind');
+      $('.take-survey-div').fadeOut('blind');
+    }
+
+
+    // lines animations
 		if(scrolledY > 300) {
 
 			$('.circle-one').fadeIn();
-      $('.take-survey-bg').show('blind');
-      $('.take-survey-div').fadeIn();
+      
       drawLineOne(863.447509765625); // line one function call
 
       if(scrolledY > 430){
@@ -224,8 +247,6 @@ window.onresize = function() {
 
       flag=false;
       $('.circle-one').fadeOut();
-      $('.take-survey-bg').fadeOut('blind');
-      $('.take-survey-div').fadeOut('blind');
       $('.line-one').css("stroke-dashoffset", 863.447509765625); //line one function reset
 
     }
@@ -235,7 +256,7 @@ window.onresize = function() {
 
     $(window).bind('scroll', function(e){
      parallaxScroll();
-     // console.log($(window).scrollTop());
+     console.log($(window).scrollTop());
     });
 
 

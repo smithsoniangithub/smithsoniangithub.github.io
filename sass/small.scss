@@ -202,15 +202,19 @@ body {
 	}
 
 	.take-survey-div {
-		@include center-div;
-		z-index: 250;
+		@include center-div(fixed);
+		z-index: 999;
 		display: none;
 		.take-survey {
+			display: none;
+		}
+		.take-survey-active {
 			position: fixed;
 			left: 0;
 			bottom: 5%;
 			right: 0;
 			margin: 0 auto;
+			display: block;
 		}
 	}
 
