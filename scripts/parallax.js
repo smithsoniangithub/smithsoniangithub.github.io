@@ -121,7 +121,8 @@ window.onresize = function() {
 
 	function parallaxScroll(){
 		var scrolledY = $(window).scrollTop();
-
+    // $('.castle-line').css('top',(0-(scrolledY*.15)));
+    // $('.annual-visitor').css('top',(0-(scrolledY*.15)));
 		if(scrolledY > 300) {
 
 			$('.circle-one').fadeIn();
