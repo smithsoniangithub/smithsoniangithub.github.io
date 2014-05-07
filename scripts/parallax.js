@@ -11,6 +11,7 @@ var flag = false;
 window.onresize = function() {
   windowWidth = $(window).width();
   docuWidth = $(document).width();
+  if(windowWidth < 720) {
     $('.cover').css('height', '100%');
 
     // $('.window-one-wrap').css('height', windowHeight);
@@ -23,7 +24,7 @@ window.onresize = function() {
     $('.bg3').css('height', '100%');
     $('.bg4').css('height', '100%');
     console.log('720px');
-  // } 
+  } 
 }
 
   window.onload = function() {
@@ -134,7 +135,7 @@ window.onresize = function() {
 		var scrolledY = $(window).scrollTop();
     
     // footer show/hide
-    if(scrolledY > 100) {
+    if(scrolledY > 900) {
 
       $('.take-survey-bg').show('blind');
       $('.take-survey-div').show();
@@ -213,10 +214,10 @@ window.onresize = function() {
 
                 } else {
 
-                  $('.circle-con1').hide();
-                  $('.circle-con2').hide();
-                  $('.circle-con3').hide();
-                  $('.center-circle').fadeOut();
+                  // $('.circle-con1').hide();
+                  // $('.circle-con2').hide();
+                  // $('.circle-con3').hide();
+                  // $('.center-circle').fadeOut();
 
                 }
 
@@ -228,7 +229,7 @@ window.onresize = function() {
 
 
             } else {
-              $('.annual-visitor').fadeOut(1000);
+              // $('.annual-visitor').fadeOut(1000);
              $('.line-three').css("stroke-dashoffset", 243); // line three function reset
 
             }
@@ -257,7 +258,14 @@ window.onresize = function() {
 
       flag=false;
       $('.circle-one').fadeOut();
+      $('.annual-visitor').fadeOut(1000);
       $('.line-one').css("stroke-dashoffset", 863.447509765625); //line one function reset
+
+      
+      $('.circle-con1').hide();
+      $('.circle-con2').hide();
+      $('.circle-con3').hide();
+      $('.center-circle').fadeOut();
 
     }
 
@@ -266,7 +274,7 @@ window.onresize = function() {
 
     $(window).bind('scroll', function(e){
      parallaxScroll();
-     // console.log($(window).scrollTop());
+     console.log($(window).scrollTop());
     });
 
 
