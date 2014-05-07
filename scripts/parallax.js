@@ -137,7 +137,7 @@ window.onresize = function() {
     // footer show/hide
     if(scrolledY > 900) {
 
-      $('.take-survey-bg').show('blind');
+      $('.take-survey-bg').fadeIn();
       $('.take-survey-div').show();
       $('.take-survey-one').addClass('take-survey-active');
       if (scrolledY > 1070) {
@@ -214,10 +214,10 @@ window.onresize = function() {
 
                 } else {
 
-                  // $('.circle-con1').hide();
-                  // $('.circle-con2').hide();
-                  // $('.circle-con3').hide();
-                  // $('.center-circle').fadeOut();
+                  $('.circle-con1').hide();
+                  $('.circle-con2').hide();
+                  $('.circle-con3').hide();
+                  $('.center-circle').fadeOut();
 
                 }
 
@@ -262,10 +262,10 @@ window.onresize = function() {
       $('.line-one').css("stroke-dashoffset", 863.447509765625); //line one function reset
 
       
-      $('.circle-con1').hide();
-      $('.circle-con2').hide();
-      $('.circle-con3').hide();
-      $('.center-circle').fadeOut();
+      // $('.circle-con1').hide();
+      // $('.circle-con2').hide();
+      // $('.circle-con3').hide();
+      // $('.center-circle').fadeOut();
 
     }
 
