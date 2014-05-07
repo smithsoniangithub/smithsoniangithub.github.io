@@ -420,3 +420,18 @@ body {
   margin: 0 auto;
   display: none;
 }
+/* line 384, ../sass/small.scss */
+.wrapper .window-four-wrap {
+  position: relative;
+  z-index: 5;
+  height: 100%;
+}
+/* line 388, ../sass/small.scss */
+.wrapper .window-four-wrap .bg-4 {
+  height: 677px;
+  z-index: 2;
+  position: relative;
+  background-image: url("/images/bg2-filter.png"), url("/images/bg4.jpg");
+  background-size: cover,cover;
+  background-repeat: no-repeat, no-repeat;
+}

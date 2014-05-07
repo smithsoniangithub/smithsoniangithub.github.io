@@ -13,6 +13,16 @@ window.onresize = function() {
   docuWidth = $(document).width();
   if(windowWidth < 720) {
     $('.cover').css('height', '100%');
+
+    $('.window-one-wrap').css('height', windowHeight);
+    $('.window-two-wrap').css('height', windowHeight);
+    $('.window-three-wrap').css('height', windowHeight);
+    $('.window-four-wrap').css('height', windowHeight);
+
+    $('.bg1').css('height', '100%');
+    $('.bg2').css('height', '100%');
+    $('.bg3').css('height', '100%');
+    $('.bg4').css('height', '100%');
     console.log('720px');
   }
 }
@@ -20,6 +30,7 @@ window.onresize = function() {
   window.onload = function() {
     windowHeight = $(window).height();
     docuHeight = $(document).height();
+    docuWidth = $(document).width();
     $('.cover').css('height', windowHeight);
     $('.circle-one').css('top', windowHeight+21);
     $('#curve-line-1').css('top', windowHeight-5);
@@ -29,6 +40,7 @@ window.onresize = function() {
     $('#white-line').css('top', windowHeight+550);
     $('#curve-line-3').css('top', windowHeight+586);
     $('#third-page-line').css('top', windowHeight+937);
+
     console.log(windowHeight);
   }
 
@@ -255,7 +267,7 @@ window.onresize = function() {
 
     $(window).bind('scroll', function(e){
      parallaxScroll();
-     console.log($(window).scrollTop());
+     // console.log($(window).scrollTop());
     });
 
 
