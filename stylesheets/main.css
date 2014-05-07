@@ -138,89 +138,90 @@ body {
 }
 /* line 110, ../sass/main.scss */
 .wrapper .castle-line #curve-line-1 svg .line-one {
+  width: 100%;
   stroke-dasharray: 863.447509765625;
   stroke-dashoffset: 863.447509765625;
 }
-/* line 118, ../sass/main.scss */
+/* line 119, ../sass/main.scss */
 .wrapper .castle-line #castle {
   position: absolute;
   z-index: 10;
   left: 351px;
 }
-/* line 124, ../sass/main.scss */
+/* line 125, ../sass/main.scss */
 .wrapper .castle-line #castle svg .castle-path {
   stroke-dashoffset: 1155.96545;
   stroke-dasharray: 1155.96545;
 }
-/* line 131, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 .wrapper .castle-line #curve-line-2 {
   position: absolute;
   z-index: 10;
   left: 129px;
 }
-/* line 137, ../sass/main.scss */
+/* line 138, ../sass/main.scss */
 .wrapper .castle-line #curve-line-2 svg path {
   stroke-dasharray: 332.88720703125;
   stroke-dashoffset: 332.88720703125;
 }
-/* line 144, ../sass/main.scss */
+/* line 145, ../sass/main.scss */
 .wrapper .castle-line #white-line {
   position: absolute;
   z-index: 10;
   left: 168px;
 }
-/* line 150, ../sass/main.scss */
+/* line 151, ../sass/main.scss */
 .wrapper .castle-line #white-line svg path {
   stroke-dasharray: 650;
   stroke-dashoffset: 650;
 }
-/* line 157, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
 .wrapper .castle-line #curve-line-3 {
   position: absolute;
   z-index: 10;
   left: 152px;
 }
-/* line 163, ../sass/main.scss */
+/* line 164, ../sass/main.scss */
 .wrapper .castle-line #curve-line-3 svg path {
   stroke-dashoffset: 243;
   stroke-dasharray: 243;
 }
-/* line 170, ../sass/main.scss */
+/* line 171, ../sass/main.scss */
 .wrapper .castle-line #third-page-line {
   position: absolute;
   z-index: 10;
   left: 36px;
 }
-/* line 176, ../sass/main.scss */
+/* line 177, ../sass/main.scss */
 .wrapper .castle-line #third-page-line svg path {
   stroke-dashoffset: 1708.6005859375;
   stroke-dasharray: 1708.6005859375;
 }
-/* line 185, ../sass/main.scss */
+/* line 186, ../sass/main.scss */
 .wrapper nav {
   position: fixed;
   right: 70px;
   top: 30%;
   z-index: 9999;
 }
-/* line 190, ../sass/main.scss */
+/* line 191, ../sass/main.scss */
 .wrapper nav ul {
   padding: 0px;
 }
-/* line 192, ../sass/main.scss */
+/* line 193, ../sass/main.scss */
 .wrapper nav ul li {
   list-style: none;
 }
-/* line 194, ../sass/main.scss */
+/* line 195, ../sass/main.scss */
 .wrapper nav ul li img {
   height: 17px;
 }
-/* line 197, ../sass/main.scss */
+/* line 198, ../sass/main.scss */
 .wrapper nav ul li img:hover {
   border: 2px solid white;
   border-radius: 100%;
 }
-/* line 205, ../sass/main.scss */
+/* line 206, ../sass/main.scss */
 .wrapper .take-survey-div {
   position: fixed;
   left: 50%;
@@ -228,11 +229,11 @@ body {
   z-index: 999;
   display: none;
 }
-/* line 209, ../sass/main.scss */
+/* line 210, ../sass/main.scss */
 .wrapper .take-survey-div .take-survey {
   display: none;
 }
-/* line 212, ../sass/main.scss */
+/* line 213, ../sass/main.scss */
 .wrapper .take-survey-div .take-survey-active {
   position: fixed;
   left: 0;
@@ -241,7 +242,7 @@ body {
   margin: 0 auto;
   display: block;
 }
-/* line 222, ../sass/main.scss */
+/* line 223, ../sass/main.scss */
 .wrapper .take-survey-bg {
   position: fixed;
   width: 100%;
@@ -251,13 +252,13 @@ body {
   opacity: 1;
   display: none;
 }
-/* line 226, ../sass/main.scss */
+/* line 227, ../sass/main.scss */
 .wrapper .window-one-wrap {
   z-index: 5;
   position: relative;
   height: 100%;
 }
-/* line 230, ../sass/main.scss */
+/* line 231, ../sass/main.scss */
 .wrapper .window-one-wrap .bg-1 {
   background-image: url("/images/bg2-filter.png");
   background-size: cover;
@@ -266,7 +267,7 @@ body {
   width: 100%;
   position: relative;
 }
-/* line 238, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 .wrapper .window-one-wrap .bg-1 video {
   position: absolute;
   right: 0;
@@ -277,38 +278,38 @@ body {
   height: auto;
   z-index: -100;
 }
-/* line 249, ../sass/main.scss */
+/* line 250, ../sass/main.scss */
 .wrapper .window-one-wrap .bg-1 .cover {
   z-index: -50;
   height: 672px;
   width: 100%;
   opacity: .5;
 }
-/* line 256, ../sass/main.scss */
+/* line 257, ../sass/main.scss */
 .wrapper .window-one-wrap .bg-1 .logo-div {
   position: absolute;
   left: 50%;
   z-index: 11;
   top: 15%;
 }
-/* line 259, ../sass/main.scss */
+/* line 260, ../sass/main.scss */
 .wrapper .window-one-wrap .bg-1 .logo-div .logo {
   position: relative;
   left: -50%;
 }
-/* line 265, ../sass/main.scss */
+/* line 266, ../sass/main.scss */
 .wrapper .window-one-wrap .bg-1 .desc-div {
   position: absolute;
   left: 50%;
   z-index: 11;
   bottom: 5%;
 }
-/* line 268, ../sass/main.scss */
+/* line 269, ../sass/main.scss */
 .wrapper .window-one-wrap .bg-1 .desc-div .desc {
   position: relative;
   left: -50%;
 }
-/* line 274, ../sass/main.scss */
+/* line 275, ../sass/main.scss */
 .wrapper .window-one-wrap .bg-1 .desc-bg {
   position: absolute;
   width: 100%;
@@ -317,12 +318,12 @@ body {
   bottom: 0;
   opacity: .7;
 }
-/* line 285, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 .wrapper .window-two-wrap {
   position: relative;
   z-index: 5;
 }
-/* line 288, ../sass/main.scss */
+/* line 289, ../sass/main.scss */
 .wrapper .window-two-wrap .bg-2 {
   height: 962px;
   width: 100%;
@@ -332,14 +333,14 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-position: center;
 }
-/* line 297, ../sass/main.scss */
+/* line 298, ../sass/main.scss */
 .wrapper .window-two-wrap .bg-2 .annual-visitor-div {
   position: absolute;
   left: 50%;
   z-index: 11;
   top: 46%;
 }
-/* line 301, ../sass/main.scss */
+/* line 302, ../sass/main.scss */
 .wrapper .window-two-wrap .bg-2 .annual-visitor-div .annual-visitor {
   background: rgba(0, 0, 0, 0.5);
   position: relative;
@@ -351,28 +352,28 @@ body {
   left: -53%;
   display: none;
 }
-/* line 312, ../sass/main.scss */
+/* line 313, ../sass/main.scss */
 .wrapper .window-two-wrap .bg-2 .annual-visitor-div .annual-visitor .number {
   font-size: 85px;
   font-weight: bolder;
   color: #ffd500;
 }
-/* line 318, ../sass/main.scss */
+/* line 319, ../sass/main.scss */
 .wrapper .window-two-wrap .bg-2 .annual-visitor-div .annual-visitor .sub-con {
   font-size: 45px;
   font-weight: 100;
 }
-/* line 323, ../sass/main.scss */
+/* line 324, ../sass/main.scss */
 .wrapper .window-two-wrap .bg-2 .annual-visitor-div .annual-visitor .sub-con-two {
   font-size: 25px;
   font-weight: 100;
 }
-/* line 332, ../sass/main.scss */
+/* line 333, ../sass/main.scss */
 .wrapper .window-three-wrap {
   position: relative;
   z-index: 5;
 }
-/* line 335, ../sass/main.scss */
+/* line 336, ../sass/main.scss */
 .wrapper .window-three-wrap .bg-3 {
   height: 962px;
   width: 100%;
@@ -382,7 +383,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 344, ../sass/main.scss */
+/* line 345, ../sass/main.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle {
   position: absolute;
   right: 0;
@@ -395,7 +396,7 @@ body {
   border-radius: 100%;
   display: none;
 }
-/* line 356, ../sass/main.scss */
+/* line 357, ../sass/main.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle .circle-con1 {
   top: 20%;
   position: absolute;
@@ -404,7 +405,7 @@ body {
   margin: 0 auto;
   display: none;
 }
-/* line 365, ../sass/main.scss */
+/* line 366, ../sass/main.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle .circle-con2 {
   top: 27%;
   position: absolute;
@@ -413,7 +414,7 @@ body {
   margin: 0 auto;
   display: none;
 }
-/* line 374, ../sass/main.scss */
+/* line 375, ../sass/main.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle .circle-con3 {
   top: 55%;
   position: absolute;
@@ -422,12 +423,12 @@ body {
   margin: 0 auto;
   display: none;
 }
-/* line 386, ../sass/main.scss */
+/* line 387, ../sass/main.scss */
 .wrapper .window-four-wrap {
   position: relative;
   z-index: 5;
 }
-/* line 389, ../sass/main.scss */
+/* line 390, ../sass/main.scss */
 .wrapper .window-four-wrap .bg-4 {
   height: 962px;
   width: 100%;

@@ -11,20 +11,19 @@ var flag = false;
 window.onresize = function() {
   windowWidth = $(window).width();
   docuWidth = $(document).width();
-  if(windowWidth < 720) {
     $('.cover').css('height', '100%');
 
-    $('.window-one-wrap').css('height', windowHeight);
+    // $('.window-one-wrap').css('height', windowHeight);
     $('.window-two-wrap').css('height', windowHeight);
     $('.window-three-wrap').css('height', windowHeight);
     $('.window-four-wrap').css('height', windowHeight);
 
-    $('.bg1').css('height', '100%');
+    // $('.bg1').css('height', '100%');
     $('.bg2').css('height', '100%');
     $('.bg3').css('height', '100%');
     $('.bg4').css('height', '100%');
     console.log('720px');
-  }
+  // } 
 }
 
   window.onload = function() {
