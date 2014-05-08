@@ -84,7 +84,7 @@ body {
 		.circle-one {
 			position: absolute;
 			z-index: 10;
-			left: 625px;
+			left: 450px;
 			// left:0;
 			// right: 0;
 			// margin: 0 auto;
@@ -94,16 +94,17 @@ body {
 		.circle-two {
 			position: absolute;
 			z-index: 10;	
-			left: 145px;
+			top:1176px !important;
+			left: 15px;
 			display: none;
 		}
 
 		#curve-line-1 {
 			position: absolute;
 			z-index: 10;
-			left: 625px;
-			height: 390px;
-			width: 470px;			
+			left: 450px;
+			height: 370px;
+			width: 445px;			
 			svg {
 				.line-one {
 					stroke-dasharray: 1204.9405517578125;
@@ -116,9 +117,9 @@ body {
 		#castle {
 			position: absolute;
 			z-index: 10;
-			left: 372px;
-			height: 446px;
-			width: 507px;
+			left: 197px;
+			height: 415px;
+			width: 495px;
 			svg {
 				.castle-path{
 					stroke-dashoffset:1155.9654541015625 ;
@@ -130,9 +131,10 @@ body {
 		#curve-line-2 {
 			position: absolute;
 			z-index: 10;
-			left: 131px;
+			top:988px !important;
+			left: 3px;
 			height: 270px;
-			width: 326px;
+			width: 276px;
 			svg {
 				path {
 					stroke-dasharray:332.88720703125;
@@ -144,9 +146,10 @@ body {
 		#white-line {
 			position: absolute;
 			z-index: 10;
-			left: 170px;
+			top:1172px !important;
+			left: 41px;
 			height: 44px;
-			width: 746px;
+			width: 685px;
 			svg {
 				path {
 					stroke-dasharray: 650;
@@ -158,8 +161,9 @@ body {
 		#curve-line-3 {
 			position: absolute;
 			z-index: 10;
-			left: 152px;
-			height: 420px;
+			top:1208px !important;
+			left: 21px;
+			height: 440px;
 			width: 18px;
 			svg {
 				path{
@@ -172,9 +176,10 @@ body {
 		#third-page-line{
 			position: absolute;
 			z-index: 10;
-			left: 26px;
+			top:1574px !important;
+			left: -88px;
 			height: 1025px;
-			width: 1044px;
+			width: 955px;
 			svg {
 				path {
 					stroke-dashoffset:1708.6005859375;
@@ -280,7 +285,7 @@ body {
 
 			.annual-visitor-div {
 				@include center-div(absolute);
-				top: 43%;
+				top: 41%;
 
 				.annual-visitor {
 				background: rgba(0, 0, 0, 0.5);

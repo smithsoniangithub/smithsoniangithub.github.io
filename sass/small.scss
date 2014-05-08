@@ -79,16 +79,15 @@ body {
 		right: 0;
 		margin: 0 auto;
 		z-index: 999;
-		
-		.blue-circle {
-			display: none;
-		}
-
+	
 		.circle-one {
 			position: absolute;
 			z-index: 10;
 			// top: 700px;
-			left: 612px;
+			// left: 612px;
+			left:0;
+			right: 0;
+			margin: 0 auto;
 			display: none;
 		}
 
