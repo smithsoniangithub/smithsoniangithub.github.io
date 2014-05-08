@@ -9,21 +9,20 @@ var isSmall;
 var flag = false;
 
 window.onresize = function() {
-  windowWidth = $(window).width();
+  windowWidth = $(document).width();
   docuWidth = $(document).width();
   if(windowWidth < 720) {
     $('.cover').css('height', '100%');
 
-    // $('.window-one-wrap').css('height', windowHeight);
+    $('.window-one-wrap').css('height', windowHeight);
     $('.window-two-wrap').css('height', windowHeight);
     $('.window-three-wrap').css('height', windowHeight);
     $('.window-four-wrap').css('height', windowHeight);
 
     // $('.bg1').css('height', '100%');
-    $('.bg2').css('height', '100%');
-    $('.bg3').css('height', '100%');
-    $('.bg4').css('height', '100%');
-    console.log('720px');
+    // $('.bg2').css('height', '100%');
+    // $('.bg3').css('height', '100%');
+    // $('.bg4').css('height', '100%');
   } 
 }
 
@@ -31,15 +30,15 @@ window.onresize = function() {
     windowHeight = $(window).height();
     docuHeight = $(document).height();
     docuWidth = $(document).width();
-    $('.cover').css('height', windowHeight);
+    // $('.cover').css('height', windowHeight);
     $('.circle-one').css('top', windowHeight+21);
-    $('#curve-line-1').css('top', windowHeight-5);
-    $('#castle').css('top', windowHeight);
-    $('#curve-line-2').css('top', windowHeight+375);
-    $('.circle-two').css('top', windowHeight+557);
-    $('#white-line').css('top', windowHeight+550);
-    $('#curve-line-3').css('top', windowHeight+586);
-    $('#third-page-line').css('top', windowHeight+937);
+    $('#curve-line-1').css('top', windowHeight+21);
+    $('#castle').css('top', windowHeight-7);
+    $('#curve-line-2').css('top', windowHeight+368);
+    $('.circle-two').css('top', windowHeight+550);
+    $('#white-line').css('top', windowHeight+543);
+    $('#curve-line-3').css('top', windowHeight+579);
+    $('#third-page-line').css('top', windowHeight+930);
 
     console.log(windowHeight);
   }
@@ -135,26 +134,15 @@ window.onresize = function() {
 		var scrolledY = $(window).scrollTop();
     
     // footer show/hide
-    if(scrolledY > 900) {
+    if(scrolledY > 960) {
 
-      $('.take-survey-bg').fadeIn();
-      $('.take-survey-div').show();
-      $('.take-survey-one').addClass('take-survey-active');
-      if (scrolledY > 1070) {
-        
-        $('.take-survey-two').addClass('take-survey-active');
-      
-      } else {
-        
-        $('.take-survey-two').removeClass('take-survey-active');
-      
-      }
+      $('.take-survey-bg').show('slide');
+      $('.take-survey-one').show();
     
     } else {
 
-      $('.take-survey-one').removeClass('take-survey-active');
       $('.take-survey-bg').fadeOut('blind');
-      $('.take-survey-div').fadeOut('blind');
+      $('.take-survey-one').fadeOut('blind');
     }
 
 
@@ -260,12 +248,6 @@ window.onresize = function() {
       $('.circle-one').fadeOut();
       $('.annual-visitor').fadeOut(1000);
       $('.line-one').css("stroke-dashoffset", 863.447509765625); //line one function reset
-
-      
-      // $('.circle-con1').hide();
-      // $('.circle-con2').hide();
-      // $('.circle-con3').hide();
-      // $('.center-circle').fadeOut();
 
     }
 

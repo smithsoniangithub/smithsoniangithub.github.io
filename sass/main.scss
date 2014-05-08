@@ -102,7 +102,9 @@ body {
 		#curve-line-1 {
 			position: absolute;
 			z-index: 10;
-			left: 620px;			
+			left: 620px;
+			height: 330px;
+			width: 420px;			
 			svg {
 				.line-one {
 					stroke-dasharray: 863.447509765625;
@@ -116,6 +118,8 @@ body {
 			position: absolute;
 			z-index: 10;
 			left: 351px;
+			height: 446px;
+			width: 507px;
 			svg {
 				.castle-path{
 					stroke-dashoffset:1155.9654541015625 ;
@@ -128,6 +132,8 @@ body {
 			position: absolute;
 			z-index: 10;
 			left: 129px;
+			height: 300px;
+			width: 300px;
 			svg {
 				path {
 					stroke-dasharray:332.88720703125;
@@ -139,7 +145,9 @@ body {
 		#white-line {
 			position: absolute;
 			z-index: 10;
-			left: 168px;
+			left: 170px;
+			height: 44px;
+			width: 748px;
 			svg {
 				path {
 					stroke-dasharray: 650;
@@ -152,6 +160,8 @@ body {
 			position: absolute;
 			z-index: 10;
 			left: 152px;
+			height: 390px;
+			width: 18px;
 			svg {
 				path{
 					stroke-dashoffset:243;
@@ -164,6 +174,8 @@ body {
 			position: absolute;
 			z-index: 10;
 			left: 36px;
+			height: 1025px;
+			width: 1044px;
 			svg {
 				path {
 					stroke-dashoffset:1708.6005859375;
@@ -194,26 +206,7 @@ body {
 		}
 	}
 
-	.take-survey-div {
-		@include center-div(fixed);
-		z-index: 999;
-		display: none;
-		.take-survey {
-			display: none;
-		}
-		.take-survey-active {
-			position: fixed;
-			left: 0;
-			bottom: 5%;
-			right: 0;
-			margin: 0 auto;
-			display: block;
-		}
-	}
 
-	.take-survey-bg {
-		@include take-survey-bg(100px, 1);
-	}
 
 	.window-one-wrap {
 		z-index: 5;
@@ -242,7 +235,7 @@ body {
 				z-index: -50;
 				height: 672px;
 				width: 100%;
-				opacity: .5;
+				opacity: .1;
 			}
 
 			.logo-div {
@@ -318,6 +311,22 @@ body {
 					}
 				}
 			}
+
+			.take-survey-div {
+				@include center-div(absolute);
+				bottom:3%;
+				// display: none;
+				.take-survey {
+					// display: none;
+					position: relative;
+					left: -50%;
+					bottom: 5%;
+				}
+			}
+
+			.take-survey-bg {
+				@include take-survey-bg(100px, 1);
+			}
 		}
 	}
 
@@ -371,6 +380,22 @@ body {
 					margin: 0 auto;
 					display: none;
 				}
+			}
+
+			.take-survey-div {
+				@include center-div(absolute);
+				bottom:3%;
+				// display: none;
+				.take-survey {
+					// display: none;
+					position: relative;
+					left: -50%;
+					bottom: 5%;
+				}
+			}
+
+			.take-survey-bg {
+				@include take-survey-bg(100px, 1);
 			}
 		}
 	}
