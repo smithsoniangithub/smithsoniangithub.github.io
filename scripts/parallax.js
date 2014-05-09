@@ -41,7 +41,7 @@ window.onresize = function() {
     $('.circle-two').css('top', windowHeight+520);
     $('#white-line').css('top', windowHeight+513);
     $('#curve-line-3').css('top', windowHeight+549);
-    $('#third-page-line').css('top', windowHeight+929);
+    $('#third-page-line').css('top', windowHeight+936);
 
     console.log(windowHeight);
   }
@@ -184,7 +184,7 @@ window.onresize = function() {
             if(scrolledY > 1000) {
 
               drawLineThree(243); // line three function call
-              $('.annual-visitor').fadeIn(1000);
+              $('.fact-one').fadeIn(1000);
 
               if(flag==true){
 
@@ -217,10 +217,10 @@ window.onresize = function() {
 
                 } else {
 
-                  $('.circle-con1').hide();
-                  $('.circle-con2').hide();
-                  $('.circle-con3').hide();
-                  $('.center-circle').fadeOut();
+                  // $('.circle-con1').hide();
+                  // $('.circle-con2').hide();
+                  // $('.circle-con3').hide();
+                  // $('.center-circle').fadeOut();
 
                 }
 
@@ -261,7 +261,7 @@ window.onresize = function() {
 
       flag=false;
       $('.circle-one').fadeOut();
-      $('.annual-visitor').fadeOut(1000);
+      $('.fact-one').fadeOut(1000);
       $('.line-one').css("stroke-dashoffset", 1204.9405517578125); //line one function reset
 
     }
@@ -271,7 +271,7 @@ window.onresize = function() {
 
     $(window).bind('scroll', function(e){
      parallaxScroll();
-     console.log($(window).scrollTop());
+     // console.log($(window).scrollTop());
     });
 
 

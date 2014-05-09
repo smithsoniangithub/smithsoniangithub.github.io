@@ -134,7 +134,7 @@ body {
 			height: 270px;
 			width: 326px;
 			svg {
-				path {
+				.line-two {
 					stroke-dasharray:332.88720703125;
 					stroke-dashoffset:332.88720703125;
 				}
@@ -146,9 +146,9 @@ body {
 			z-index: 10;
 			left: 170px;
 			height: 44px;
-			width: 746px;
+			width: 744px;
 			svg {
-				path {
+				.white-line {
 					stroke-dasharray: 650;
 					stroke-dashoffset: 650;
 				}
@@ -159,10 +159,10 @@ body {
 			position: absolute;
 			z-index: 10;
 			left: 152px;
-			height: 420px;
+			height: 428px;
 			width: 18px;
 			svg {
-				path{
+				.line-three{
 					stroke-dashoffset:243;
 					stroke-dasharray:243;
 				}
@@ -176,7 +176,7 @@ body {
 			height: 1025px;
 			width: 1044px;
 			svg {
-				path {
+				.line-four {
 					stroke-dashoffset:1708.6005859375;
 					stroke-dasharray:1708.6005859375;
 				}
@@ -278,11 +278,11 @@ body {
 			background-repeat: no-repeat, no-repeat;
 			background-position: center;
 
-			.annual-visitor-div {
+			.fact-div {
 				@include center-div(absolute);
 				top: 43%;
 
-				.annual-visitor {
+				.fact-one {
 				background: rgba(0, 0, 0, 0.5);
 				position:relative;
 				color: white;
@@ -410,6 +410,50 @@ body {
 			background-image: url('/images/bg2-filter.png'), url('/images/bg4.jpg');
 			background-size:cover,cover;
 			background-repeat: no-repeat, no-repeat;
+			
+			.take-survey-div {
+				@include center-div(absolute);
+				bottom:3%;
+				// display: none;
+				.take-survey {
+					// display: none;
+					position: relative;
+					left: -50%;
+					bottom: 5%;
+				}
+			}
+
+			.take-survey-bg-three {
+				@include take-survey-bg(100px, 1);
+			}
+
+			.fact-div {
+				@include center-div(absolute);
+				top: 8%;
+
+				.fact-two {
+					background: rgba(0, 0, 0, 0.5);
+					position:relative;
+					color: white;
+					text-align: center;	
+					width: 580px;
+					padding-bottom: 25px;
+					line-height: 1.5;
+					left: -53%;
+					// display: none;
+
+					.number-two {
+						font-size: 85px;
+						font-weight:bolder;
+						color:#ffd500;
+					}
+
+					.sub-con {
+						font-size: 35px;
+						font-weight: 100;
+					}
+				}
+			}
 		}
 	}
 }

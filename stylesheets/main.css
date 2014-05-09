@@ -161,7 +161,7 @@ body {
   width: 326px;
 }
 /* line 137, ../sass/main.scss */
-.wrapper .castle-line #curve-line-2 svg path {
+.wrapper .castle-line #curve-line-2 svg .line-two {
   stroke-dasharray: 332.88720703125;
   stroke-dashoffset: 332.88720703125;
 }
@@ -171,10 +171,10 @@ body {
   z-index: 10;
   left: 170px;
   height: 44px;
-  width: 746px;
+  width: 744px;
 }
 /* line 151, ../sass/main.scss */
-.wrapper .castle-line #white-line svg path {
+.wrapper .castle-line #white-line svg .white-line {
   stroke-dasharray: 650;
   stroke-dashoffset: 650;
 }
@@ -183,11 +183,11 @@ body {
   position: absolute;
   z-index: 10;
   left: 152px;
-  height: 420px;
+  height: 428px;
   width: 18px;
 }
 /* line 165, ../sass/main.scss */
-.wrapper .castle-line #curve-line-3 svg path {
+.wrapper .castle-line #curve-line-3 svg .line-three {
   stroke-dashoffset: 243;
   stroke-dasharray: 243;
 }
@@ -200,7 +200,7 @@ body {
   width: 1044px;
 }
 /* line 179, ../sass/main.scss */
-.wrapper .castle-line #third-page-line svg path {
+.wrapper .castle-line #third-page-line svg .line-four {
   stroke-dashoffset: 1708.6005859375;
   stroke-dasharray: 1708.6005859375;
 }
@@ -310,14 +310,14 @@ body {
   background-position: center;
 }
 /* line 281, ../sass/main.scss */
-.wrapper .window-two-wrap .bg-2 .annual-visitor-div {
+.wrapper .window-two-wrap .bg-2 .fact-div {
   position: absolute;
   left: 50%;
   z-index: 11;
   top: 43%;
 }
 /* line 285, ../sass/main.scss */
-.wrapper .window-two-wrap .bg-2 .annual-visitor-div .annual-visitor {
+.wrapper .window-two-wrap .bg-2 .fact-div .fact-one {
   background: rgba(0, 0, 0, 0.5);
   position: relative;
   color: white;
@@ -329,18 +329,18 @@ body {
   display: none;
 }
 /* line 296, ../sass/main.scss */
-.wrapper .window-two-wrap .bg-2 .annual-visitor-div .annual-visitor .number {
+.wrapper .window-two-wrap .bg-2 .fact-div .fact-one .number {
   font-size: 85px;
   font-weight: bolder;
   color: #ffd500;
 }
 /* line 302, ../sass/main.scss */
-.wrapper .window-two-wrap .bg-2 .annual-visitor-div .annual-visitor .sub-con {
+.wrapper .window-two-wrap .bg-2 .fact-div .fact-one .sub-con {
   font-size: 45px;
   font-weight: 100;
 }
 /* line 307, ../sass/main.scss */
-.wrapper .window-two-wrap .bg-2 .annual-visitor-div .annual-visitor .sub-con-two {
+.wrapper .window-two-wrap .bg-2 .fact-div .fact-one .sub-con-two {
   font-size: 25px;
   font-weight: 100;
 }
@@ -459,4 +459,55 @@ body {
   background-image: url("/images/bg2-filter.png"), url("/images/bg4.jpg");
   background-size: cover,cover;
   background-repeat: no-repeat, no-repeat;
+}
+/* line 414, ../sass/main.scss */
+.wrapper .window-four-wrap .bg-4 .take-survey-div {
+  position: absolute;
+  left: 50%;
+  z-index: 11;
+  bottom: 3%;
+}
+/* line 418, ../sass/main.scss */
+.wrapper .window-four-wrap .bg-4 .take-survey-div .take-survey {
+  position: relative;
+  left: -50%;
+  bottom: 5%;
+}
+/* line 426, ../sass/main.scss */
+.wrapper .window-four-wrap .bg-4 .take-survey-bg-three {
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  height: 100px;
+  bottom: 0;
+  opacity: 1;
+}
+/* line 430, ../sass/main.scss */
+.wrapper .window-four-wrap .bg-4 .fact-div {
+  position: absolute;
+  left: 50%;
+  z-index: 11;
+  top: 8%;
+}
+/* line 434, ../sass/main.scss */
+.wrapper .window-four-wrap .bg-4 .fact-div .fact-two {
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  color: white;
+  text-align: center;
+  width: 580px;
+  padding-bottom: 25px;
+  line-height: 1.5;
+  left: -53%;
+}
+/* line 445, ../sass/main.scss */
+.wrapper .window-four-wrap .bg-4 .fact-div .fact-two .number-two {
+  font-size: 85px;
+  font-weight: bolder;
+  color: #ffd500;
+}
+/* line 451, ../sass/main.scss */
+.wrapper .window-four-wrap .bg-4 .fact-div .fact-two .sub-con {
+  font-size: 35px;
+  font-weight: 100;
 }

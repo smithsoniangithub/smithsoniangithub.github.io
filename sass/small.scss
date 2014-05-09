@@ -103,7 +103,8 @@ body {
 			position: absolute;
 			z-index: 10;
 			// top: 674px;
-			left: 620px;			
+			left: 320px;			
+			height:390px;
 			svg {
 				.line-one {
 					stroke-dasharray: 863.447509765625;
@@ -271,11 +272,11 @@ body {
 			background-repeat: no-repeat, no-repeat;
 
 
-			.annual-visitor-div {
+			.fact-div {
 				@include center-div(absolute);
 				top: 46%;
 
-				.annual-visitor {
+				.fact-one {
 				background: rgba(0, 0, 0, 0.5);
 				position:relative;
 				color: white;
@@ -388,6 +389,50 @@ body {
 			background-image: url('/images/bg2-filter.png'), url('/images/bg4.jpg');
 			background-size:cover,cover;
 			background-repeat: no-repeat, no-repeat;
+
+			.take-survey-div {
+				@include center-div(absolute);
+				bottom:3%;
+				// display: none;
+				.take-survey {
+					// display: none;
+					position: relative;
+					left: -50%;
+					bottom: 5%;
+				}
+			}
+
+			.take-survey-bg-three {
+				@include take-survey-bg(100px, 1);
+			}
+
+			.fact-div {
+				@include center-div(absolute);
+				top: 8%;
+
+				.fact-two{
+					background: rgba(0, 0, 0, 0.5);
+					position:relative;
+					color: white;
+					text-align: center;
+					// width: 450px;	
+					padding-bottom: 25px;
+					line-height: 1.5;
+					left: -53%;
+					// display: none;
+
+					.number-two {
+						font-size: 60px;
+						font-weight:bolder;
+						color:#ffd500;
+					}
+
+					.sub-con {
+						font-size: 25px;
+						font-weight: 100;
+					}
+				}
+			}
 		}
 	}
 }
