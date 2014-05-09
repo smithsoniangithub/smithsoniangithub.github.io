@@ -135,14 +135,14 @@ window.onresize = function() {
 
       } else {
 
-        // $('.take-survey-bg-two').fadeOut('slide');
-        // $('.take-survey-two').fadeOut('blind');
+        $('.take-survey-bg-two').fadeOut();
+        $('.take-survey-two').fadeOut();
 
       }
     } else {
 
-      // $('.take-survey-bg').fadeOut('blind');
-      // $('.take-survey-one').fadeOut('blind');
+      $('.take-survey-bg').fadeOut();
+      $('.take-survey-one').fadeOut();
 
     }
 
