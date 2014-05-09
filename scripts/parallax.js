@@ -241,7 +241,7 @@ window.onresize = function() {
           } else {
 
             $('.white-line').css("stroke-dashoffset", 650); // white line function reset
-            $('.circle-two').fadeOut();
+            // $('.circle-two').fadeOut();
 
           }
           
@@ -260,7 +260,7 @@ window.onresize = function() {
     } else {
 
       flag=false;
-      $('.circle-one').fadeOut();
+      // $('.circle-one').fadeOut();
       $('.fact-one').fadeOut(1000);
       $('.line-one').css("stroke-dashoffset", 1204.9405517578125); //line one function reset
 

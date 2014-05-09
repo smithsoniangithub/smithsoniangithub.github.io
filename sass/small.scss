@@ -94,21 +94,24 @@ body {
 		.circle-two {
 			position: absolute;
 			z-index: 10;
-			// top: 1235px;
-			left: 145px;
+			top: 1040px !important;
+			left: 80px;
 			display: none;
 		}
 
 		#curve-line-1 {
 			position: absolute;
 			z-index: 10;
-			// top: 674px;
-			left: 320px;			
+			top: 636px !important;
+			left: 326px;			
 			height:390px;
+			width: 335px;
 			svg {
 				.line-one {
-					stroke-dasharray: 863.447509765625;
-					stroke-dashoffset: 863.447509765625;
+					// stroke-dasharray: 863.447509765625;
+					// stroke-dashoffset: 863.447509765625;
+					stroke-dasharray: 0;
+					stroke-dashoffset: 0;
 				}
 			}
 		}
@@ -117,12 +120,16 @@ body {
 		#castle {
 			position: absolute;
 			z-index: 10;
-			// top: 679px;
-			left: 351px;
+			top: 773px !important;
+			left: 209px;
+			height: 200px;
+			width: 300px;
 			svg {
 				.castle-path{
-					stroke-dashoffset:1155.9654541015625 ;
-					stroke-dasharray:1155.9654541015625 ;
+					// stroke-dashoffset:1155.9654541015625 ;
+					// stroke-dasharray:1155.9654541015625 ;
+					stroke-dasharray: 0;
+					stroke-dashoffset: 0;
 				}
 			}
 		}
@@ -130,12 +137,16 @@ body {
 		#curve-line-2 {
 			position: absolute;
 			z-index: 10;
-			// top: 1054px;
-			left: 129px;
+			top: 928px !important;
+			left: 16px;
+			height: 154px;
+			width: 308px;
 			svg {
 				path {
-					stroke-dasharray:332.88720703125;
-					stroke-dashoffset:332.88720703125;
+					// stroke-dasharray:332.88720703125;
+					// stroke-dashoffset:332.88720703125;
+					stroke-dasharray: 0;
+					stroke-dashoffset: 0;
 				}
 			}
 		}
@@ -143,12 +154,16 @@ body {
 		#white-line {
 			position: absolute;
 			z-index: 10;
-			// top: 1229px;
-			left: 168px;
+			top: 1036px !important;
+			left: 105px;
+			height: 44px;
+			width: 453px;
 			svg {
 				path {
-					stroke-dasharray: 650;
-					stroke-dashoffset: 650;
+					// stroke-dasharray: 650;
+					// stroke-dashoffset: 650;
+					stroke-dasharray: 0;
+					stroke-dashoffset: 0;
 				}
 			}
 		}
@@ -156,12 +171,16 @@ body {
 		#curve-line-3 {
 			position: absolute;
 			z-index: 10;
-			// top: 1265px;
-			left: 152px;
+			top: 1070px !important;
+			left: 85px;
+			height: 301px;
+				width: 18px;
 			svg {
 				path{
-					stroke-dashoffset:243;
-					stroke-dasharray:243;
+					// stroke-dashoffset:243;
+					// stroke-dasharray:243;
+					stroke-dasharray: 0;
+					stroke-dashoffset: 0;
 				}
 			}
 		}
@@ -169,12 +188,16 @@ body {
 		#third-page-line{
 			position: absolute;
 			z-index: 10;
-			// top: 1615px;
-			left: 36px;
+			top: 1158px !important;
+			left: 13px;
+			height: 1025px;
+			width: 654px;
 			svg {
 				path {
-					stroke-dashoffset:1708.6005859375;
-					stroke-dasharray:1708.6005859375;
+					// stroke-dashoffset:1708.6005859375;
+					// stroke-dasharray:1708.6005859375;
+					stroke-dasharray: 0;
+					stroke-dashoffset: 0;
 				}
 			}
 		}
@@ -274,27 +297,27 @@ body {
 
 			.fact-div {
 				@include center-div(absolute);
-				top: 46%;
+				top: 42%;
 
 				.fact-one {
 				background: rgba(0, 0, 0, 0.5);
 				position:relative;
 				color: white;
 				text-align: center;
-				width: 450px;	
+				width: 360px;	
 				padding-bottom: 25px;
 				line-height: 1.5;
-				left: -53%;
+				left: -38%;
 				display: none;
 
 				.number {
-					font-size: 60px;
+					font-size: 55px;
 					font-weight:bolder;
 					color:#ffd500;
 				}
 
 				.sub-con {
-					font-size: 40px;
+					font-size: 35px;
 					font-weight: 100;
 				}
 

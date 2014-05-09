@@ -103,11 +103,13 @@ body {
 			z-index: 10;
 			left: 625px;
 			height: 390px;
-			width: 470px;			
+			width: 470px;		
 			svg {
 				.line-one {
-					stroke-dasharray: 1204.9405517578125;
-					stroke-dashoffset: 1204.9405517578125;
+					// stroke-dasharray: 1204.9405517578125;
+					// stroke-dashoffset: 1204.9405517578125;
+					stroke-dasharray: 0;
+					stroke-dashoffset: 0;
 				}
 			}
 		}
@@ -121,8 +123,10 @@ body {
 			width: 507px;
 			svg {
 				.castle-path{
-					stroke-dashoffset:1155.9654541015625 ;
-					stroke-dasharray:1155.9654541015625 ;
+					// stroke-dashoffset:1155.9654541015625;
+					// stroke-dasharray:1155.9654541015625;
+					stroke-dasharray: 0;
+					stroke-dashoffset: 0;
 				}
 			}
 		}
@@ -135,8 +139,10 @@ body {
 			width: 326px;
 			svg {
 				.line-two {
-					stroke-dasharray:332.88720703125;
-					stroke-dashoffset:332.88720703125;
+					// stroke-dasharray:332.88720703125;
+					// stroke-dashoffset:332.88720703125;
+					stroke-dasharray: 0;
+					stroke-dashoffset: 0;
 				}
 			}
 		}
@@ -149,8 +155,10 @@ body {
 			width: 744px;
 			svg {
 				.white-line {
-					stroke-dasharray: 650;
-					stroke-dashoffset: 650;
+					// stroke-dasharray: 650;
+					// stroke-dashoffset: 650;
+					stroke-dasharray: 0;
+					stroke-dashoffset: 0;
 				}
 			}
 		}
@@ -163,8 +171,10 @@ body {
 			width: 18px;
 			svg {
 				.line-three{
-					stroke-dashoffset:243;
-					stroke-dasharray:243;
+					// stroke-dashoffset:243;
+					// stroke-dasharray:243;
+					stroke-dasharray: 0;
+					stroke-dashoffset: 0;
 				}
 			}
 		}
@@ -177,8 +187,10 @@ body {
 			width: 1044px;
 			svg {
 				.line-four {
-					stroke-dashoffset:1708.6005859375;
-					stroke-dasharray:1708.6005859375;
+					// stroke-dashoffset:1708.6005859375;
+					// stroke-dasharray:1708.6005859375;
+					stroke-dasharray: 0;
+					stroke-dashoffset: 0;
 				}
 			}
 		}
