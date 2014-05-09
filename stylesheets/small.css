@@ -133,29 +133,29 @@ body {
 .wrapper .castle-line #curve-line-1 {
   position: absolute;
   z-index: 10;
-  top: 636px !important;
-  left: 326px;
+  top: 638px !important;
+  left: 353px;
   height: 390px;
   width: 335px;
 }
 /* line 110, ../sass/small.scss */
 .wrapper .castle-line #curve-line-1 svg .line-one {
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+  stroke-dasharray: 863.447509765625;
+  stroke-dashoffset: 863.447509765625;
 }
 /* line 120, ../sass/small.scss */
 .wrapper .castle-line #castle {
   position: absolute;
   z-index: 10;
-  top: 773px !important;
-  left: 209px;
-  height: 200px;
-  width: 300px;
+  top: 753px !important;
+  left: 208px;
+  height: 222px;
+  width: 327px;
 }
 /* line 128, ../sass/small.scss */
 .wrapper .castle-line #castle svg .castle-path {
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+  stroke-dashoffset: 1155.9654541015625;
+  stroke-dasharray: 1155.9654541015625;
 }
 /* line 137, ../sass/small.scss */
 .wrapper .castle-line #curve-line-2 {
@@ -168,8 +168,8 @@ body {
 }
 /* line 145, ../sass/small.scss */
 .wrapper .castle-line #curve-line-2 svg path {
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+  stroke-dasharray: 332.88720703125;
+  stroke-dashoffset: 332.88720703125;
 }
 /* line 154, ../sass/small.scss */
 .wrapper .castle-line #white-line {
@@ -182,8 +182,8 @@ body {
 }
 /* line 162, ../sass/small.scss */
 .wrapper .castle-line #white-line svg path {
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
 }
 /* line 171, ../sass/small.scss */
 .wrapper .castle-line #curve-line-3 {
@@ -196,8 +196,8 @@ body {
 }
 /* line 179, ../sass/small.scss */
 .wrapper .castle-line #curve-line-3 svg path {
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+  stroke-dashoffset: 243;
+  stroke-dasharray: 243;
 }
 /* line 188, ../sass/small.scss */
 .wrapper .castle-line #third-page-line {
@@ -210,8 +210,8 @@ body {
 }
 /* line 196, ../sass/small.scss */
 .wrapper .castle-line #third-page-line svg path {
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+  stroke-dashoffset: 1708.6005859375;
+  stroke-dasharray: 1708.6005859375;
 }
 /* line 207, ../sass/small.scss */
 .wrapper nav {

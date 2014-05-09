@@ -14,8 +14,9 @@ window.onresize = function() {
   docuWidth = $(document).width();
 
   if(windowWidth < 720) {
-    $('.cover').css('height', '100%');
 
+    $('.cover').css('height', '100%');
+    
     $('.window-one-wrap').css('height', windowHeight);
     $('.window-two-wrap').css('height', windowHeight);
     $('.window-three-wrap').css('height', windowHeight);
@@ -56,9 +57,6 @@ window.onresize = function() {
     
     
     $('.line-one').css("stroke-dashoffset", zeroOffset);
-    if(scrolledY>515) {
-      $('.line-one').css("stroke-dashoffset", 0);
-    }
   } 
 
   function drawCastle (castleOffset) {
@@ -68,9 +66,6 @@ window.onresize = function() {
     var offset = (castleOffset) + (scrolledY*9);
   
     $('.castle-path').css("stroke-dashoffset", offset);
-    if(scrolledY>640) {
-      $('.castle-path').css("stroke-dashoffset", 0);
-    } 
 
   }
 
@@ -78,13 +73,11 @@ window.onresize = function() {
     var path = document.querySelector('.line-two');
     var pathLength = path.getTotalLength();  // 332.88720703125
     scrolledY = $(window).scrollTop();
-    var zeroOffset = lineTwoOffset+(scrolledY*2.08);
+    var zeroOffset = lineTwoOffset+(scrolledY*2.045);
     
     
     $('.line-two').css("stroke-dashoffset", zeroOffset);
-    if(scrolledY>800) {
-      $('.line-two').css("stroke-dashoffset", 0);
-    }
+
   }
 
   function drawWhiteLine (whiteLineOffset) {
@@ -95,23 +88,17 @@ window.onresize = function() {
     
     
     $('.white-line').css("stroke-dashoffset", zeroOffset);
-    if(scrolledY>1020) {
-      $('.white-line').css("stroke-dashoffset", 0);
-    }
 
   }
 
   function drawLineThree (lineThreeOffset) {
     var path = document.querySelector('.line-three');
-    var pathLength = path.getTotalLength();  // 
+    var pathLength = path.getTotalLength();  // 243
     scrolledY = $(window).scrollTop();
-    var zeroOffset = lineThreeOffset-(scrolledY*3.89);
+    var zeroOffset = lineThreeOffset-(scrolledY*3.81);
     
     
     $('.line-three').css("stroke-dashoffset", zeroOffset);
-    if(scrolledY >1060) {
-      $('.line-three').css("stroke-dashoffset", 0);
-    }
 
   }
 
@@ -122,7 +109,6 @@ window.onresize = function() {
     var zeroOffset = lineFourOffset+(scrolledY*2.2);
 
     $('.line-four').css("stroke-dashoffset", zeroOffset);
-    // console.log(pathLength);
   }
    
   //  function to animate numbers with comma
@@ -149,14 +135,14 @@ window.onresize = function() {
 
       } else {
 
-        $('.take-survey-bg-two').fadeOut('slide');
-        $('.take-survey-two').fadeOut('blind');
+        // $('.take-survey-bg-two').fadeOut('slide');
+        // $('.take-survey-two').fadeOut('blind');
 
       }
     } else {
 
-      $('.take-survey-bg').fadeOut('blind');
-      $('.take-survey-one').fadeOut('blind');
+      // $('.take-survey-bg').fadeOut('blind');
+      // $('.take-survey-one').fadeOut('blind');
 
     }
 
@@ -170,19 +156,23 @@ window.onresize = function() {
 
       if(scrolledY > 515){
 
+        $('.line-one').css("stroke-dashoffset", 0);
         drawCastle(1155.9654541015625); // draw castle function call
 
         if(scrolledY > 640){
 
+          $('.castle-path').css("stroke-dashoffset", 0);
           drawLineTwo(332.88720703125); // line two function call
           
           if (scrolledY > 815){
 
+            $('.line-two').css("stroke-dashoffset", 0);
             $('.circle-two').fadeIn();
             drawWhiteLine(650); // White line function call
 
-            if(scrolledY > 1000) {
+            if(scrolledY > 1020) {
 
+              $('.white-line').css("stroke-dashoffset", 0);
               drawLineThree(243); // line three function call
               $('.fact-one').fadeIn(1000);
 
@@ -204,8 +194,9 @@ window.onresize = function() {
 
                   // end of 30, 000, 000 animation
               } 
-              if(scrolledY > 1060) {
+              if(scrolledY > 1085) {
 
+                $('.line-three').css("stroke-dashoffset", 0);
                 drawLineFour(1708.6005859375) // line four function call
 
                 if (scrolledY > 1700) {
@@ -217,10 +208,10 @@ window.onresize = function() {
 
                 } else {
 
-                  // $('.circle-con1').hide();
-                  // $('.circle-con2').hide();
-                  // $('.circle-con3').hide();
-                  // $('.center-circle').fadeOut();
+                  $('.circle-con1').hide();
+                  $('.circle-con2').hide();
+                  $('.circle-con3').hide();
+                  $('.center-circle').fadeOut();
 
                 }
 
@@ -232,7 +223,7 @@ window.onresize = function() {
 
 
             } else {
-              // $('.annual-visitor').fadeOut(1000);
+              $('.annual-visitor').fadeOut(1000);
              $('.line-three').css("stroke-dashoffset", 243); // line three function reset
 
             }
@@ -241,7 +232,7 @@ window.onresize = function() {
           } else {
 
             $('.white-line').css("stroke-dashoffset", 650); // white line function reset
-            // $('.circle-two').fadeOut();
+            $('.circle-two').fadeOut();
 
           }
           
@@ -260,7 +251,7 @@ window.onresize = function() {
     } else {
 
       flag=false;
-      // $('.circle-one').fadeOut();
+      $('.circle-one').fadeOut();
       $('.fact-one').fadeOut(1000);
       $('.line-one').css("stroke-dashoffset", 1204.9405517578125); //line one function reset
 
@@ -269,7 +260,7 @@ window.onresize = function() {
     
   }
 
-    $(window).bind('scroll', function(e){
+    $(window).bind('scroll', function(){
      parallaxScroll();
      // console.log($(window).scrollTop());
     });

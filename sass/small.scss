@@ -102,16 +102,16 @@ body {
 		#curve-line-1 {
 			position: absolute;
 			z-index: 10;
-			top: 636px !important;
-			left: 326px;			
+			top: 638px !important;
+			left: 353px;			
 			height:390px;
 			width: 335px;
 			svg {
 				.line-one {
-					// stroke-dasharray: 863.447509765625;
-					// stroke-dashoffset: 863.447509765625;
-					stroke-dasharray: 0;
-					stroke-dashoffset: 0;
+					stroke-dasharray: 863.447509765625;
+					stroke-dashoffset: 863.447509765625;
+					// stroke-dasharray: 0;
+					// stroke-dashoffset: 0;
 				}
 			}
 		}
@@ -120,16 +120,16 @@ body {
 		#castle {
 			position: absolute;
 			z-index: 10;
-			top: 773px !important;
-			left: 209px;
-			height: 200px;
-			width: 300px;
+			top: 753px !important;
+			left: 208px;
+			height: 222px;
+			width: 327px;
 			svg {
 				.castle-path{
-					// stroke-dashoffset:1155.9654541015625 ;
-					// stroke-dasharray:1155.9654541015625 ;
-					stroke-dasharray: 0;
-					stroke-dashoffset: 0;
+					stroke-dashoffset:1155.9654541015625;
+					stroke-dasharray:1155.9654541015625;
+					// stroke-dasharray: 0;
+					// stroke-dashoffset: 0;
 				}
 			}
 		}
@@ -143,10 +143,10 @@ body {
 			width: 308px;
 			svg {
 				path {
-					// stroke-dasharray:332.88720703125;
-					// stroke-dashoffset:332.88720703125;
-					stroke-dasharray: 0;
-					stroke-dashoffset: 0;
+					stroke-dasharray:332.88720703125;
+					stroke-dashoffset:332.88720703125;
+					// stroke-dasharray: 0;
+					// stroke-dashoffset: 0;
 				}
 			}
 		}
@@ -160,10 +160,10 @@ body {
 			width: 453px;
 			svg {
 				path {
-					// stroke-dasharray: 650;
-					// stroke-dashoffset: 650;
-					stroke-dasharray: 0;
-					stroke-dashoffset: 0;
+					stroke-dasharray: 650;
+					stroke-dashoffset: 650;
+					// stroke-dasharray: 0;
+					// stroke-dashoffset: 0;
 				}
 			}
 		}
@@ -177,10 +177,10 @@ body {
 				width: 18px;
 			svg {
 				path{
-					// stroke-dashoffset:243;
-					// stroke-dasharray:243;
-					stroke-dasharray: 0;
-					stroke-dashoffset: 0;
+					stroke-dashoffset:243;
+					stroke-dasharray:243;
+					// stroke-dasharray: 0;
+					// stroke-dashoffset: 0;
 				}
 			}
 		}
@@ -194,10 +194,10 @@ body {
 			width: 654px;
 			svg {
 				path {
-					// stroke-dashoffset:1708.6005859375;
-					// stroke-dasharray:1708.6005859375;
-					stroke-dasharray: 0;
-					stroke-dashoffset: 0;
+					stroke-dashoffset:1708.6005859375;
+					stroke-dasharray:1708.6005859375;
+					// stroke-dasharray: 0;
+					// stroke-dashoffset: 0;
 				}
 			}
 		}

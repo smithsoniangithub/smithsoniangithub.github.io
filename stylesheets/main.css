@@ -136,8 +136,8 @@ body {
 }
 /* line 108, ../sass/main.scss */
 .wrapper .castle-line #curve-line-1 svg .line-one {
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+  stroke-dasharray: 1204.9405517578125;
+  stroke-dashoffset: 1204.9405517578125;
 }
 /* line 118, ../sass/main.scss */
 .wrapper .castle-line #castle {
@@ -149,8 +149,8 @@ body {
 }
 /* line 125, ../sass/main.scss */
 .wrapper .castle-line #castle svg .castle-path {
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+  stroke-dashoffset: 1155.9654541015625;
+  stroke-dasharray: 1155.9654541015625;
 }
 /* line 134, ../sass/main.scss */
 .wrapper .castle-line #curve-line-2 {
@@ -162,8 +162,8 @@ body {
 }
 /* line 141, ../sass/main.scss */
 .wrapper .castle-line #curve-line-2 svg .line-two {
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+  stroke-dasharray: 332.88720703125;
+  stroke-dashoffset: 332.88720703125;
 }
 /* line 150, ../sass/main.scss */
 .wrapper .castle-line #white-line {
@@ -175,8 +175,8 @@ body {
 }
 /* line 157, ../sass/main.scss */
 .wrapper .castle-line #white-line svg .white-line {
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
 }
 /* line 166, ../sass/main.scss */
 .wrapper .castle-line #curve-line-3 {
@@ -188,8 +188,8 @@ body {
 }
 /* line 173, ../sass/main.scss */
 .wrapper .castle-line #curve-line-3 svg .line-three {
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+  stroke-dashoffset: 243;
+  stroke-dasharray: 243;
 }
 /* line 182, ../sass/main.scss */
 .wrapper .castle-line #third-page-line {
@@ -201,8 +201,8 @@ body {
 }
 /* line 189, ../sass/main.scss */
 .wrapper .castle-line #third-page-line svg .line-four {
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
+  stroke-dashoffset: 1708.6005859375;
+  stroke-dasharray: 1708.6005859375;
 }
 /* line 200, ../sass/main.scss */
 .wrapper nav {
