@@ -13,7 +13,7 @@ var flag = false;
 //  line animation function
   function drawLine (pathName, scrolled, lineOffset, multiplier) {
     var path = document.querySelector(pathName);
-    var pathLength = path.getTotalLength();  // 1204.9405517578125
+    var pathLength = path.getTotalLength();
     scrolledY = $(window).scrollTop();
     var offset = (lineOffset)-(scrolled*multiplier);
     
@@ -24,7 +24,7 @@ var flag = false;
 //  line animation function two
   function drawLineFunctionTwo (pathName, scrolled, lineOffset, multiplier) {
     var path = document.querySelector(pathName);
-    var pathLength = path.getTotalLength();  // 1204.9405517578125
+    var pathLength = path.getTotalLength();
     scrolledY = $(window).scrollTop();
     var offset = (lineOffset)+(scrolled*multiplier);
     
@@ -181,7 +181,7 @@ var flag = false;
     
   }
 
-  $(window).on('resize', function(){
+$(window).on('resize', function(){
   windowWidth = $(window).width();
   windowHeight = $(window).height();
   docuWidth = $(document).width();

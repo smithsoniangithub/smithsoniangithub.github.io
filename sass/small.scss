@@ -327,12 +327,16 @@ body {
 			}
 
 			.take-survey-div {
-				@include center-div(absolute);
-				bottom:4%;
-				// display: none;
+				width: 455px;
+				position: absolute;
+				right: 0;
+				bottom: 3%;
+				left: 0;
+				margin: 0 auto;
+				z-index: 11;
+				display: none;
 				.take-survey {
 					position: relative;
-					left: -50%;
 				}
 			}
 
@@ -395,6 +399,24 @@ body {
 					height: 90px;
 					// display: none;
 				}
+
+				.take-survey-div {
+					width: 455px;
+					position: absolute;
+					right: 0;
+					bottom: 3%;
+					left: 0;
+					margin: 0 auto;
+					z-index: 11;
+					display: none;
+				.take-survey{
+					position: relative;
+				}
+			}
+
+				.take-survey-bg-two {
+					@include take-survey-bg(100px, 1);
+				}
 			}
 		}
 	}
@@ -412,14 +434,16 @@ body {
 			background-repeat: no-repeat, no-repeat;
 
 			.take-survey-div {
-				@include center-div(absolute);
-				bottom:3%;
-				// display: none;
+				width: 455px;
+				position: absolute;
+				right: 0;
+				bottom: 3%;
+				left: 0;
+				margin: 0 auto;
+				z-index: 11;
+				display: none;
 				.take-survey {
-					// display: none;	
 					position: relative;
-					left: -50%;
-					bottom: 5%;
 				}
 			}
 
