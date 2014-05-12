@@ -199,10 +199,10 @@ $(window).on('resize', function(){
 
   if ($(window).width() < 720) {
     $('.cover').css('height', '100%');
-    $('.window-one-wrap').css('height', windowHeight);
-    $('.window-two-wrap').css('height', windowHeight);
-    $('.window-three-wrap').css('height', windowHeight);
-    $('.window-four-wrap').css('height', windowHeight);
+    $('.window-one-wrap').css('height', '100%');
+    $('.window-two-wrap').css('height', '100%');
+    $('.window-three-wrap').css('height', '100%');
+    $('.window-four-wrap').css('height', '100%');
 
     $('.bg1').css('height', '100%');
     $('.bg2').css('height', '100%');

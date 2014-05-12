@@ -61,7 +61,7 @@ table {
 
 /* line 58, ../sass/main.scss */
 body {
-  background-color: black;
+  background-color: white;
   line-height: 2;
   font-family: 'Lato', sans-serif;
 }
@@ -365,6 +365,7 @@ body {
   height: 100px;
   bottom: 0;
   opacity: 1;
+  display: none;
 }
 /* line 341, ../sass/main.scss */
 .wrapper .window-three-wrap {
@@ -444,6 +445,7 @@ body {
   height: 100px;
   bottom: 0;
   opacity: 1;
+  display: none;
 }
 /* line 414, ../sass/main.scss */
 .wrapper .window-four-wrap {
@@ -482,6 +484,7 @@ body {
   height: 100px;
   bottom: 0;
   opacity: 1;
+  display: none;
 }
 /* line 443, ../sass/main.scss */
 .wrapper .window-four-wrap .bg-4 .fact-div {

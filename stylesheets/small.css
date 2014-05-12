@@ -61,7 +61,7 @@ table {
 
 /* line 57, ../sass/small.scss */
 body {
-  background-color: black;
+  background-color: white;
   line-height: 2;
   font-family: 'Lato', sans-serif;
 }
@@ -374,6 +374,7 @@ body {
   height: 100px;
   bottom: 0;
   opacity: 1;
+  display: none;
 }
 /* line 349, ../sass/small.scss */
 .wrapper .window-three-wrap {
@@ -452,6 +453,7 @@ body {
   height: 100px;
   bottom: 0;
   opacity: 1;
+  display: none;
 }
 /* line 424, ../sass/small.scss */
 .wrapper .window-four-wrap {
@@ -491,6 +493,7 @@ body {
   height: 100px;
   bottom: 0;
   opacity: 1;
+  display: none;
 }
 /* line 454, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 .fact-div {
