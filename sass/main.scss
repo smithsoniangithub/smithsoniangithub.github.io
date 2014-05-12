@@ -85,9 +85,6 @@ body {
 			position: absolute;
 			z-index: 10;
 			left: 625px;
-			// left:0;
-			// right: 0;
-			// margin: 0 auto;
 			display: none;
 		}
 
@@ -326,7 +323,6 @@ body {
 				bottom:3%;
 				display: none;
 				.take-survey {
-					// display: none;
 					position: relative;
 					left: -50%;
 					bottom: 5%;
@@ -424,9 +420,7 @@ body {
 			.take-survey-div {
 				@include center-div(absolute);
 				bottom:3%;
-				// display: none;
 				.take-survey {
-					// display: none;
 					position: relative;
 					left: -50%;
 					bottom: 5%;
@@ -467,16 +461,3 @@ body {
 		}
 	}
 }
-
-// .parallax-nav {
-// 	.active {
-// 		// opacity:1;
-// 		border: 2px solid white;
-// 		border-radius: 100%;
-// 	}
-
-// 	.active-blue {
-// 		border: 2px solid #0bb3ff;
-// 		border-radius: 100%;
-// 	}
-// }
