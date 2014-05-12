@@ -222,7 +222,6 @@ body {
 	.window-one-wrap {
 		z-index: 5;
 		position:relative;
-		height: 100%;
 		.bg-1 {
 			background-image: url("/images/bg2-filter.png");
 			background-size: cover;
@@ -244,7 +243,6 @@ body {
 
 			.cover {
 				z-index: -50;
-				height: 672px;
 				width: 100%;
 				opacity: .1;
 			}

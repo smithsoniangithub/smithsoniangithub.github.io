@@ -121,7 +121,7 @@ body {
   margin: 0 auto;
   display: none;
 }
-/* line 94, ../sass/small.scss */
+/* line 92, ../sass/small.scss */
 .wrapper .castle-line .circle-two {
   position: absolute;
   z-index: 10;
@@ -129,7 +129,7 @@ body {
   left: 80px;
   display: none;
 }
-/* line 102, ../sass/small.scss */
+/* line 100, ../sass/small.scss */
 .wrapper .castle-line #curve-line-1 {
   position: absolute;
   z-index: 10;
@@ -138,12 +138,12 @@ body {
   height: 390px;
   width: 335px;
 }
-/* line 110, ../sass/small.scss */
+/* line 108, ../sass/small.scss */
 .wrapper .castle-line #curve-line-1 svg .line-one {
   stroke-dasharray: 863.447509765625;
   stroke-dashoffset: 863.447509765625;
 }
-/* line 120, ../sass/small.scss */
+/* line 118, ../sass/small.scss */
 .wrapper .castle-line #castle {
   position: absolute;
   z-index: 10;
@@ -152,12 +152,12 @@ body {
   height: 222px;
   width: 327px;
 }
-/* line 128, ../sass/small.scss */
+/* line 126, ../sass/small.scss */
 .wrapper .castle-line #castle svg .castle-path {
   stroke-dashoffset: 1155.9654541015625;
   stroke-dasharray: 1155.9654541015625;
 }
-/* line 137, ../sass/small.scss */
+/* line 135, ../sass/small.scss */
 .wrapper .castle-line #curve-line-2 {
   position: absolute;
   z-index: 10;
@@ -166,12 +166,12 @@ body {
   height: 154px;
   width: 308px;
 }
-/* line 145, ../sass/small.scss */
+/* line 143, ../sass/small.scss */
 .wrapper .castle-line #curve-line-2 svg path {
   stroke-dasharray: 332.88720703125;
   stroke-dashoffset: 332.88720703125;
 }
-/* line 154, ../sass/small.scss */
+/* line 152, ../sass/small.scss */
 .wrapper .castle-line #white-line {
   position: absolute;
   z-index: 10;
@@ -180,12 +180,12 @@ body {
   height: 44px;
   width: 453px;
 }
-/* line 162, ../sass/small.scss */
+/* line 160, ../sass/small.scss */
 .wrapper .castle-line #white-line svg path {
   stroke-dasharray: 650;
   stroke-dashoffset: 650;
 }
-/* line 171, ../sass/small.scss */
+/* line 169, ../sass/small.scss */
 .wrapper .castle-line #curve-line-3 {
   position: absolute;
   z-index: 10;
@@ -194,12 +194,12 @@ body {
   height: 301px;
   width: 18px;
 }
-/* line 179, ../sass/small.scss */
+/* line 177, ../sass/small.scss */
 .wrapper .castle-line #curve-line-3 svg path {
   stroke-dashoffset: 243;
   stroke-dasharray: 243;
 }
-/* line 188, ../sass/small.scss */
+/* line 186, ../sass/small.scss */
 .wrapper .castle-line #third-page-line {
   position: absolute;
   z-index: 10;
@@ -208,41 +208,41 @@ body {
   height: 1025px;
   width: 654px;
 }
-/* line 196, ../sass/small.scss */
+/* line 194, ../sass/small.scss */
 .wrapper .castle-line #third-page-line svg path {
   stroke-dashoffset: 1708.6005859375;
   stroke-dasharray: 1708.6005859375;
 }
-/* line 207, ../sass/small.scss */
+/* line 205, ../sass/small.scss */
 .wrapper nav {
   position: fixed;
   right: 70px;
   top: 30%;
   z-index: 9999;
 }
-/* line 212, ../sass/small.scss */
+/* line 210, ../sass/small.scss */
 .wrapper nav ul {
   padding: 0px;
 }
-/* line 214, ../sass/small.scss */
+/* line 212, ../sass/small.scss */
 .wrapper nav ul li {
   list-style: none;
 }
-/* line 216, ../sass/small.scss */
+/* line 214, ../sass/small.scss */
 .wrapper nav ul li img {
   height: 17px;
 }
-/* line 219, ../sass/small.scss */
+/* line 217, ../sass/small.scss */
 .wrapper nav ul li img:hover {
   border: 2px solid white;
   border-radius: 100%;
 }
-/* line 228, ../sass/small.scss */
+/* line 226, ../sass/small.scss */
 .wrapper .window-one-wrap {
   z-index: 5;
   position: relative;
 }
-/* line 231, ../sass/small.scss */
+/* line 229, ../sass/small.scss */
 .wrapper .window-one-wrap .bg-1 {
   background-image: url("/images/bg2-filter.png");
   background-size: cover;
@@ -251,7 +251,7 @@ body {
   width: 100%;
   position: relative;
 }
-/* line 239, ../sass/small.scss */
+/* line 237, ../sass/small.scss */
 .wrapper .window-one-wrap .bg-1 video {
   position: absolute;
   right: 0;
@@ -262,38 +262,38 @@ body {
   height: auto;
   z-index: -100;
 }
-/* line 250, ../sass/small.scss */
+/* line 248, ../sass/small.scss */
 .wrapper .window-one-wrap .bg-1 .cover {
   z-index: -50;
   height: 100%;
   width: 100%;
   opacity: .5;
 }
-/* line 257, ../sass/small.scss */
+/* line 255, ../sass/small.scss */
 .wrapper .window-one-wrap .bg-1 .logo-div {
   position: absolute;
   left: 50%;
   z-index: 11;
   top: 15%;
 }
-/* line 260, ../sass/small.scss */
+/* line 258, ../sass/small.scss */
 .wrapper .window-one-wrap .bg-1 .logo-div .logo {
   position: relative;
   left: -50%;
 }
-/* line 266, ../sass/small.scss */
+/* line 264, ../sass/small.scss */
 .wrapper .window-one-wrap .bg-1 .desc-div {
   position: absolute;
   left: 50%;
   z-index: 11;
   bottom: 5%;
 }
-/* line 269, ../sass/small.scss */
+/* line 267, ../sass/small.scss */
 .wrapper .window-one-wrap .bg-1 .desc-div .desc {
   position: relative;
   left: -50%;
 }
-/* line 275, ../sass/small.scss */
+/* line 273, ../sass/small.scss */
 .wrapper .window-one-wrap .bg-1 .desc-bg {
   position: absolute;
   width: 100%;
@@ -302,13 +302,13 @@ body {
   bottom: 0;
   opacity: .7;
 }
-/* line 286, ../sass/small.scss */
+/* line 284, ../sass/small.scss */
 .wrapper .window-two-wrap {
   position: relative;
   z-index: 5;
   height: 100%;
 }
-/* line 290, ../sass/small.scss */
+/* line 288, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 {
   height: 677px;
   position: relative;
@@ -316,14 +316,14 @@ body {
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
 }
-/* line 298, ../sass/small.scss */
+/* line 296, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 .fact-div {
   position: absolute;
   left: 50%;
   z-index: 11;
   top: 42%;
 }
-/* line 302, ../sass/small.scss */
+/* line 300, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 .fact-div .fact-one {
   background: rgba(0, 0, 0, 0.5);
   position: relative;
@@ -335,35 +335,35 @@ body {
   left: -38%;
   display: none;
 }
-/* line 313, ../sass/small.scss */
+/* line 311, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 .fact-div .fact-one .number {
   font-size: 55px;
   font-weight: bolder;
   color: #ffd500;
 }
-/* line 319, ../sass/small.scss */
+/* line 317, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 .fact-div .fact-one .sub-con {
   font-size: 35px;
   font-weight: 100;
 }
-/* line 324, ../sass/small.scss */
+/* line 322, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 .fact-div .fact-one .sub-con-two {
   font-size: 25px;
   font-weight: 100;
 }
-/* line 331, ../sass/small.scss */
+/* line 329, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 .take-survey-div {
   position: absolute;
   left: 50%;
   z-index: 11;
   bottom: 4%;
 }
-/* line 335, ../sass/small.scss */
+/* line 333, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 .take-survey-div .take-survey {
   position: relative;
   left: -50%;
 }
-/* line 341, ../sass/small.scss */
+/* line 339, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 .take-survey-bg {
   position: absolute;
   width: 100%;
@@ -372,13 +372,13 @@ body {
   bottom: 0;
   opacity: 1;
 }
-/* line 347, ../sass/small.scss */
+/* line 345, ../sass/small.scss */
 .wrapper .window-three-wrap {
   position: relative;
   z-index: 5;
   height: 100%;
 }
-/* line 351, ../sass/small.scss */
+/* line 349, ../sass/small.scss */
 .wrapper .window-three-wrap .bg-3 {
   height: 677px;
   z-index: 2;
@@ -387,7 +387,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 359, ../sass/small.scss */
+/* line 357, ../sass/small.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle {
   position: absolute;
   right: 0;
@@ -399,7 +399,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 100%;
 }
-/* line 371, ../sass/small.scss */
+/* line 369, ../sass/small.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle .circle-con1 {
   position: absolute;
   top: 20%;
@@ -408,7 +408,7 @@ body {
   margin: 0 auto;
   height: 17px;
 }
-/* line 381, ../sass/small.scss */
+/* line 379, ../sass/small.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle .circle-con2 {
   position: absolute;
   top: 27%;
@@ -417,7 +417,7 @@ body {
   margin: 0 auto;
   height: 25px;
 }
-/* line 391, ../sass/small.scss */
+/* line 389, ../sass/small.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle .circle-con3 {
   position: absolute;
   top: 55%;
@@ -426,13 +426,13 @@ body {
   margin: 0 auto;
   height: 90px;
 }
-/* line 404, ../sass/small.scss */
+/* line 402, ../sass/small.scss */
 .wrapper .window-four-wrap {
   position: relative;
   z-index: 5;
   height: 100%;
 }
-/* line 408, ../sass/small.scss */
+/* line 406, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 {
   height: 677px;
   z-index: 2;
@@ -441,20 +441,20 @@ body {
   background-size: cover,cover;
   background-repeat: no-repeat, no-repeat;
 }
-/* line 416, ../sass/small.scss */
+/* line 414, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 .take-survey-div {
   position: absolute;
   left: 50%;
   z-index: 11;
   bottom: 3%;
 }
-/* line 420, ../sass/small.scss */
+/* line 418, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 .take-survey-div .take-survey {
   position: relative;
   left: -50%;
   bottom: 5%;
 }
-/* line 428, ../sass/small.scss */
+/* line 426, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 .take-survey-bg-three {
   position: absolute;
   width: 100%;
@@ -463,14 +463,14 @@ body {
   bottom: 0;
   opacity: 1;
 }
-/* line 432, ../sass/small.scss */
+/* line 430, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 .fact-div {
   position: absolute;
   left: 50%;
   z-index: 11;
   top: 8%;
 }
-/* line 436, ../sass/small.scss */
+/* line 434, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 .fact-div .fact-two {
   background: rgba(0, 0, 0, 0.5);
   position: relative;
@@ -481,13 +481,13 @@ body {
   line-height: 1.5;
   left: -53%;
 }
-/* line 447, ../sass/small.scss */
+/* line 445, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 .fact-div .fact-two .number-two {
   font-size: 60px;
   font-weight: bolder;
   color: #ffd500;
 }
-/* line 453, ../sass/small.scss */
+/* line 451, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 .fact-div .fact-two .sub-con {
   font-size: 25px;
   font-weight: 100;

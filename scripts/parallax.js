@@ -6,17 +6,27 @@ var windowHeight;
 var docuHeight;
 var docuWidth;
 var isSmall;
-var scrolledY;
+var scrolledY = $(window).scrollTop();
 var flag = false;
 
-window.onresize = function() {
-  windowWidth = $(document).width();
+$(window).on('resize', function(){
+  windowWidth = $(window).width();
+  windowHeight = $(window).height();
   docuWidth = $(document).width();
+  docuHeight = $(document).height();
 
-  if(windowWidth < 720) {
+  $('.cover').css('height', windowHeight);  
+  $('.circle-one').css('top', windowHeight+21);
+  $('#curve-line-1').css('top', windowHeight+4);
+  $('#castle').css('top', windowHeight+3);
+  $('#curve-line-2').css('top', windowHeight+322);
+  $('.circle-two').css('top', windowHeight+520);
+  $('#white-line').css('top', windowHeight+513);
+  $('#curve-line-3').css('top', windowHeight+549);
+  $('#third-page-line').css('top', windowHeight+936);
 
+  if ($(window).width() < 720) {
     $('.cover').css('height', '100%');
-    
     $('.window-one-wrap').css('height', windowHeight);
     $('.window-two-wrap').css('height', windowHeight);
     $('.window-three-wrap').css('height', windowHeight);
@@ -26,91 +36,45 @@ window.onresize = function() {
     $('.bg2').css('height', '100%');
     $('.bg3').css('height', '100%');
     $('.bg4').css('height', '100%');
-    console.log($(window).scrollTop());
-  } 
-}
+  } else {
 
-  window.onload = function() {
-    windowHeight = $(window).height();
-    docuHeight = $(document).height();
-    docuWidth = $(document).width();
+    $(window).on('scroll', function(){
+     parallaxScroll();
+    });
+
     $('.cover').css('height', windowHeight);
-    $('.circle-one').css('top', windowHeight+21);
-    $('#curve-line-1').css('top', windowHeight+4);
-    $('#castle').css('top', windowHeight+3);
-    $('#curve-line-2').css('top', windowHeight+322);
-    $('.circle-two').css('top', windowHeight+520);
-    $('#white-line').css('top', windowHeight+513);
-    $('#curve-line-3').css('top', windowHeight+549);
-    $('#third-page-line').css('top', windowHeight+936);
+    $('.window-one-wrap').css('height','100%');
+    $('.window-wrap').css('height','962px');
 
-    console.log(windowHeight);
+    $('.bg1').css('height', '100%');
+    $('.bg2').css('height', '100%');
+    $('.bg3').css('height', '100%');
+    $('.bg4').css('height', '100%');
   }
+}).resize();
 
-  // function drawLine ()
-
- 
-  function drawLineOne (lineOneOffset) {
-    var path = document.querySelector('.line-one');
+//  line animation function
+  function drawLine (pathName, scrolled, lineOffset, multiplier) {
+    var path = document.querySelector(pathName);
     var pathLength = path.getTotalLength();  // 1204.9405517578125
-    var scrolledY = $(window).scrollTop();
-    var zeroOffset = (lineOneOffset)-(scrolledY*7);
-    
-    
-    $('.line-one').css("stroke-dashoffset", zeroOffset);
-  } 
-
-  function drawCastle (castleOffset) {
-    var castlepath = document.querySelector('.castle-path');
-    var castlePathLength = castlepath.getTotalLength();  // 1155.9654541015625
     scrolledY = $(window).scrollTop();
-    var offset = (castleOffset) + (scrolledY*9);
-  
-    $('.castle-path').css("stroke-dashoffset", offset);
-
+    var offset = (lineOffset)-(scrolled*multiplier);
+    
+    
+    $(path).css("stroke-dashoffset", offset);
   }
 
-  function drawLineTwo (lineTwoOffset) {
-    var path = document.querySelector('.line-two');
-    var pathLength = path.getTotalLength();  // 332.88720703125
+//  line animation function two
+  function drawLineFunctionTwo (pathName, scrolled, lineOffset, multiplier) {
+    var path = document.querySelector(pathName);
+    var pathLength = path.getTotalLength();  // 1204.9405517578125
     scrolledY = $(window).scrollTop();
-    var zeroOffset = lineTwoOffset+(scrolledY*2.045);
+    var offset = (lineOffset)+(scrolled*multiplier);
     
     
-    $('.line-two').css("stroke-dashoffset", zeroOffset);
-
+    $(path).css("stroke-dashoffset", offset);
   }
 
-  function drawWhiteLine (whiteLineOffset) {
-    var path = document.querySelector('.white-line');
-    var pathLength = path.getTotalLength();  // 650
-    scrolledY = $(window).scrollTop();
-    var zeroOffset = whiteLineOffset-(scrolledY*3.183);
-    
-    
-    $('.white-line').css("stroke-dashoffset", zeroOffset);
-
-  }
-
-  function drawLineThree (lineThreeOffset) {
-    var path = document.querySelector('.line-three');
-    var pathLength = path.getTotalLength();  // 243
-    scrolledY = $(window).scrollTop();
-    var zeroOffset = lineThreeOffset-(scrolledY*3.81);
-    
-    
-    $('.line-three').css("stroke-dashoffset", zeroOffset);
-
-  }
-
-  function drawLineFour (lineFourOffset) {
-    var path = document.querySelector('.line-four');
-    var pathLength = path.getTotalLength();  // 1708.6005859375
-    scrolledY = $(window).scrollTop();
-    var zeroOffset = lineFourOffset+(scrolledY*2.2);
-
-    $('.line-four').css("stroke-dashoffset", zeroOffset);
-  }
    
   //  function to animate numbers with comma
 	function commaSeparateNumber(val){
@@ -150,31 +114,30 @@ window.onresize = function() {
 
     // lines animations
 		if(scrolledY > 300) {
-
 			$('.circle-one').fadeIn();
-      
-      drawLineOne(1204.9405517578125); // line one function call
+       
+      drawLine('.line-one',scrolledY,1204.9405517578125,7); // line one animation function call
 
       if(scrolledY > 515){
 
         $('.line-one').css("stroke-dashoffset", 0);
-        drawCastle(1155.9654541015625); // draw castle function call
+        drawLineFunctionTwo('.castle-path',scrolledY, 1155.9654541015625, 9); // castle animation function call
 
         if(scrolledY > 640){
 
           $('.castle-path').css("stroke-dashoffset", 0);
-          drawLineTwo(332.88720703125); // line two function call
+          drawLineFunctionTwo('.line-two',scrolledY, 332.88720703125, 2.045); // line two animation function call
           
           if (scrolledY > 815){
 
+            drawLine('.white-line',scrolledY,650,3.183); // white line animation function call
             $('.line-two').css("stroke-dashoffset", 0);
             $('.circle-two').fadeIn();
-            drawWhiteLine(650); // White line function call
 
             if(scrolledY > 1020) {
 
+              drawLine('.line-three',scrolledY,243,3.81); // line three animation function call
               $('.white-line').css("stroke-dashoffset", 0);
-              drawLineThree(243); // line three function call
               $('.fact-one').fadeIn(1000);
 
               if(flag==true){
@@ -198,7 +161,7 @@ window.onresize = function() {
               if(scrolledY > 1085) {
 
                 $('.line-three').css("stroke-dashoffset", 0);
-                drawLineFour(1708.6005859375) // line four function call
+                drawLineFunctionTwo('.line-four', scrolledY,1708.6005859375,2.2) // line four animation function call
 
                 if (scrolledY > 1700) {
 
@@ -261,30 +224,6 @@ window.onresize = function() {
     
   }
 
-    $(window).bind('scroll', function(){
-     parallaxScroll();
-     // console.log($(window).scrollTop());
-    });
-
-
-
-    // $('.nav-one').hover(function(){
-    //   // mouse enter
-    //   $('.tool-one').css('display','block');
-    //   $('.one').removeClass('active');
-    // }, function(){
-    //   // mouse leave
-    //   $('.tool-one').css('display','none');
-    // });
-
-    // $('.nav-two').hover(function(){
-    //   // mouse enter
-    //   $('.tool-two').css('display','block');
-    //   $('.two').removeClass('active');
-    // }, function(){
-    //   // mouse leave
-    //   $('.tool-two').css('display','none');
-    // });
 
 });
 
