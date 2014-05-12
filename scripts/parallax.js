@@ -210,9 +210,9 @@ $(window).on('resize', function(){
     $('.bg4').css('height', '100%');
   } else {
 
-    $(window).on('scroll', function(){
-     parallaxScroll();
-    });
+    // $(window).on('scroll', function(){
+    //  parallaxScroll();
+    // });
 
     $('.cover').css('height', windowHeight);
     $('.window-one-wrap').css('height','100%');
@@ -224,6 +224,19 @@ $(window).on('resize', function(){
     $('.bg4').css('height', '100%');
   }
 }).resize();
+
+$(window).on('scroll', function(){
+  windowWidth = $(window).width();
+  windowHeight = $(window).height();
+  docuWidth = $(document).width();
+  docuHeight = $(document).height();
+
+  if(windowWidth < 720) {
+
+  } else {
+    parallaxScroll();
+  }
+});
 
 
 });
