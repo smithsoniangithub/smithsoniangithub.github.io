@@ -47,6 +47,7 @@ window.onresize = function() {
     console.log(windowHeight);
   }
 
+  // function drawLine ()
 
  
   function drawLineOne (lineOneOffset) {
@@ -125,7 +126,7 @@ window.onresize = function() {
     // footer show/hide
     if(scrolledY > 960) {
 
-      $('.take-survey-bg'). ('slide');
+      $('.take-survey-bg').show('slide');
       $('.take-survey-one').show();
 
       if (scrolledY > 1900) {
