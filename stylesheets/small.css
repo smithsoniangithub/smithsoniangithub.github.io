@@ -126,7 +126,7 @@ body {
   position: absolute;
   z-index: 10;
   top: 1040px !important;
-  left: 80px;
+  left: 74px;
   display: none;
 }
 /* line 100, ../sass/small.scss */
@@ -148,7 +148,7 @@ body {
   position: absolute;
   z-index: 10;
   top: 753px !important;
-  left: 208px;
+  left: 203px;
   height: 222px;
   width: 327px;
 }
@@ -162,7 +162,7 @@ body {
   position: absolute;
   z-index: 10;
   top: 928px !important;
-  left: 16px;
+  left: 12px;
   height: 154px;
   width: 308px;
 }
@@ -176,9 +176,9 @@ body {
   position: absolute;
   z-index: 10;
   top: 1036px !important;
-  left: 105px;
+  left: 102px;
   height: 44px;
-  width: 453px;
+  width: 482px;
 }
 /* line 160, ../sass/small.scss */
 .wrapper .castle-line #white-line svg path {
@@ -190,7 +190,7 @@ body {
   position: absolute;
   z-index: 10;
   top: 1070px !important;
-  left: 85px;
+  left: 80px;
   height: 301px;
   width: 18px;
 }
@@ -204,7 +204,7 @@ body {
   position: absolute;
   z-index: 10;
   top: 1158px !important;
-  left: 13px;
+  left: 8px;
   height: 1025px;
   width: 654px;
 }
@@ -356,7 +356,7 @@ body {
   width: 455px;
   position: absolute;
   right: 0;
-  bottom: 3%;
+  bottom: 4%;
   left: 0;
   margin: 0 auto;
   z-index: 11;
@@ -435,7 +435,7 @@ body {
   width: 455px;
   position: absolute;
   right: 0;
-  bottom: 3%;
+  bottom: 4%;
   left: 0;
   margin: 0 auto;
   z-index: 11;
@@ -475,7 +475,7 @@ body {
   width: 455px;
   position: absolute;
   right: 0;
-  bottom: 3%;
+  bottom: 4%;
   left: 0;
   margin: 0 auto;
   z-index: 11;
