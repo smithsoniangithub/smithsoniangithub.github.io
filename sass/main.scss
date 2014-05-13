@@ -71,128 +71,6 @@ body {
 	.tool-two {
 		@include tooltip(245px);
 	}
-	
-	.castle-line {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
-		z-index: 500;
-
-		.circle-one {
-			position: absolute;
-			z-index: 10;
-			left: 625px;
-			display: none;
-		}
-
-		.circle-two {
-			position: absolute;
-			z-index: 10;	
-			left: 145px;
-			display: none;
-		}
-
-		#curve-line-1 {
-			position: absolute;
-			z-index: 10;
-			left: 625px;
-			height: 390px;
-			width: 470px;		
-			svg {
-				.line-one {
-					stroke-dasharray: 1204.9405517578125;
-					stroke-dashoffset: 1204.9405517578125;
-					// stroke-dasharray: 0;
-					// stroke-dashoffset: 0;
-				}
-			}
-		}
-
-
-		#castle {
-			position: absolute;
-			z-index: 10;
-			left: 372px;
-			height: 446px;
-			width: 507px;
-			svg {
-				.castle-path{
-					stroke-dashoffset:1155.9654541015625;
-					stroke-dasharray:1155.9654541015625;
-					// stroke-dasharray: 0;
-					// stroke-dashoffset: 0;
-				}
-			}
-		}
-
-		#curve-line-2 {
-			position: absolute;
-			z-index: 10;
-			left: 131px;
-			height: 270px;
-			width: 326px;
-			svg {
-				.line-two {
-					stroke-dasharray:332.88720703125;
-					stroke-dashoffset:332.88720703125;
-					// stroke-dasharray: 0;
-					// stroke-dashoffset: 0;
-				}
-			}
-		}
-
-		#white-line {
-			position: absolute;
-			z-index: 10;
-			left: 170px;
-			height: 44px;
-			width: 744px;
-			svg {
-				.white-line {
-					stroke-dasharray: 650;
-					stroke-dashoffset: 650;
-					// stroke-dasharray: 0;
-					// stroke-dashoffset: 0;
-				}
-			}
-		}
-
-		#curve-line-3 {
-			position: absolute;
-			z-index: 10;
-			left: 152px;
-			height: 428px;
-			width: 18px;
-			svg {
-				.line-three{
-					stroke-dashoffset:243;
-					stroke-dasharray:243;
-					// stroke-dasharray: 0;
-					// stroke-dashoffset: 0;
-				}
-			}
-		}
-
-		#third-page-line{
-			position: absolute;
-			z-index: 10;
-			left: 26px;
-			height: 1025px;
-			width: 1044px;
-			svg {
-				.line-four {
-					stroke-dashoffset:1708.6005859375;
-					stroke-dasharray:1708.6005859375;
-					// stroke-dasharray: 0;
-					// stroke-dashoffset: 0;
-				}
-			}
-		}
-	}
-
 
 	nav {
 		position: fixed;
@@ -284,10 +162,125 @@ body {
 			background-size: cover,cover;
 			background-repeat: no-repeat, no-repeat;
 			background-position: center;
+			.con {
+				position:absolute;
+				width:1280px;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				z-index: 500;
+
+				.circle-one {
+				position: absolute;
+				z-index: 10;
+				// left: 625px;
+				top:40px;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				display: none;
+			}
+
+				#curve-line-1 {
+					position: absolute;
+					z-index: 10;
+					// left: 625px;
+					left: 48.5%;
+					top: 24px;
+					height: 390px;
+					width: 470px;		
+					svg {
+						.line-one {
+							stroke-dasharray: 1204.9405517578125;
+							stroke-dashoffset: 1204.9405517578125;
+							// stroke-dasharray: 0;
+							// stroke-dashoffset: 0;
+						}
+					}
+				}
+
+				#castle {
+					position: absolute;
+					z-index: 10;
+					top: 38px;
+					right: 0;
+					left: 0;
+					margin:0 auto;
+					height: 446px;
+					width: 455px;
+					svg {
+						.castle-path{
+							stroke-dashoffset:1155.9654541015625;
+							stroke-dasharray:1155.9654541015625;
+							// stroke-dasharray: 0;
+							// stroke-dashoffset: 0;
+						}
+					}
+				}
+
+				#curve-line-2 {
+					position: absolute;
+					z-index: 10;
+					top: 344px;
+					right: 61.7%;
+					height: 270px;
+					width: 326px;
+					svg {
+						.line-two {
+							stroke-dasharray:332.88720703125;
+							stroke-dashoffset:332.88720703125;
+							// stroke-dasharray: 0;
+							// stroke-dashoffset: 0;
+						}
+					}
+				}
+
+				.circle-two {
+					position: absolute;
+					z-index: 10;	
+					top: 542px;
+					left: 14%;
+					display: none;
+				}
+
+				#white-line {
+					position: absolute;
+					z-index: 10;
+					top:536px;
+					left: 16%;
+					height: 44px;
+					width: 710px;
+					svg {
+						.white-line {
+							stroke-dasharray: 650;
+							stroke-dashoffset: 650;
+							// stroke-dasharray: 0;
+							// stroke-dashoffset: 0;
+						}
+					}
+				}
+
+				#curve-line-3 {
+					position: absolute;
+					z-index: 10;
+					top: 570px;
+					left: 14.5%;
+					height: 428px;
+					width: 18px;
+					svg {
+						.line-three{
+							stroke-dashoffset:243;
+							stroke-dasharray:243;
+							// stroke-dasharray: 0;
+							// stroke-dashoffset: 0;
+						}
+					}
+				}
+			}
 
 			.fact-div {
 				@include center-div(absolute);
-				top: 43%;
+				top: 45%;
 
 				.fact-one {
 				background: rgba(0, 0, 0, 0.5);
@@ -349,6 +342,32 @@ body {
 			background-image: url('/images/bg3.jpg');
 			background-size:cover;
 			background-repeat: no-repeat;
+			.con {
+				position:absolute;
+				width:1280px;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				z-index: 500;
+				#third-page-line{
+					position: absolute;
+					z-index: 10;
+					top: -37px;
+					left: 4.7%;
+					height: 1025px;
+					width: 1044px;
+					z-index: 500;
+					svg {
+						.line-four {
+							stroke-dashoffset:1708.6005859375;
+							stroke-dasharray:1708.6005859375;
+							// stroke-dasharray: 0;
+							// stroke-dashoffset: 0;
+						}
+					}
+				}
+			}
+
 			
 			.center-circle {
 				position:absolute;

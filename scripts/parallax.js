@@ -330,17 +330,17 @@ $(window).on('resize', function(){
   docuWidth = $(document).width();
   docuHeight = $(document).height();
 
-  // if ($(window).width() > 720){
-    $('.cover').css('height', windowHeight);  
-    $('.circle-one').css('top', windowHeight+21);
-    $('#curve-line-1').css('top', windowHeight+4);
-    $('#castle').css('top', windowHeight+3);
-    $('#curve-line-2').css('top', windowHeight+322);
-    $('.circle-two').css('top', windowHeight+520);
-    $('#white-line').css('top', windowHeight+513);
-    $('#curve-line-3').css('top', windowHeight+549);
-    $('#third-page-line').css('top', windowHeight+936);
-    console.log('test');
+  // if ($(window).width() > 600){
+  //   $('.cover').css('height', windowHeight);  
+  //   $('.circle-one').css('top', windowHeight+21);
+  //   $('#curve-line-1').css('top', windowHeight+4);
+  //   $('#castle').css('top', windowHeight+3);
+  //   $('#curve-line-2').css('top', windowHeight+322);
+  //   $('.circle-two').css('top', windowHeight+520);
+  //   $('#white-line').css('top', windowHeight+513);
+  //   $('#curve-line-3').css('top', windowHeight+549);
+  //   $('#third-page-line').css('top', windowHeight+936);
+  //   console.log('test2');
   // } 
 
   if ($(window).width() < 720) {
@@ -378,7 +378,7 @@ $(window).on('scroll', function(){
 
   if(windowWidth <= 720) {
     console.log(scrolledY);
-    parallaxScrollTwo();
+    // parallaxScrollTwo();
   } else {
     parallaxScroll();
   }
