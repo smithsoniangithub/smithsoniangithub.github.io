@@ -158,8 +158,6 @@ var flag = false;
             $('.circle-two').fadeOut();
 
           }
-          
-            // scrolled 1000 place here
 
         } else {
 
@@ -299,7 +297,6 @@ var flag = false;
 
             }
             
-              // scrolled 1000 place here
 
           } else {
 

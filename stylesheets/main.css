@@ -120,11 +120,11 @@ body {
 /* line 84, ../sass/main.scss */
 .wrapper nav ul li img {
   height: 17px;
+  opacity: 0.5;
 }
-/* line 87, ../sass/main.scss */
+/* line 88, ../sass/main.scss */
 .wrapper nav ul li img:hover {
-  border: 2px solid white;
-  border-radius: 100%;
+  opacity: 1;
 }
 /* line 97, ../sass/main.scss */
 .wrapper .window-one-wrap {

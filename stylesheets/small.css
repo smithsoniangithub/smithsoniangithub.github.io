@@ -228,17 +228,12 @@ body {
 .wrapper nav ul li img {
   height: 17px;
 }
-/* line 213, ../sass/small.scss */
-.wrapper nav ul li img:hover {
-  border: 2px solid white;
-  border-radius: 100%;
-}
-/* line 222, ../sass/small.scss */
+/* line 218, ../sass/small.scss */
 .wrapper .window-one-wrap {
   z-index: 5;
   position: relative;
 }
-/* line 225, ../sass/small.scss */
+/* line 221, ../sass/small.scss */
 .wrapper .window-one-wrap .bg-1 {
   background-image: url("/images/bg2-filter.png");
   background-size: cover;
@@ -247,7 +242,7 @@ body {
   width: 100%;
   position: relative;
 }
-/* line 233, ../sass/small.scss */
+/* line 229, ../sass/small.scss */
 .wrapper .window-one-wrap .bg-1 video {
   position: absolute;
   right: 0;
@@ -258,38 +253,38 @@ body {
   height: auto;
   z-index: -100;
 }
-/* line 244, ../sass/small.scss */
+/* line 240, ../sass/small.scss */
 .wrapper .window-one-wrap .bg-1 .cover {
   z-index: -50;
   height: 100%;
   width: 100%;
   opacity: .5;
 }
-/* line 251, ../sass/small.scss */
+/* line 247, ../sass/small.scss */
 .wrapper .window-one-wrap .bg-1 .logo-div {
   position: absolute;
   left: 50%;
   z-index: 11;
   top: 15%;
 }
-/* line 254, ../sass/small.scss */
+/* line 250, ../sass/small.scss */
 .wrapper .window-one-wrap .bg-1 .logo-div .logo {
   position: relative;
   left: -50%;
 }
-/* line 260, ../sass/small.scss */
+/* line 256, ../sass/small.scss */
 .wrapper .window-one-wrap .bg-1 .desc-div {
   position: absolute;
   left: 50%;
   z-index: 11;
   bottom: 5%;
 }
-/* line 263, ../sass/small.scss */
+/* line 259, ../sass/small.scss */
 .wrapper .window-one-wrap .bg-1 .desc-div .desc {
   position: relative;
   left: -50%;
 }
-/* line 269, ../sass/small.scss */
+/* line 265, ../sass/small.scss */
 .wrapper .window-one-wrap .bg-1 .desc-bg {
   position: absolute;
   width: 100%;
@@ -298,13 +293,13 @@ body {
   bottom: 0;
   opacity: .7;
 }
-/* line 280, ../sass/small.scss */
+/* line 276, ../sass/small.scss */
 .wrapper .window-two-wrap {
   position: relative;
   z-index: 5;
   height: 100%;
 }
-/* line 284, ../sass/small.scss */
+/* line 280, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 {
   height: 677px;
   position: relative;
@@ -312,14 +307,14 @@ body {
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
 }
-/* line 292, ../sass/small.scss */
+/* line 288, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 .fact-div {
   position: absolute;
   left: 50%;
   z-index: 11;
   top: 42%;
 }
-/* line 296, ../sass/small.scss */
+/* line 292, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 .fact-div .fact-one {
   background: rgba(0, 0, 0, 0.5);
   position: relative;
@@ -331,23 +326,23 @@ body {
   left: -38%;
   display: none;
 }
-/* line 307, ../sass/small.scss */
+/* line 303, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 .fact-div .fact-one .number {
   font-size: 55px;
   font-weight: bolder;
   color: #ffd500;
 }
-/* line 313, ../sass/small.scss */
+/* line 309, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 .fact-div .fact-one .sub-con {
   font-size: 35px;
   font-weight: 100;
 }
-/* line 318, ../sass/small.scss */
+/* line 314, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 .fact-div .fact-one .sub-con-two {
   font-size: 25px;
   font-weight: 100;
 }
-/* line 325, ../sass/small.scss */
+/* line 321, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 .take-survey-div {
   width: 455px;
   position: absolute;
@@ -358,11 +353,11 @@ body {
   z-index: 11;
   display: none;
 }
-/* line 334, ../sass/small.scss */
+/* line 330, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 .take-survey-div .take-survey {
   position: relative;
 }
-/* line 339, ../sass/small.scss */
+/* line 335, ../sass/small.scss */
 .wrapper .window-two-wrap .bg-2 .take-survey-bg {
   position: absolute;
   width: 100%;
@@ -372,13 +367,13 @@ body {
   opacity: 1;
   display: none;
 }
-/* line 345, ../sass/small.scss */
+/* line 341, ../sass/small.scss */
 .wrapper .window-three-wrap {
   position: relative;
   z-index: 5;
   height: 100%;
 }
-/* line 349, ../sass/small.scss */
+/* line 345, ../sass/small.scss */
 .wrapper .window-three-wrap .bg-3 {
   height: 677px;
   z-index: 2;
@@ -387,7 +382,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 357, ../sass/small.scss */
+/* line 353, ../sass/small.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle {
   position: absolute;
   right: 0;
@@ -399,7 +394,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 100%;
 }
-/* line 369, ../sass/small.scss */
+/* line 365, ../sass/small.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle .circle-con1 {
   position: absolute;
   top: 20%;
@@ -408,7 +403,7 @@ body {
   margin: 0 auto;
   height: 17px;
 }
-/* line 379, ../sass/small.scss */
+/* line 375, ../sass/small.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle .circle-con2 {
   position: absolute;
   top: 27%;
@@ -417,7 +412,7 @@ body {
   margin: 0 auto;
   height: 25px;
 }
-/* line 389, ../sass/small.scss */
+/* line 385, ../sass/small.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle .circle-con3 {
   position: absolute;
   top: 55%;
@@ -426,7 +421,7 @@ body {
   margin: 0 auto;
   height: 90px;
 }
-/* line 399, ../sass/small.scss */
+/* line 395, ../sass/small.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle .take-survey-div {
   width: 455px;
   position: absolute;
@@ -437,11 +432,11 @@ body {
   z-index: 11;
   display: none;
 }
-/* line 408, ../sass/small.scss */
+/* line 404, ../sass/small.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle .take-survey-div .take-survey {
   position: relative;
 }
-/* line 413, ../sass/small.scss */
+/* line 409, ../sass/small.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle .take-survey-bg-two {
   position: absolute;
   width: 100%;
@@ -451,13 +446,13 @@ body {
   opacity: 1;
   display: none;
 }
-/* line 420, ../sass/small.scss */
+/* line 416, ../sass/small.scss */
 .wrapper .window-four-wrap {
   position: relative;
   z-index: 5;
   height: 100%;
 }
-/* line 424, ../sass/small.scss */
+/* line 420, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 {
   height: 677px;
   z-index: 2;
@@ -466,7 +461,7 @@ body {
   background-size: cover,cover;
   background-repeat: no-repeat, no-repeat;
 }
-/* line 432, ../sass/small.scss */
+/* line 428, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 .take-survey-div {
   width: 455px;
   position: absolute;
@@ -477,11 +472,11 @@ body {
   z-index: 11;
   display: none;
 }
-/* line 441, ../sass/small.scss */
+/* line 437, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 .take-survey-div .take-survey {
   position: relative;
 }
-/* line 446, ../sass/small.scss */
+/* line 442, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 .take-survey-bg-three {
   position: absolute;
   width: 100%;
@@ -491,14 +486,14 @@ body {
   opacity: 1;
   display: none;
 }
-/* line 450, ../sass/small.scss */
+/* line 446, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 .fact-div {
   position: absolute;
   left: 50%;
   z-index: 11;
   top: 8%;
 }
-/* line 454, ../sass/small.scss */
+/* line 450, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 .fact-div .fact-two {
   background: rgba(0, 0, 0, 0.5);
   position: relative;
@@ -509,13 +504,13 @@ body {
   line-height: 1.5;
   left: -53%;
 }
-/* line 465, ../sass/small.scss */
+/* line 461, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 .fact-div .fact-two .number-two {
   font-size: 60px;
   font-weight: bolder;
   color: #ffd500;
 }
-/* line 471, ../sass/small.scss */
+/* line 467, ../sass/small.scss */
 .wrapper .window-four-wrap .bg-4 .fact-div .fact-two .sub-con {
   font-size: 25px;
   font-weight: 100;

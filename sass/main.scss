@@ -83,10 +83,10 @@ body {
 				list-style: none;
 				img {
 					height: 17px;
+					opacity: 0.5;
 				}
 				img:hover {
-					border: 2px solid white;
-					border-radius: 100%;
+					opacity: 1;
 				}
 			}
 		}
