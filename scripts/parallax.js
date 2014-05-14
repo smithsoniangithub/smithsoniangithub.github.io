@@ -49,12 +49,12 @@ var flag = false;
     // footer show/hide
     if(scrolledY > 960) {
 
-      $('.take-survey-bg').show('slide');
+      $('.take-survey-bg').fadeIn();
       $('.take-survey-one').show();
 
       if (scrolledY > 1900) {
 
-        $('.take-survey-bg-two').show('slide');
+        $('.take-survey-bg-two').fadeIn();
         $('.take-survey-two').show();
 
       } else {
@@ -330,19 +330,6 @@ $(window).on('resize', function(){
   docuWidth = $(document).width();
   docuHeight = $(document).height();
 
-  // if ($(window).width() > 600){
-  //   $('.cover').css('height', windowHeight);  
-  //   $('.circle-one').css('top', windowHeight+21);
-  //   $('#curve-line-1').css('top', windowHeight+4);
-  //   $('#castle').css('top', windowHeight+3);
-  //   $('#curve-line-2').css('top', windowHeight+322);
-  //   $('.circle-two').css('top', windowHeight+520);
-  //   $('#white-line').css('top', windowHeight+513);
-  //   $('#curve-line-3').css('top', windowHeight+549);
-  //   $('#third-page-line').css('top', windowHeight+936);
-  //   console.log('test2');
-  // } 
-
   if ($(window).width() < 720) {
     $('.cover').css('height', '100%');
     $('.window-one-wrap').css('height', '100%');
@@ -355,10 +342,6 @@ $(window).on('resize', function(){
     $('.bg3').css('height', '100%');
     $('.bg4').css('height', '100%');
   } else {
-
-    // $(window).on('scroll', function(){
-    //  parallaxScroll();
-    // });
 
     $('.cover').css('height', windowHeight);
     $('.window-one-wrap').css('height','100%');

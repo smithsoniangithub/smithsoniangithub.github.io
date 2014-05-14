@@ -3,10 +3,6 @@
 
 @import 'mixins';
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -92,7 +88,7 @@ body {
 		.circle-two {
 			position: absolute;
 			z-index: 10;
-			top: 1040px !important;
+			top: 1040px;
 			left: 74px;
 			display: none;
 		}
@@ -100,7 +96,7 @@ body {
 		#curve-line-1 {
 			position: absolute;
 			z-index: 10;
-			top: 638px !important;
+			top: 638px;
 			left: 349px;			
 			height:390px;
 			width: 335px;
@@ -118,7 +114,7 @@ body {
 		#castle {
 			position: absolute;
 			z-index: 10;
-			top: 753px !important;
+			top: 753px;
 			left: 203px;
 			height: 222px;
 			width: 327px;
@@ -135,7 +131,7 @@ body {
 		#curve-line-2 {
 			position: absolute;
 			z-index: 10;
-			top: 928px !important;
+			top: 928px;
 			left: 12px;
 			height: 154px;
 			width: 308px;
@@ -152,7 +148,7 @@ body {
 		#white-line {
 			position: absolute;
 			z-index: 10;
-			top: 1036px !important;
+			top: 1036px;
 			left: 102px;
 			height: 44px;
 			width: 482px;
@@ -169,7 +165,7 @@ body {
 		#curve-line-3 {
 			position: absolute;
 			z-index: 10;
-			top: 1070px !important;
+			top: 1070px;
 			left: 80px;
 			height: 301px;
 				width: 18px;
@@ -186,7 +182,7 @@ body {
 		#third-page-line{
 			position: absolute;
 			z-index: 10;
-			top: 1158px !important;
+			top: 1158px;
 			left: 8px;
 			height: 1025px;
 			width: 654px;
