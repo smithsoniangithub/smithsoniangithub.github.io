@@ -44,28 +44,34 @@ var flag = false;
   // line and castle animation function for device width morethan 720px
 	function parallaxScroll(){
 		scrolledY = $(window).scrollTop();
+    console.log(scrolledY);
     
     // footer show/hide
-    if(scrolledY > 960) {
+    if(scrolledY > 640) {
 
-      $('.take-survey-bg').fadeIn();
+      $('.take-survey-div').show('slide',{direction:'down'});
       $('.take-survey-one').show();
+      $('.take-survey-two').hide();
+      $('.take-survey-three').hide();
+      
+      if(scrolledY > 1060) {
 
-      if (scrolledY > 1900) {
-
-        $('.take-survey-bg-two').fadeIn();
+        $('.take-survey-one').hide();
         $('.take-survey-two').show();
+        $('.take-survey-three').hide();
 
-      } else {
+        if(scrolledY > 2020) {
 
-        $('.take-survey-bg-two').fadeOut();
-        $('.take-survey-two').fadeOut();
+          $('.take-survey-one').hide();
+          $('.take-survey-two').hide();
+          $('.take-survey-three').show();
+        }
 
       }
+
     } else {
 
-      $('.take-survey-bg').fadeOut();
-      $('.take-survey-one').fadeOut();
+      $('.take-survey-div').hide('slide',{direction:'down'});
 
     }
 
@@ -83,18 +89,18 @@ var flag = false;
 
         if(scrolledY > 640){
 
+          drawLineFunctionTwo('.line-two',scrolledY, 332.88720703125, 2.078); // line two animation function call
           $('.castle-path').css("stroke-dashoffset", 0);
-          drawLineFunctionTwo('.line-two',scrolledY, 332.88720703125, 2.045); // line two animation function call
           
-          if (scrolledY > 815){
+          if (scrolledY > 800){
 
-            drawLine('.white-line',scrolledY,650,3.183); // white line animation function call
+            drawLine('.white-line',scrolledY,650,3.242); // white line animation function call
             $('.line-two').css("stroke-dashoffset", 0);
             $('.circle-two').fadeIn();
 
-            if(scrolledY > 1020) {
+            if(scrolledY > 1000) {
 
-              drawLine('.line-three',scrolledY,243,3.81); // line three animation function call
+              drawLine('.line-three',scrolledY,243,3.87); // line three animation function call
               $('.white-line').css("stroke-dashoffset", 0);
               $('.fact-one').fadeIn(1000);
 
@@ -116,7 +122,7 @@ var flag = false;
 
                   // end of 30, 000, 000 animation
               } 
-              if(scrolledY > 1085) {
+              if(scrolledY > 1060) {
 
                 $('.line-three').css("stroke-dashoffset", 0);
                 drawLineFunctionTwo('.line-four', scrolledY,1708.6005859375,2.2) // line four animation function call

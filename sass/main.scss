@@ -91,6 +91,53 @@ body {
 			}
 		}
 	}
+	
+	// FOOTER
+	.take-survey-div {
+		background-image: url('/images/footer.png');
+		background-size:cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 90px;
+		position: fixed;
+		bottom: 0;
+		z-index: 11;
+		display: none;
+		.take-survey-one {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto auto;
+			display: none;
+		}
+
+		.take-survey-two {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto auto;
+			display: none;
+		}
+
+		.take-survey-three {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto auto;
+			display: none;
+		}
+	}
+
+	.active {
+		display: block;
+	}
+
 
 
 
@@ -309,24 +356,6 @@ body {
 					}
 				}
 			}
-
-			.take-survey-div {
-				width: 455px;
-				position: absolute;
-				right: 0;
-				bottom: 3%;
-				left: 0;
-				margin: 0 auto;
-				z-index: 11;
-				display: none;
-				.take-survey {
-					position: relative;
-				}
-			}
-
-			.take-survey-bg {
-				@include take-survey-bg(100px, 1);
-			}
 		}
 	}
 
@@ -407,25 +436,6 @@ body {
 					display: none;
 				}
 			}
-
-			.take-survey-div {
-				width: 455px;
-				position: absolute;
-				right: 0;
-				bottom: 3%;
-				left: 0;
-				margin: 0 auto;
-				z-index: 11;
-				display: none;
-				
-				.take-survey{
-					position: relative;
-				}
-			}
-
-			.take-survey-bg-two {
-				@include take-survey-bg(100px, 1);
-			}
 		}
 	}
 
@@ -440,23 +450,6 @@ body {
 			background-image: url('/images/bg2-filter.png'), url('/images/bg4.jpg');
 			background-size:cover,cover;
 			background-repeat: no-repeat, no-repeat;
-			
-			.take-survey-div {
-				width: 455px;
-				position: absolute;
-				right: 0;
-				bottom: 3%;
-				left: 0;
-				margin: 0 auto;
-				z-index: 11;
-				.take-survey {
-					position: relative;
-				}
-			}
-
-			.take-survey-bg-three {
-				@include take-survey-bg(100px, 1);
-			}
 
 			.fact-div {
 				@include center-div(absolute);
