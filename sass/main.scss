@@ -98,7 +98,6 @@ body {
 		z-index: 5;
 		position:relative;
 		.bg-1 {
-			background-image: url("/images/bg2-filter.png");
 			background-size: cover;
 			background-repeat: no-repeat;
 			height: 100%;
@@ -119,7 +118,7 @@ body {
 			.cover {
 				z-index: -50;
 				width: 100%;
-				opacity: .1;
+				opacity: .7;
 			}
 
 			.logo-div {
@@ -145,8 +144,8 @@ body {
 				width: 100%;
 				z-index: 0;
 				height: 190px;
-				bottom: 0;
-				opacity: .7;
+				bottom: -30px;
+				opacity: 1;
 			}
 		}
 	}

@@ -1,5 +1,4 @@
 //  RESPONSIVE BRANCH
-// console.log('test');
   
 $(document).ready(function(){
 var windowWidth;
