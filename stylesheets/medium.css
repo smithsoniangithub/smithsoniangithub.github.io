@@ -43,14 +43,8 @@
 }
 /* line 51, ../sass/medium.scss */
 .wrapper .window-two-wrap .bg-2 .fact-div {
-  position: absolute;
-  left: 50%;
-  z-index: 11;
   top: 53%;
-}
-/* line 55, ../sass/medium.scss */
-.wrapper .window-two-wrap .bg-2 .fact-div .fact-one {
-  left: -50%;
+  width: 405px;
 }
 /* line 57, ../sass/medium.scss */
 .wrapper .window-two-wrap .bg-2 .fact-div .fact-one .number {
@@ -71,36 +65,20 @@
 }
 /* line 76, ../sass/medium.scss */
 .wrapper .window-three-wrap .bg-3 {
-  height: 962px;
-  width: 100%;
-  z-index: 2;
-  position: relative;
-  background-image: url("/images/bg3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 768px;
 }
-/* line 84, ../sass/medium.scss */
+/* line 79, ../sass/medium.scss */
 .wrapper .window-three-wrap .bg-3 .con {
-  position: absolute;
   width: 900px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  z-index: 500;
+}
+/* line 82, ../sass/medium.scss */
+.wrapper .window-three-wrap .bg-3 .con #third-page-line {
+  top: -32px;
+  left: -2.1%;
+  height: 840px;
+  width: 840px;
 }
 /* line 91, ../sass/medium.scss */
-.wrapper .window-three-wrap .bg-3 .con #third-page-line {
-  top: -30px;
-  left: -1.6%;
-  height: 800px;
-  width: 800px;
-}
-/* line 97, ../sass/medium.scss */
-.wrapper .window-three-wrap .bg-3 .con #third-page-line svg .line-four {
-  stroke-dasharray: 0;
-  stroke-dashoffset: 0;
-}
-/* line 108, ../sass/medium.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle {
   position: absolute;
   right: 0;
@@ -113,7 +91,7 @@
   border-radius: 100%;
   display: none;
 }
-/* line 120, ../sass/medium.scss */
+/* line 103, ../sass/medium.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle .circle-con1 {
   top: 20%;
   position: absolute;
@@ -122,7 +100,7 @@
   margin: 0 auto;
   display: none;
 }
-/* line 129, ../sass/medium.scss */
+/* line 112, ../sass/medium.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle .circle-con2 {
   top: 27%;
   position: absolute;
@@ -131,7 +109,7 @@
   margin: 0 auto;
   display: none;
 }
-/* line 138, ../sass/medium.scss */
+/* line 121, ../sass/medium.scss */
 .wrapper .window-three-wrap .bg-3 .center-circle .circle-con3 {
   top: 55%;
   position: absolute;
@@ -140,12 +118,12 @@
   margin: 0 auto;
   display: none;
 }
-/* line 150, ../sass/medium.scss */
+/* line 133, ../sass/medium.scss */
 .wrapper .window-four-wrap {
   position: relative;
   z-index: 5;
 }
-/* line 153, ../sass/medium.scss */
+/* line 136, ../sass/medium.scss */
 .wrapper .window-four-wrap .bg-4 {
   height: 962px;
   width: 100%;
@@ -155,32 +133,19 @@
   background-size: cover,cover;
   background-repeat: no-repeat, no-repeat;
 }
-/* line 162, ../sass/medium.scss */
+/* line 145, ../sass/medium.scss */
 .wrapper .window-four-wrap .bg-4 .fact-div {
-  position: absolute;
-  left: 50%;
-  z-index: 11;
   top: 8%;
+  width: 500px;
 }
-/* line 166, ../sass/medium.scss */
-.wrapper .window-four-wrap .bg-4 .fact-div .fact-two {
-  background: rgba(0, 0, 0, 0.5);
-  position: relative;
-  color: white;
-  text-align: center;
-  width: 580px;
-  padding-bottom: 25px;
-  line-height: 1.5;
-  left: -53%;
-}
-/* line 177, ../sass/medium.scss */
+/* line 151, ../sass/medium.scss */
 .wrapper .window-four-wrap .bg-4 .fact-div .fact-two .number-two {
-  font-size: 85px;
+  font-size: 60px;
   font-weight: bolder;
   color: #ffd500;
 }
-/* line 183, ../sass/medium.scss */
+/* line 157, ../sass/medium.scss */
 .wrapper .window-four-wrap .bg-4 .fact-div .fact-two .sub-con {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 100;
 }

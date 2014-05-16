@@ -49,11 +49,11 @@
 			}
 
 			.fact-div {
-				@include center-div(absolute);
 				top: 53%;
+				width: 405px;
 
 				.fact-one {
-					left: -50%;
+
 					.number {
 						font-size: 50px;
 					}
@@ -74,33 +74,16 @@
 		position:relative;
 		z-index: 5;
 		.bg-3 {
-			height: 962px;
-			width: 100%;
-			z-index: 2;
-			position: relative;
-			background-image: url('/images/bg3.jpg');
-			background-size:cover;
-			background-repeat: no-repeat;
+			height: 768px;
+			
 			.con {
-				position:absolute;
 				width:900px;
-				left: 0;
-				right: 0;
-				margin: 0 auto;
-				z-index: 500;
+
 				#third-page-line{
-					top: -30px;
-					left: -1.6%;
-					height: 800px;
-					width: 800px;
-					svg {
-						.line-four {
-							// stroke-dashoffset:1708.6005859375;
-							// stroke-dasharray:1708.6005859375;
-							stroke-dasharray: 0;
-							stroke-dashoffset: 0;
-						}
-					}
+					top: -32px;
+					left: -2.1%;
+					height: 840px;
+					width: 840px;
 				}
 			}
 
@@ -160,28 +143,19 @@
 			background-repeat: no-repeat, no-repeat;
 
 			.fact-div {
-				@include center-div(absolute);
 				top: 8%;
+				width: 500px;
 
 				.fact-two {
-					background: rgba(0, 0, 0, 0.5);
-					position:relative;
-					color: white;
-					text-align: center;	
-					width: 580px;
-					padding-bottom: 25px;
-					line-height: 1.5;
-					left: -53%;
-					// display: none;
 
 					.number-two {
-						font-size: 85px;
+						font-size: 60px;
 						font-weight:bolder;
 						color:#ffd500;
 					}
 
 					.sub-con {
-						font-size: 35px;
+						font-size: 30px;
 						font-weight: 100;
 					}
 				}

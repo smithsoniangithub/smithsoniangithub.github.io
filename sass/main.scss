@@ -163,20 +163,28 @@ body {
 			}
 
 			.logo-div {
-					@include center-div(absolute);
-					top: 15%;
+					position: absolute;
+					z-index: 11;
+					top: 10%;
+					right: 0;
+					left: 0;
+					margin: 0 auto;
+					width: 274px;
 					.logo {
 						position: relative;
-						left:-50%;
 					}
 				}
 
 			.desc-div {
-				@include center-div(absolute);
+				position: absolute;
+				z-index: 11;
+				right: 0;
 				bottom: 5%;
+				left: 0;
+				margin: 0 auto;
+				width: 292px; 
 				.desc {
 					position:relative;
-					left: -50%
 				}
 			}
 
@@ -317,19 +325,21 @@ body {
 			}
 
 			.fact-div {
-				@include center-div(absolute);
+				position:absolute;
+				z-index: 11;
 				top: 45%;
+				right: 0;
+				left: 0;
+				width: 580px;
+				margin: 0 auto;
 
 				.fact-one {
 				background: rgba(0, 0, 0, 0.5);
 				position:relative;
 				color: white;
+				padding-bottom:25px;
 				text-align: center;	
-				padding-right: 75px;
-				padding-bottom: 25px;
-				padding-left:75px;
 				line-height: 1.5;
-				left: -51%;
 				display: none;
 
 				.number {
@@ -445,18 +455,21 @@ body {
 			background-repeat: no-repeat, no-repeat;
 
 			.fact-div {
-				@include center-div(absolute);
+				position: absolute;
+				z-index: 11;
 				top: 8%;
+				right: 0;
+				left: 0;
+				margin: 0 auto;
+				width: 580px;
 
 				.fact-two {
 					background: rgba(0, 0, 0, 0.5);
 					position:relative;
 					color: white;
 					text-align: center;	
-					width: 580px;
 					padding-bottom: 25px;
 					line-height: 1.5;
-					left: -53%;
 					// display: none;
 
 					.number-two {
