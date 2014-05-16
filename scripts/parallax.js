@@ -44,7 +44,6 @@ var flag = false;
   // line and castle animation function for device width morethan 720px
 	function parallaxScroll(){
 		scrolledY = $(window).scrollTop();
-    console.log(scrolledY);
     
     // footer show/hide
     if(scrolledY > 640) {
@@ -331,6 +330,7 @@ $(window).on('resize', function(){
   windowHeight = $(window).height();
   docuWidth = $(document).width();
   docuHeight = $(document).height();
+
 
   if ($(window).width() < 720) {
     $('.cover').css('height', '100%');

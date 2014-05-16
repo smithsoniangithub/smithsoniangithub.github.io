@@ -134,12 +134,6 @@ body {
 		}
 	}
 
-	.active {
-		display: block;
-	}
-
-
-
 
 	.window-one-wrap {
 		z-index: 5;
@@ -218,8 +212,7 @@ body {
 
 				.circle-one {
 				position: absolute;
-				z-index: 10;
-				// left: 625px;
+				// z-index: 10;
 				top:40px;
 				left: 0;
 				right: 0;
@@ -229,8 +222,7 @@ body {
 
 				#curve-line-1 {
 					position: absolute;
-					z-index: 10;
-					// left: 625px;
+					// z-index: 10;
 					left: 48.5%;
 					top: 24px;
 					height: 390px;
@@ -247,7 +239,7 @@ body {
 
 				#castle {
 					position: absolute;
-					z-index: 10;
+					// z-index: 10;
 					top: 38px;
 					right: 0;
 					left: 0;
@@ -266,7 +258,7 @@ body {
 
 				#curve-line-2 {
 					position: absolute;
-					z-index: 10;
+					// z-index: 10;
 					top: 344px;
 					right: 61.7%;
 					height: 270px;
@@ -283,7 +275,7 @@ body {
 
 				.circle-two {
 					position: absolute;
-					z-index: 10;	
+					// z-index: 10;	
 					top: 542px;
 					left: 14%;
 					display: none;
@@ -291,7 +283,7 @@ body {
 
 				#white-line {
 					position: absolute;
-					z-index: 10;
+					// z-index: 10;
 					top:536px;
 					left: 16%;
 					height: 44px;
@@ -308,7 +300,7 @@ body {
 
 				#curve-line-3 {
 					position: absolute;
-					z-index: 10;
+					// z-index: 10;
 					top: 570px;
 					left: 14.5%;
 					height: 428px;
@@ -333,10 +325,11 @@ body {
 				position:relative;
 				color: white;
 				text-align: center;	
-				width: 580px;
+				padding-right: 75px;
 				padding-bottom: 25px;
+				padding-left:75px;
 				line-height: 1.5;
-				left: -53%;
+				left: -51%;
 				display: none;
 
 				.number {

@@ -3,333 +3,69 @@
 
 @import 'mixins';
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
-body {
-	background-color: black;
-	line-height:2;
-	font-family: 'Lato', sans-serif;
-}
-
 .wrapper {
-	position:relative;
-	
-	.tool-one {
-		@include tooltip(212px);
-	}
-
-	.tool-two {
-		@include tooltip(245px);
-	}
-	
-	.castle-line {
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		left: 0;
-		right: 0;
-		margin: 0 auto;
-		z-index: 500;
-
-		.circle-one {
-			position: absolute;
-			z-index: 10;
-			left: 450px;
-			// left:0;
-			// right: 0;
-			// margin: 0 auto;
-			display: none;
-		}
-
-		.circle-two {
-			position: absolute;
-			z-index: 10;	
-			top:1176px !important;
-			left: 15px;
-			display: none;
-		}
-
-		#curve-line-1 {
-			position: absolute;
-			z-index: 10;
-			left: 450px;
-			height: 370px;
-			width: 445px;			
-			svg {
-				.line-one {
-					stroke-dasharray: 1204.9405517578125;
-					stroke-dashoffset: 1204.9405517578125;
-				}
-			}
-		}
-
-
-		#castle {
-			position: absolute;
-			z-index: 10;
-			left: 197px;
-			height: 415px;
-			width: 495px;
-			svg {
-				.castle-path{
-					stroke-dashoffset:1155.9654541015625 ;
-					stroke-dasharray:1155.9654541015625 ;
-				}
-			}
-		}
-
-		#curve-line-2 {
-			position: absolute;
-			z-index: 10;
-			top:988px !important;
-			left: 3px;
-			height: 270px;
-			width: 276px;
-			svg {
-				path {
-					stroke-dasharray:332.88720703125;
-					stroke-dashoffset:332.88720703125;
-				}
-			}
-		}
-
-		#white-line {
-			position: absolute;
-			z-index: 10;
-			top:1172px !important;
-			left: 41px;
-			height: 44px;
-			width: 685px;
-			svg {
-				path {
-					stroke-dasharray: 650;
-					stroke-dashoffset: 650;
-				}
-			}
-		}
-
-		#curve-line-3 {
-			position: absolute;
-			z-index: 10;
-			top:1208px !important;
-			left: 21px;
-			height: 440px;
-			width: 18px;
-			svg {
-				path{
-					stroke-dashoffset:243;
-					stroke-dasharray:243;
-				}
-			}
-		}
-
-		#third-page-line{
-			position: absolute;
-			z-index: 10;
-			top:1574px !important;
-			left: -88px;
-			height: 1025px;
-			width: 955px;
-			svg {
-				path {
-					stroke-dashoffset:1708.6005859375;
-					stroke-dasharray:1708.6005859375;
-				}
-			}
-		}
-	}
-
-
-	nav {
-		position: fixed;
-		right: 70px;
-		top: 30%;
-		z-index: 9999;
-		ul {
-			padding:0px; 
-			li {
-				list-style: none;
-				img {
-					height: 17px;
-				}
-				img:hover {
-					border: 2px solid white;
-					border-radius: 100%;
-				}
-			}
-		}
-	}
-
-
-
-	.window-one-wrap {
-		z-index: 5;
-		position:relative;
-		height: 100%;
-		.bg-1 {
-			background-image: url("/images/bg2-filter.png");
-			background-size: cover;
-			background-repeat: no-repeat;
-			height: 100%;
-			width: 100%;
-			position: relative;
-
-			video {
-				position: absolute;
-				right: 0; 
-				bottom: 0;
-				min-width: 100%;
-				min-height: 100%;
-				width: auto; 
-				height: auto; 
-				z-index: -100;
-			}
-
-			.cover {
-				z-index: -50;
-				height: 672px;
-				width: 100%;
-				opacity: .1;
-			}
-
-			.logo-div {
-					@include center-div(absolute);
-					top: 15%;
-					.logo {
-						position: relative;
-						left:-50%;
-					}
-				}
-
-			.desc-div {
-				@include center-div(absolute);
-				bottom: 5%;
-				.desc {
-					position:relative;
-					left: -50%
-				}
-			}
-
-			.desc-bg {
-				position:absolute;
-				width: 100%;
-				z-index: 0;
-				height: 190px;
-				bottom: 0;
-				opacity: .7;
-			}
-		}
-	}
 	
 	.window-two-wrap {
-		position:relative;
-		z-index: 5;
+
 		.bg-2 {
-			height: 962px;
-			width: 100%;
-			position: relative;
-			background-image: url("/images/bg2-filter.png"), url("/images/bg2.jpg");
-			background-size: cover,cover;
-			background-repeat: no-repeat, no-repeat;
-			background-position: center;
+			height: 768px;
+			.con {
+				width:900px;
 
-			.annual-visitor-div {
+				#curve-line-1 {
+					left: 48.5%;
+					height: 360px;
+					width: 430px;		
+				}
+
+				#castle {
+					height: 402px;
+					width: 427px;
+				}
+
+				#curve-line-2 {
+					top: 325px;
+					right: 65.9%;
+					height: 200px;
+					width: 250px;
+				}
+
+				.circle-two {
+					top: 470px;
+					left: 7.5%;
+				}
+
+				#white-line {
+					top: 465px;
+					left: 10.4%;
+					width: 560px;
+				}
+
+				#curve-line-3 {
+					top: 500px;
+					left: 8.4%;
+					height: 270px;
+				}
+			}
+
+			.fact-div {
 				@include center-div(absolute);
-				top: 41%;
+				top: 53%;
 
-				.annual-visitor {
-				background: rgba(0, 0, 0, 0.5);
-				position:relative;
-				color: white;
-				text-align: center;	
-				width: 580px;
-				padding-bottom: 25px;
-				line-height: 1.5;
-				left: -53%;
-				display: none;
+				.fact-one {
+					left: -50%;
+					.number {
+						font-size: 50px;
+					}
 
-				.number {
-					font-size: 85px;
-					font-weight:bolder;
-					color:#ffd500;
-				}
+					.sub-con {
+						font-size: 30px;
+					}
 
-				.sub-con {
-					font-size: 45px;
-					font-weight: 100;
-				}
-
-				.sub-con-two {
-					font-size: 25px;
-					font-weight: 100;
+					.sub-con-two {
+						font-size: 20px;
 					}
 				}
-			}
-
-			.take-survey-div {
-				@include center-div(absolute);
-				bottom:3%;
-				display: none;
-				.take-survey {
-					// display: none;
-					position: relative;
-					left: -50%;
-					bottom: 5%;
-				}
-			}
-
-			.take-survey-bg {
-				@include take-survey-bg(100px, 1);
 			}
 		}
 	}
@@ -345,6 +81,29 @@ body {
 			background-image: url('/images/bg3.jpg');
 			background-size:cover;
 			background-repeat: no-repeat;
+			.con {
+				position:absolute;
+				width:900px;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				z-index: 500;
+				#third-page-line{
+					top: -30px;
+					left: -1.6%;
+					height: 800px;
+					width: 800px;
+					svg {
+						.line-four {
+							// stroke-dashoffset:1708.6005859375;
+							// stroke-dasharray:1708.6005859375;
+							stroke-dasharray: 0;
+							stroke-dashoffset: 0;
+						}
+					}
+				}
+			}
+
 			
 			.center-circle {
 				position:absolute;
@@ -385,22 +144,6 @@ body {
 					display: none;
 				}
 			}
-
-			.take-survey-div {
-				@include center-div(absolute);
-				bottom:3%;
-				display: none;
-				.take-survey {
-					// display: none;
-					position: relative;
-					left: -50%;
-					bottom: 5%;
-				}
-			}
-
-			.take-survey-bg-two {
-				@include take-survey-bg(100px, 1);
-			}
 		}
 	}
 
@@ -415,19 +158,34 @@ body {
 			background-image: url('/images/bg2-filter.png'), url('/images/bg4.jpg');
 			background-size:cover,cover;
 			background-repeat: no-repeat, no-repeat;
+
+			.fact-div {
+				@include center-div(absolute);
+				top: 8%;
+
+				.fact-two {
+					background: rgba(0, 0, 0, 0.5);
+					position:relative;
+					color: white;
+					text-align: center;	
+					width: 580px;
+					padding-bottom: 25px;
+					line-height: 1.5;
+					left: -53%;
+					// display: none;
+
+					.number-two {
+						font-size: 85px;
+						font-weight:bolder;
+						color:#ffd500;
+					}
+
+					.sub-con {
+						font-size: 35px;
+						font-weight: 100;
+					}
+				}
+			}
 		}
 	}
 }
-
-// .parallax-nav {
-// 	.active {
-// 		// opacity:1;
-// 		border: 2px solid white;
-// 		border-radius: 100%;
-// 	}
-
-// 	.active-blue {
-// 		border: 2px solid #0bb3ff;
-// 		border-radius: 100%;
-// 	}
-// }
